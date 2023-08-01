@@ -1,0 +1,2959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="tei_himmlJer.rng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Eine Digitale Edition der Beschreibung des Himmlischen Jerusalem nach Vorau Cod.
+               276, Fol. 133vb-135va</title>
+            <respStmt>
+               <resp>Masterarbeit</resp>
+               <persName>
+                  <forename>Stefanie</forename>
+                  <surname>Schöberl</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Masterarbeit</p>
+            <p>noch in Planung</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>Österreich</country>
+                  <institution ref="https://www.stift-vorau.at/">Augustiner Chorherrenstift
+                     Vorau</institution>
+                  <idno type="shelfmark" source="urn:nbn:at:at-ubg:2-22148">Vorau Cod. 276</idno>
+                  <altIdentifier type="shelfmark">
+                     <idno>früher Vorau Cod. XI</idno>
+                  </altIdentifier>
+                  <altIdentifier type="URI">
+                     <idno>urn:nbn:at:at-ubg:2-22148</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem xml:id="HimmlJer">
+                     <locus>Fol. 133vb-135va</locus>
+                     <title>Beschreibung des Himmlischen Jerusalem</title>
+                     <textLang ana="main">Mittelhochdeutsch-bairisch</textLang>
+                     <textLang ana="traces">Mittelhochdeutsch-fränkisch</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc>
+                        <extent>
+                           <measureGrp>
+                              <measure type="leafs">183</measure>
+                              <height unit="mm">450</height>
+                              <width unit="mm">325</width>
+                           </measureGrp>
+                           <material>Pergament</material>
+                        </extent>
+                        <foliation>
+                           Zählung wurde wohl nachträglich hinzugefügt, Folio-Nummer auf der Recto-Seite rechts oben am Rand des Schriftraums
+                        </foliation>
+                        <collation>
+                           <desc>Einband Mitte 15. Jh.; Bindung: 23 Quaternionen, 2 Vorsatzblätter</desc>
+                        </collation>
+                        <condition>
+                           <desc>fehlende Lage(n) nach Fol. 135v, vier nachträglich hinzugefügte
+                              Blätter (Fol. 1, 8, 89, 96)</desc>
+                        </condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="46">2 Spalten zu je 46 Zeilen <measure>
+                              <height unit="mm">340</height>
+                              <width unit="mm">230-235</width>
+                           </measure>
+                           <desc>Verse nicht abgesetzt, Textgestaltung unterschiedlich, größtenteils
+                              Texttrennung mittels großen, illuminierten Initialen, teilweise
+                              Übergang ohne Markierung</desc>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="2">
+                     <handNote xml:id="Hand1" scope="major">
+                        <locus>Fol. 133v, 134rb-135ra</locus>
+                        <desc>Gotische Minuskelschrift, größere Ausgestaltung der Zeichen (teilweise
+                           Überlappung von mehrstöckigen Zeichen mit Folge-/Vorzeile), ca. 36
+                           Zeichen/Zeile, überwiegend mittelhochdeutsches z, w wird häufig als vv
+                           realisiert, Schaft-s und rundes s gleichermaßen, Majuskeln häufig als
+                           vergrößerte Minuskeln realisiert, Geviertstriche am Zeilenende inkonsistent ausgeführt </desc>
+                     </handNote>
+                     <handNote xml:id="Hand2" scope="minor">
+                        <locus>Fol. 134ra</locus>
+                        <desc>Gotische Minuskelschrift, kleinere Ausgestaltung der Zeichen
+                           (deutlichere Zeilenränder), ca. 41 Zeichen/Zeile, überwiegen vergrößertes
+                           Minuskel-z, w eindeutig erkennbar, kein v, ausschließlich Schaft-s,
+                           Majuskeln ausschließlich als Majuskeln realisiert, keine Geviertstriche ausgeführt </desc>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notAfter-custom="1200">4. Viertel 12. Jh.</origDate>
+                     <origPlace>Entstehungsort unbekannt, evtl. Stift Vorau</origPlace>
+                  </origin>
+                  <provenance>Augustiner Chorherrenstift Vorau belegt seit 13. Jh. (Fol. 86r) bzw.
+                     15. Jh., lat. Teil sicher unter Propst Bernhard I. in Vorau
+                     verfasst</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p ana="Grundprinzipien"><list>
+               <item>Das Hauptziel der Edition ist, den Text sowohl in einer hyperdiplomatischen
+                  Transkription als auch in einer verständlicheren Lesefassung anzubieten.</item>
+               <item>Die vorliegende Edition soll eine möglichst breite Basis für Fragestellungen aus
+                  verschiedenen Fachbereichen darstellen.</item>
+               <item>Grundprinzipien der Transkription sind hier aufgeführt. Für eine umfangreichere
+                  Erklärung, theoretische Grundüberlegungen sowie Begründungen für diverse
+                  Transkriptionsentscheidungen siehe <bibl>Masterarbeit</bibl>.</item>
+            </list>
+               </p>
+            <p ana="Makrostrukturebene"><list>
+                     <item><gi>facsimile</gi>: Die Auszeichnung der einzelnen Zones erfolgt
+                        seitenweise mit <gi>surfaceGrp</gi>, spaltenweise mit <gi>surface</gi>,
+                           <gi>zone</gi> für Abschnitte, die mit einer farblich/deutlich
+                        gekennzeichneten Initiale beginnen.</item>
+                     <item><gi>body</gi>: Strophen werden mit <gi>lg</gi> und <att>xml:id</att>
+                        sowie <att>facs</att> mit Referenz auf <gi>zone</gi> transkribiert.</item>
+                     <item>Zeilenumbrüche werden mit <gi>lb</gi> transkribiert und mit <att>n</att>
+                        je Spalte nummeriert.</item>
+                     <item>Verse werden mit <gi>l</gi> ausgezeichnet und mit <att>n</att>
+                        fortlaufend nummeriert. Verse werden dann transkribiert, wenn sie entweder
+                        durch Interpunktionszeichen markiert sind oder aufgrund von Hebung und
+                        Reimmaß Sinn ergeben.</item>
+                  </list></p>
+            <p ana="Mikrostrukturebene"><list>
+                  <item>Alle Zeichen, die im Text vorkommen, werden in der <gi>charDecl</gi>
+                     aufgelistet und beschrieben.</item>
+                  <item>Zeichen, die Teil der ASCII-Tabelle sind, werden im Fließtext nicht
+                     gesondert ausgezeichnet.</item>
+                  <item>Zeichen, die nicht Teil der ASCII-Tabelle sind (das sind: Allografen,
+                     Diakritika, Abkürzungzeichen, Brevigraphen, ambige Zeichen) werden mit
+                        <gi>g</gi> annotiert und mit <att>ref</att> wird auf das jeweilige Item in
+                     der <gi>charDecl</gi> verwiesen.</item>
+                  <item>Interpunktionszeichen werden immer mit <gi>g</gi> annotiert. Der Punkt
+                     (#period) wird zusätzlich mit <att>ana</att> versehen, das die jeweilige
+                     Funktion anzeigt ("emph", "num", "syntax", "amb").</item>
+                  <item>Initialen werden mit <gi>hi</gi>, <att>rend</att> ("illuminated", "initial")
+                     und <att>style</att> (zur Beschreibung von Gestaltungselementen und Textfarbe)
+                     recodiert.</item>
+               </list>
+            </p>
+               <p ana="Deutungsebene"><list>
+                     <item>Variierende Leseformen (durch Spatien, ambige Zeichen, u/v-Schreibung,
+                        Abkürzungen, Zeilenumbrüche innerhalb von Wörtern) werden auf Wortebene mit
+                           <gi>choice</gi> markiert.</item>
+                     <item>Abkürzungen werden mit <att>ana</att>="abbr" sowie <gi>abbr</gi> und
+                           <gi>expan</gi> ergänzt.</item>
+                     <item>Zeilenübergreifende Wörter werden mit <att>ana</att>="lb" sowie
+                           <gi>orig</gi> und <gi>reg</gi> ausgezeichnet.</item>
+                     <item>Ambiguitäten werden mit <att>ana</att>="rdg" sowie <gi>orig</gi> und
+                           <gi>reg</gi> recodiert.</item>
+                     <item>Es werden keine Schriftzeichen hinzugefügt oder entfernt. "w" wird als
+                        Ligatur gewertet, d.h. als Kombination von "uu", "uv" oder "vu".</item>
+                  </list>
+               </p>
+               <p ana="Besonderheiten"><list>
+                     <item>Überschneidungen zwischen verschiedenen <att>ana</att>-Varianten fallen
+                        zugunsten <att>ana</att>="lb". Zusätzlich wird ein <gi>note</gi>
+                        hinzugefügt.</item>
+                     <item>Verse und Strophen, die über mehrere <gi>zone</gi>-Bereiche gehen, werden
+                        mit <att>part</att>="I" bzw. <att>part</att>="F" versehen.</item>
+                  </list>
+               </p>
+            
+         </editorialDecl>
+         <charDecl>
+            <!--Alphabetzeichen-->
+            <char xml:id="A">
+               <desc>LATIN CAPITAL LETTER A</desc>
+            </char>
+            <char xml:id="a">
+               <desc>LATIN SMALL LETTER A</desc>
+            </char>
+            <glyph ana="graph" corresp="ae" resp="https://hdl.handle.net/1956/10699" source="p.17"
+               xml:id="aelig">
+               <desc>LATIN SMALL LETTER AE</desc>
+               <mapping type="normalized">ae</mapping>
+               <mapping subtype="Lat1Suppl" type="unicode_codepoint">00E6</mapping>
+               <mapping type="unicode_symbol">æ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">æ</mapping>
+            </glyph>
+            <char xml:id="b">
+               <desc>LATIN SMALL LETTER B</desc>
+            </char>
+            <char xml:id="C">
+               <desc>LATIN CAPITAL LETTER C</desc>
+            </char>
+            <char xml:id="c">
+               <desc>LATIN SMALL LETTER C</desc>
+            </char>
+            <char xml:id="D">
+               <desc>LATIN CAPITAL LETTER D</desc>
+            </char>
+            <char xml:id="d">
+               <desc>LATIN SMALL LETTER D</desc>
+            </char>
+            <char xml:id="E">
+               <desc>LATIN CAPITAL LETTER E</desc>
+            </char>
+            <char xml:id="e">
+               <desc>LATIN SMALL LETTER E</desc>
+            </char>
+            <char xml:id="f">
+               <desc>LATIN SMALL LETTER F</desc>
+            </char>
+            <char xml:id="G">
+               <desc>LATIN CAPITAL LETTER G</desc>
+            </char>
+            <char xml:id="g">
+               <desc>LATIN SMALL LETTER G</desc>
+            </char>
+            <char xml:id="H">
+               <desc>LATIN CAPITAL LETTER H</desc>
+            </char>
+            <char xml:id="h">
+               <desc>LATIN SMALL LETTER H</desc>
+            </char>
+            <char xml:id="I">
+               <desc>LATIN CAPITAL LETTER I</desc>
+            </char>
+            <glyph ana="graph" resp="https://hdl.handle.net/1956/10699" source="p.48" xml:id="inodot">
+               <desc>LATIN SMALL LETTER DOTLESS I</desc>
+               <mapping type="normalized">i</mapping>
+               <mapping subtype="LatExtA" type="unicode_codepoint">0131</mapping>
+               <mapping type="unicode_symbol">ı</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ı</mapping>
+            </glyph>
+            <char xml:id="l">
+               <desc>LATIN SMALL LETTER L</desc>
+            </char>
+            <char xml:id="M">
+               <desc>LATIN CAPITAL LETTER M</desc>
+            </char>
+            <char xml:id="m">
+               <desc>LATIN SMALL LETTER M</desc>
+            </char>
+            <char xml:id="N">
+               <desc>LATIN CAPITAL LETTER N</desc>
+            </char>
+            <char xml:id="n">
+               <desc>LATIN SMALL LETTER N</desc>
+            </char>
+            <char xml:id="o">
+               <desc>LATIN SMALL LETTER O</desc>
+            </char>
+            <char xml:id="P">
+               <desc>LATIN CAPITAL LETTER P</desc>
+            </char>
+            <char xml:id="p">
+               <desc>LATIN SMALL LETTER P</desc>
+            </char>
+            <char xml:id="r">
+               <desc>LATIN SMALL LETTER R</desc>
+            </char>
+            <char xml:id="S">
+               <desc>LATIN CAPITAL LETTER S</desc>
+            </char>
+            <char xml:id="s">
+               <desc>LATIN SMALL LETTER S</desc>
+            </char>
+            <char xml:id="T">
+               <desc>LATIN CAPITAL LETTER T</desc>
+            </char>
+            <char xml:id="t">
+               <desc>LATIN SMALL LETTER T</desc>
+            </char>
+            <char xml:id="u">
+               <desc>LATIN SMALL LETTER U</desc>
+            </char>
+            <char xml:id="V">
+               <desc>LATIN CAPITAL LETTER V</desc>
+            </char>
+            <char xml:id="v">
+               <desc>LATIN SMALL LETTER V</desc>
+            </char>
+            <char xml:id="W">
+               <desc>LATIN CAPITAL LETTER W</desc>
+            </char>
+            <char xml:id="w">
+               <desc>LATIN SMALL LETTER W</desc>
+            </char>
+            <char xml:id="x">
+               <desc>LATIN SMALL LETTER X</desc>
+            </char>
+            <char xml:id="y">
+               <desc>LATIN SMALL LETTER Y</desc>
+            </char>
+            <char xml:id="Z">
+               <desc>LATIN CAPITAL LETTER Z</desc>
+            </char>
+            <char xml:id="z">
+               <desc>LATIN SMALL LETTER Z</desc>
+            </char>
+
+            <!--Allografen-->
+            <glyph ana="allograph" corresp="A" resp="https://hdl.handle.net/1956/10699"
+               source="p.12" xml:id="aenl">
+               <desc>LATIN ENLARGED LETTER SMALL A</desc>
+               <mapping type="normalized">A</mapping>
+               <mapping subtype="PUA" type="unicode_codepoint">EEE0</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+               <note>Private Use Area Glyph</note>
+            </glyph>
+            <glyph ana="allograph" corresp="D" resp="https://hdl.handle.net/1956/10699"
+               source="p.31" xml:id="Drot">
+               <desc>LATIN CAPITAL LETTER INSULAR D</desc>
+               <mapping type="normalized">D</mapping>
+               <mapping subtype="LatExtD" type="unicode_codepoint">A779</mapping>
+               <mapping type="unicode_symbol">Ꝺ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">Ꝺ</mapping>
+            </glyph>
+            <glyph ana="allograph" corresp="d" resp="https://hdl.handle.net/1956/10699"
+               source="p.31" xml:id="drot">
+               <desc>LATIN SMALL LETTER INSULAR D</desc>
+               <mapping type="normalized">d</mapping>
+               <mapping subtype="LatExtD" type="unicode_codepoint">A77A</mapping>
+               <mapping type="unicode_symbol">ꝺ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ꝺ</mapping>
+            </glyph>
+            <glyph ana="allograph" corresp="e" resp="https://hdl.handle.net/1956/10699"
+               source="p.37" xml:id="eunc">
+               <desc>LATIN SMALL LETTER E UNCIAL FORM</desc>
+               <mapping type="normalized">e</mapping>
+               <mapping subtype="PUA-51" type="unicode_codepoint">F218</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+               <note>Private Use Area Glyph</note>
+            </glyph>
+            <glyph ana="allograph" corresp="l" resp="https://hdl.handle.net/1956/10699"
+               source="p.58" xml:id="lscap">
+               <desc>LATIN LETTER SMALL CAPITAL L</desc>
+               <mapping type="normalized">l</mapping>
+               <mapping subtype="IPAExt" type="unicode_codepoint">029F</mapping>
+               <mapping type="unicode_symbol">ʟ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ʟ</mapping>
+            </glyph>
+            <glyph ana="allograph" corresp="M" resp="https://hdl.handle.net/1956/10699"
+               source="p.61" xml:id="menl">
+               <desc>LATIN ENLARGED LETTER SMALL M</desc>
+               <mapping type="normalized">M</mapping>
+               <mapping subtype="PUA-3" type="unicode_codepoint">EEEE</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+               <note>Private Use Area Glyph</note>
+            </glyph>
+            <glyph ana="allograph" corresp="m" resp="https://hdl.handle.net/1956/10699"
+               source="p.62" xml:id="munc">
+               <desc>LATIN SMALL LETTER M UNCIAL FORM</desc>
+               <mapping type="normalized">m</mapping>
+               <mapping subtype="PUA-51" type="unicode_codepoint">F23C</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+               <note>Private Use Area Glyph</note>
+            </glyph>
+            <glyph ana="allograph" corresp="N" resp="https://hdl.handle.net/1956/10699"
+               source="p.64" xml:id="nenl">
+               <desc>LATIN ENLARGED LETTER SMALL N</desc>
+               <mapping type="normalized">N</mapping>
+               <mapping subtype="PUA-3" type="unicode_codepoint">EEEF</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+               <note>Private Use Area Glyph</note>
+            </glyph>
+            <glyph ana="allograph" corresp="n" resp="https://hdl.handle.net/1956/10699"
+               source="p.64" xml:id="nscap">
+               <desc>LATIN LETTER SMALL CAPITAL N</desc>
+               <mapping type="normalized">n</mapping>
+               <mapping subtype="IPAExt" type="unicode_codepoint">0274</mapping>
+               <mapping type="unicode_symbol">ɴ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ɴ</mapping>
+            </glyph>
+            <glyph ana="allograph" corresp="r" resp="https://hdl.handle.net/1956/10699"
+               source="p.82" xml:id="rscap">
+               <desc>LATIN LETTER SMALL CAPITAL R</desc>
+               <mapping type="normalized">r</mapping>
+               <mapping subtype="IPAExt" type="unicode_codepoint">0280</mapping>
+               <mapping type="unicode_symbol">ʀ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ʀ</mapping>
+            </glyph>
+            <glyph ana="allograph" corresp="s" resp="https://hdl.handle.net/1956/10699"
+               source="p.89" xml:id="slong">
+               <desc>LATIN SMALL LETTER LONG S</desc>
+               <mapping type="normalized">s</mapping>
+               <mapping subtype="LatExtA" type="unicode_codepoint">017F</mapping>
+               <mapping type="unicode_symbol">ſ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ſ</mapping>
+            </glyph>
+            <glyph ana="allograph" corresp="z"
+               resp="https://mufi.info/q.php?p=mufi/chars/unichar/62008" xml:id="mhgzed">
+               <desc>LATIN SMALL LETTER MIDDLE HIGH GERMAN ZED</desc>
+               <mapping type="normalized">z</mapping>
+               <mapping subtype="PUA-14" type="unicode_codepoint">F238</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+               <note>MUFI version: Characters added after v.4.0</note>
+               <note>Private Use Area Glyph</note>
+            </glyph>
+            <glyph ana="allograph" corresp="z" resp="https://hdl.handle.net/1956/10699"
+               source="p.112" xml:id="zscap">
+               <desc>LATIN LETTER SMALL CAPITAL Z</desc>
+               <mapping type="normalized">z</mapping>
+               <mapping subtype="PhonExt" type="unicode_codepoint">1D22</mapping>
+               <mapping type="unicode_symbol">ᴢ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ᴢ</mapping>
+            </glyph>
+
+            <!--Diakritika, Abkürzungsmarker-->
+            <glyph ana="diacritic" resp="https://hdl.handle.net/1956/10699" source="p.123"
+               xml:id="esup">
+               <desc>COMBINING LATIN SMALL LETTER E</desc>
+               <mapping type="normalized">e</mapping>
+               <mapping subtype="CombDiaMk" type="unicode_codepoint">0364</mapping>
+               <mapping type="unicode_symbol">ͤ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ͤ</mapping>
+            </glyph>
+            <glyph ana="diacritic" resp="https://hdl.handle.net/1956/10699" source="p.124"
+               xml:id="inodotsup">
+               <desc>COMBINING LATIN SMALL LETTER DOTLESS I</desc>
+               <mapping type="normalized">i</mapping>
+               <mapping subtype="PUA-7" type="unicode_codepoint">F02F</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+            </glyph>
+            <glyph ana="diacritic" resp="https://hdl.handle.net/1956/10699" source="p.125"
+               xml:id="osup">
+               <desc>COMBINING LATIN SMALL LETTER O</desc>
+               <mapping type="normalized">o</mapping>
+               <mapping subtype="CombDiaMk" type="unicode_codepoint">0366</mapping>
+               <mapping type="unicode_symbol">ͦ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ͦ</mapping>
+            </glyph>
+            <glyph ana="diacritic" resp="https://hdl.handle.net/1956/10699" source="p.126"
+               xml:id="vsup">
+               <desc>COMBINING LATIN SMALL LETTER V</desc>
+               <mapping type="normalized">v</mapping>
+               <mapping subtype="CombDiaMk" type="unicode_codepoint">036E</mapping>
+               <mapping type="unicode_symbol">ͮ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ͮ</mapping>
+            </glyph>
+            <glyph ana="diacritic" resp="https://hdl.handle.net/1956/10699" source="p.127"
+               xml:id="combacute">
+               <desc>COMBINING ACUTE ACCENT</desc>
+               <mapping type="normalized">´</mapping>
+               <mapping subtype="CombDiaMk" type="unicode_codepoint">0301</mapping>
+               <mapping type="unicode_symbol">́</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">́</mapping>
+            </glyph>
+            <glyph ana="diacritic" resp="https://hdl.handle.net/1956/10699" source="p.128"
+               xml:id="combced">
+               <desc>COMBINING CEDILLA</desc>
+               <mapping subtype="CombDiaMk" type="unicode_codepoint">0327</mapping>
+               <mapping type="unicode_symbol">̧</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">̧</mapping>
+            </glyph>
+            <glyph ana="abbreviation" resp="https://hdl.handle.net/1956/10699" source="p.129"
+               xml:id="combcurlbar">
+               <desc>COMBINING CURLY BAR ABOVE</desc>
+               <mapping subtype="PUA-6" type="unicode_codepoint">F1CC</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+               <note>Private Use Area Glyph</note>
+            </glyph>
+            <glyph ana="abbreviation" resp="https://hdl.handle.net/1956/10699" source="p.129"
+               xml:id="combcurl">
+               <desc>COMBINING OGONEK ABOVE</desc>
+               <mapping subtype="CombDiaMkS" type="unicode_codepoint">1DCE</mapping>
+               <mapping type="unicode_symbol">᷎</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">᷎</mapping>
+            </glyph>
+            <glyph ana="abbreviation" resp="https://hdl.handle.net/1956/10699" source="p.129"
+               xml:id="bar">
+               <desc>COMBINING OVERLINE</desc>
+               <mapping subtype="CombDiaMk" type="unicode_codepoint">0305</mapping>
+               <mapping type="unicode_symbol">̅</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">̅</mapping>
+            </glyph>
+            <glyph ana="abbreviation" resp="https://hdl.handle.net/1956/10699" source="p.127"
+               xml:id="combtilde">
+               <desc>COMBINING TILDE</desc>
+               <mapping type="normalized">~</mapping>
+               <mapping subtype="CombDiaMk" type="unicode_codepoint">0303</mapping>
+               <mapping type="unicode_symbol">̃</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">̃</mapping>
+            </glyph>
+            <glyph ana="brevigraph" resp="https://hdl.handle.net/1956/10699" source="p.128"
+               xml:id="combdblac">
+               <desc>COMBINING DOUBLE ACUTE ACCENT</desc>
+               <mapping type="normalized">"</mapping>
+               <mapping subtype="CombDiaMk" type="unicode_codepoint">030B</mapping>
+               <mapping type="unicode_symbol">̋</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">̋</mapping>
+            </glyph>
+            <glyph ana="ambiguous" corresp="y" resp="https://hdl.handle.net/1956/10699"
+               source="p.135" xml:id="rum">
+               <desc>LATIN SMALL LETTER RUM ROTUNDA</desc>
+               <mapping type="normalized">y</mapping>
+               <mapping subtype="LatExtD" type="unicode_codepoint">A75D</mapping>
+               <mapping type="unicode_symbol">ꝝ</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">ꝝ</mapping>
+            </glyph>
+
+            <!--Interpunktion-->
+            <glyph ana="punctuation" resp="https://hdl.handle.net/1956/10699" source="p.138"
+               xml:id="period">
+               <desc>FULL STOP</desc>
+               <mapping type="normalized">.</mapping>
+               <mapping subtype="BasLat" type="unicode_codepoint">002E</mapping>
+               <mapping type="unicode_symbol">.</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">.</mapping>
+            </glyph>
+            <glyph ana="punctuation" resp="https://hdl.handle.net/1956/10699" source="p.139"
+               xml:id="comma">
+               <desc>COMMA</desc>
+               <mapping type="normalized">,</mapping>
+               <mapping subtype="BasLat" type="unicode_codepoint">002C</mapping>
+               <mapping type="unicode_symbol">,</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">,</mapping>
+            </glyph>
+            <glyph ana="punctuation" resp="https://hdl.handle.net/1956/10699" source="p.142"
+               xml:id="ndash">
+               <desc>EN DASH</desc>
+               <mapping type="normalized">-</mapping>
+               <mapping subtype="GenPunct" type="unicode_codepoint">2013</mapping>
+               <mapping type="unicode_symbol">–</mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex">–</mapping>
+            </glyph>
+         </charDecl>
+      </encodingDesc>
+   </teiHeader>
+   <facsimile>
+      <!-- Auszeichnung der einzelnen Zones: seitenweise = surfaceGrp, spaltenweise = surface innerhalb der Gruppe -->
+      <surfaceGrp xml:id="Vorau_133v">
+         <!--Nomenklatur für xml:ids: Vorau_[FolioNummer][Spaltenkürzel]_[NummerDesParagraphen] wobei Spaltenkürzel{a=links, b=rechts}-->
+         <surface xml:id="Vorau_133v_b">
+            <graphic url="Vorau_133v.jpg" width="2000px" height="2716px"/>
+            <zone xml:id="Vorau_133vb_1"
+               points="1056,182 1270,182 1270,264 1850,264 1840,862 1505,862 1507,907 1146,907 1146,389 1062,389"/>
+            <!--Nu sule wir beginen...-->
+            <zone xml:id="Vorau_133vb_2"
+               points="1506,862 1808,862 1798,1309 1326,1301 1325,1343 1156,1345 1146,907 1507,907"/>
+            <!--Ze duhten ist uns spahe...-->
+            <zone xml:id="Vorau_133vb_3"
+               points="1326,1301 1815,1309 1815,1726 1423,1728 1423,1769 1153,1765 1156,1345 1325,1343"/>
+            <!--Daz was iohs ewwangelista...-->
+            <zone xml:id="Vorau_133vb_4"
+               points="1423,1728 1815,1726 1815,2062 1654,2062 1655,2108 1157,2107 1153,1765 1423,1769"/>
+            <!--Daz puch saget uns zedute...-->
+            <zone xml:id="Vorau_133vb_5"
+               points="1654,2062 1785,2062 1786,2152 1156,2149 1157,2107 1655,2108"/>
+            <!--Die selben XII porte...-->
+         </surface>
+      </surfaceGrp>
+      <surfaceGrp>
+         <surface xml:id="Vorau_134ra">
+            <graphic url="Vorau_134r.jpg" width="2000px" height="2716px"/>
+            <zone xml:id="Vorau_134ra_1" points="234,170 864,170 864,416 319,404 317,450 232,450"/>
+            <!--...christallen. ander osteren porte...-->
+            <zone xml:id="Vorau_134ra_2"
+               points="319,404 864,416 851,1181 440,1183 441,1235 240,1238 232,450 317,450"/>
+            <!--Insunderen porten stant doch dri...-->
+            <zone xml:id="Vorau_134ra_3"
+               points="430,1182 851,1181 844,1528 440,1529 442,1574 241,1574 240,1238 430,1236"/>
+            <!--Sulen wir so mennischlichen chomen in gotes riche...-->
+            <zone xml:id="Vorau_134ra_4"
+               points="421,1523 844,1528 858,2028 247,2026 241,1574 424,1576"/>
+            <!--Nubir unir gevorderet sun deret unde norderet...-->
+            <zone xml:id="Vorau_134ra_5" points="200,2018 256,2006 256,2028 858,2028 853,2163 250,2163 250,2079 195,2084"/>
+            <!--Ander buric mure raine ligint...-->
+         </surface>
+         <surface xml:id="Vorau_134rb">
+            <graphic url="Vorau_134r.jpg" width="2000px" height="2716px"/>
+            <zone xml:id="Vorau_134rb_1" points="920,180 1600,182 1600,510 913,506"/>
+            <!--unde lit zaller unterist...-->
+            <zone xml:id="Vorau_134rb_2"
+               points="920,503 1600,505 1600,1013 1292,1012 1292,1056 920,1055"/>
+            <!--Nu vernemet liben liute...-->
+            <zone xml:id="Vorau_134rb_3"
+               points="1293,1012 1600,1013 1600,1357 1488,1357 1488,1400 920,1400 920,1056 1292,1056"/>
+            <!--So ist der an der stain sus...-->
+            <zone xml:id="Vorau_134rb_4"
+               points="1476,1355 1600,1357 1600,1868 1227,1868 1227,1905 920,1906 920,1400 1476,1400"/>
+            <!--So ister iii. stain sus gehaizen...-->
+            <zone xml:id="Vorau_134rb_5"
+               points="1227,1868 1575,1870 1575,2169 920,2169 920,1908 1227,1905"/>
+            <!--Der selbe stain pizechinot-->
+            <zone xml:id="Vorau_134rb_add" points="1558,187  1635,187  1635,244  1558,244"/>
+         </surface>
+      </surfaceGrp>
+      <surfaceGrp>
+         <surface xml:id="Vorau_134va">
+            <graphic url="Vorau_134v.jpg" width="2000px" height="2716px"/>
+            <zone xml:id="Vorau_134va_1" points="460,194 1123,188 1123,513 548,514 544,553 460,552"/>
+            <!--...puhuete. Diu werlt sihit...-->
+            <zone xml:id="Vorau_134va_2"
+               points="548,514 1126,514 1126,1362 777,1362 777,1399 457,1399 457,552 543,552"/>
+            <!--So ist der iiii stain sus gehaizen...-->
+            <zone xml:id="Vorau_134va_3"
+               points="778,1356 1140,1356 1140,1905 839,1906 839,1944 456,1947 456,1398 779,1398"/>
+            <!--Den vil gerunnen staine eben maze...-->
+            <zone xml:id="Vorau_134va_4"
+               points="839,1904 1140,1904 1140,2177 450,2165 450,1948 839,1947"/>
+            <!--Des nist zviv el nehain...-->
+            <zone xml:id="Vorau_134va_add" points="376,1972 450,1972 450,2025 376,2025"/>
+         </surface>
+         <surface xml:id="Vorau_134vb">
+            <graphic url="Vorau_134v.jpg" width="2000px" height="2716px"/>
+            <zone xml:id="Vorau_134vb1"
+               points="1182,204 1850,204 1850,566 1306,566 1306,596 1182,596"/>
+            <!--...zaihint diu vareve rot-->
+            <zone xml:id="Vorau_134vb2"
+               points="1306,560 1835,560 1835,1153 1365,1153 1365,1193 1176,1193 1182,596 1306,596"/>
+            <!--Nu ister vi. stain sus ge haizen...-->
+            <zone xml:id="Vorau_134vb3"
+               points="1368,1150 1805,1150 1805,1409 1272,1405 1272,1448 1182,1448 1182,1190 1368,1192"/>
+            <!--Der vii. stain ist sus gehaizen...-->
+            <zone xml:id="Vorau_134vb4"
+               points="1274,1407 1812,1407 1812,1840 1622,1840 1622,1877 1182,1872 1182,1448 1272,1448"/>
+            <!--Cobe zaichenet diu varewe so daz golt...-->
+            <zone xml:id="Vorau_134vb5"
+               points="1622,1836 1825,1840 1825,2181 1177,2180 1180,1872 1622,1872"/>
+            <!--So ist der viii. stain sus gehaizen...-->
+         </surface>
+      </surfaceGrp>
+      <surfaceGrp>
+         <surface xml:id="Vorau_135ra">
+            <graphic url="Vorau_135r.jpg" width="2000px" height="2716px"/>
+            <zone xml:id="Vorau_135ra_1" points="235,230 860,230 860,428 534,412 534,460 235,454"/>
+            <!--...mit dem sinen gaiste...-->
+            <zone xml:id="Vorau_135ra_2"
+               points="534,408 858,425 851,940 406,921 401,971 242,968 235,453 539,458"/>
+            <!--Der viiii. stain ist sus gehaizen...-->
+            <zone xml:id="Vorau_135ra_3" points="397,919 847,932 850,1412 244,1395 237,967 398,968"/>
+            <!--Nu sul wir werden in ain...-->
+            <zone xml:id="Vorau_135ra_4"
+               points="203,1384 245,1382 244,1395 850,1412 835,1880 335,1866 331,1905 225,1905 229,1450 161,1448 160,1404"/>
+            <!--Der x.stain ist sus gehaizen Crisoph irus...-->
+            <zone xml:id="Vorau_135ra_5"
+               points="334,1865 850,1879 850,2217 221,2208 225,1905 334,1905"/>
+            <!--So ist der xi. stain sus gehaizen lacingtus...-->
+         </surface>
+         <surface xml:id="Vorau_135rb">
+            <graphic url="Vorau_135r.jpg" width="2000px" height="2716px"/>
+            <zone xml:id="Vorau_135rb_1" points="910,247 1589,259 1589,405 910,384"/>
+            <!--...Den guten gehente...-->
+            <zone xml:id="Vorau_135rb_2"
+               points="910,379 1589,406 1589,531 1097,531 1096,562 910,556"/>
+            <!--Sinechoment nith zeder winsteren...-->
+            <zone xml:id="Vorau_135rb_3"
+               points="1102,516 1605,532 1605,1210 903,1197 914,552 1103,558"/>
+            <!--Der xii. stain der ist ave sus gehaizen...-->
+            <zone xml:id="Vorau_135rb_4"
+               points="896,1188 1605,1210 1605,1604 1063,1593 1063,1637 896,1635"/>
+            <!--Nu scule wir di burch maizen...-->
+            <zone xml:id="Vorau_135rb_5"
+               points="1063,1593 1605,1602 1605,2246 882,2246 882,1635 1062,1635"/>
+            <!--Nu habent ir alle wol ver nomen...-->
+            <zone xml:id="Vorau_135rb_add" points="1566,245  1644,245  1644,295  1566,295"/>
+         </surface>
+      </surfaceGrp>
+      <surfaceGrp>
+         <surface xml:id="Vorau_135va">
+            <graphic url="Vorau_135v.jpg" width="2000px" height="2716px"/>
+            <zone xml:id="Vorau_135va_1" points="458,211 1146,197 1146,508 453,520"/>
+            <!--...hiuch daz ungemach nimer...-->
+         </surface>
+      </surfaceGrp>
+   </facsimile>
+   <text>
+      <body>
+         <lg xml:id="HimmlJer_p1" facs="#Vorau_133vb_1">
+            <l n="1"><lb n="1"/><handShift new="#hand1"/><hi rend="illuminated"
+                  style="text-colour: blue; glyph: enlarged small n; height: 3lines; form: red ornaments"
+                  >N</hi>v sv<g ref="#lscap">l</g><g ref="#eunc">e</g> w<g ref="#inodot">i</g><g
+                  ref="#rscap">r</g> beg<g ref="#inodot">i</g>nnen<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="2">m<g ref="#inodot">i</g>t t<g ref="#inodot">i</g>fen <lb n="2"/>ge<g
+                  ref="#slong">s</g><g ref="#inodot">i</g>nnen<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="3">e<g ref="#inodot">i</g>n rede duten <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>ovhc</orig>
+                  <reg>iouch</reg>
+               </choice>
+               <lb n="3"/>be<g ref="#slong">s</g>ten</l>
+            <l n="4"><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> dere h<g ref="#inodot">i</g>mel<g ref="#inodot">i</g><g ref="#slong"
+               >s</g>cen <choice ana="abbr">
+                  <abbr><g ref="#inodot">i</g>er<g ref="#slong">s</g>lm<g ref="#combcurlbar"
+                     /></abbr>
+                  <expan>jerusalem</expan>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="5">d<g ref="#inodot">i</g>u <lb n="4"/>ge<g ref="#mhgzed">z</g><g ref="#inodot"
+                  >i</g>mberet <g ref="#inodot">i</g><g ref="#slong">s</g>t den re<g ref="#inodot"
+                  >i</g>nen</l>
+            <l n="6">u<g ref="#mhgzed">z</g> den <choice ana="lb">
+                  <orig>lem<g ref="#ndash">-</g><lb n="5"/>t<g ref="#inodot">i</g>gen</orig>
+                  <reg>lemtigen</reg>
+               </choice>
+               <g ref="#slong">s</g>te<g ref="#inodot">i</g>nen<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="7">d<g ref="#inodot">i</g>e <g ref="#inodot">i</g>ohanne<g ref="#slong">s</g>
+               <g ref="#slong">s</g>ah der <choice ana="lb">
+                  <orig>go <lb n="6"/>tes</orig>
+                  <reg>gotes</reg>
+               </choice> trut<g ref="#period" ana="syntax">.</g></l>
+            <l n="8">n<g ref="#inodot">i</g>der <g ref="#slong">s</g>t<g ref="#inodot">i</g>gen <g
+                  ref="#slong">s</g>am e<g ref="#inodot">i</g>ne buth<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="9"><lb n="7"/><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> den h<g ref="#inodot">i</g>melen <choice ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>o<g ref="#vsup">v</g></orig>
+                  <reg>zuo</reg>
+               </choice> der erde<g ref="#period" ana="syntax">.</g></l>
+            <l n="10">ge<g ref="#mhgzed">z</g><g ref="#inodot">i</g>ret <lb n="8"/>was <g
+                  ref="#slong">s</g><g ref="#inodot">i</g> werde<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="11">der d<g ref="#inodot">i</g>e h<g ref="#inodot">i</g>mele habe <choice ana="lb">
+                  <orig>be<g ref="#ndash">-</g><lb n="9"/><g ref="#slong">s</g>e<g ref="#mhgzed"
+                        >z</g>en</orig>
+                  <reg>besezen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="12">d<g ref="#inodot">i</g>e erde umbe me<g ref="#mhgzed">z</g><g ref="#mhgzed"
+                  >z</g>en<g ref="#period" ana="syntax">.</g></l>
+            <l n="13">d<g ref="#inodot">i</g>e <choice ana="lb">
+                  <orig>re<g ref="#ndash">-</g><lb n="10"/>genes</orig>
+                  <reg>regenes</reg>
+               </choice> trophen ge<g ref="#mhgzed">z</g>elet<g ref="#period" ana="syntax">.</g></l>
+            <l n="14"><choice ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>o<g ref="#vsup">u</g></orig>
+                  <reg>zuo</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>nme d<g ref="#inodot">i</g>
+               <lb n="11"/>ne<g ref="#slong">s</g>te erwelth</l>
+            <l n="15">d<g ref="#inodot">i</g>e engele dar<g ref="#inodot">i</g>nne<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="16"><g ref="#inodot">i</g>n <lb n="12"/><g ref="#slong">s</g><g ref="#inodot"
+                  >i</g>nes namen m<g ref="#inodot">i</g>nne<g ref="#period" ana="syntax">.</g></l>
+            <l n="17"><g ref="#slong">s</g>o beg<g ref="#inodot">i</g>nne w<g ref="#inodot">i</g>r
+                  <lb n="13"/>d<g ref="#inodot">i</g>ces l<g ref="#inodot">i</g>edes<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="18"><choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>le</orig>
+                  <reg>vile</reg>
+               </choice> harte <choice ana="rdg">
+                  <orig>uo<g ref="#vsup">u</g>rhte</orig>
+                  <reg>vuorhte</reg>
+               </choice>
+               <g ref="#inodot">i</g>h m<g ref="#inodot">i</g>r <lb n="14"/>des</l>
+            <l n="19">da<g ref="#mhgzed">z</g> etel<g ref="#inodot">i</g>che <g ref="#slong"
+                  >s</g>celten<g ref="#period" ana="syntax">.</g></l>
+            <l n="20"><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> den <choice ana="lb">
+                  <orig>h<g ref="#inodot">i</g>me<g ref="#ndash">-</g><lb n="15"/>len</orig>
+                  <reg>himelen</reg>
+               </choice> reden w<g ref="#inodot">i</g>r <g ref="#slong">s</g>elten<g ref="#period"
+                  ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p2" facs="#Vorau_133vb_2">
+            <l n="21"><hi rend="initial" style="text-colour: red">Z</hi>e duten <g ref="#inodot"
+                  >i</g><g ref="#slong">s</g>t <lb n="16"/>uns <g ref="#slong">s</g>pahe<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="22">wa<g ref="#mhgzed">z</g>
+               <choice ana="abbr">
+                  <abbr><g ref="#inodot">i</g>oh<g ref="#combcurlbar"/>s</abbr>
+                  <expan>johannes</expan>
+               </choice>
+               <g ref="#slong">s</g>ahe<g ref="#period" ana="syntax">.</g></l>
+            <l n="23">dom<g ref="#inodot">i</g>c<g ref="#inodot">i</g>u<g ref="#slong">s</g>
+               <lb n="17"/>habet <g ref="#inodot">i</g>n <choice ana="rdg">
+                  <orig>uer<g ref="#slong">s</g>ant</orig>
+                  <reg>versant</reg>
+               </choice></l>
+            <l n="24"><g ref="#inodot">i</g>n e<g ref="#inodot">i</g>n ellente<g ref="#mhgzed">z</g>
+                  lant<g ref="#period" ana="syntax">.</g></l>
+            <l n="25"><lb n="18"/><g ref="#inodot">i</g>n e<g ref="#inodot">i</g>ne <g ref="#inodot"
+                  >i</g><g ref="#slong">s</g>elen d<g ref="#inodot">i</g>u <choice ana="rdg">
+                  <orig>he<g ref="#inodotsup">i</g><g ref="#mhgzed">z</g>et</orig>
+                  <reg>heizet</reg>
+               </choice> pathmos<g ref="#period" ana="syntax">.</g></l>
+            <l n="26">da <lb n="19"/><choice ana="rdg">
+                  <orig>le<g ref="#inodot">i</g>der</orig>
+                  <reg>leid er</reg>
+               </choice> arbe<g ref="#inodot">i</g>te gro<g ref="#mhgzed">z</g><g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="27">e<g ref="#inodot">i</g>nes <g ref="#slong">s</g>untages <lb n="20"/><choice
+                  ana="rdg">
+                  <orig>uro<g ref="#vsup">u</g></orig>
+                  <reg>vruo</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="28">der gotes engel chom <g ref="#inodot">i</g>me <choice ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>ov</orig>
+                  <reg>zuo</reg>
+               </choice><g ref="#period" ana="syntax">.</g>
+            </l>
+            <l n="29"><lb n="21"/>er hub <g ref="#inodot">i</g>n uf <g ref="#slong">s</g>cone<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="30">d<g ref="#inodot">i</g>e <g ref="#slong">s</g>elben burch <lb n="22"/>
+               <choice ana="rdg">
+                  <orig>urone</orig>
+                  <reg>vrone</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="31"><choice ana="rdg">
+                  <orig>h<g ref="#inodot">i</g><g ref="#mhgzed">z</g>er</orig>
+                  <reg>hiz er</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>
+                     <g ref="#inodot">i</g>n<g ref="#slong">s</g>co<g ref="#vsup">u</g>en</orig>
+                  <reg>in scouen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="32">der rede <g ref="#slong">s</g>cul <lb n="23"/>w<g ref="#inodot">i</g>r <choice
+                  ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>o<g ref="#vsup">u</g>wen</orig>
+                  <reg>zouwen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="33">men<g ref="#inodot">i</g>g<g ref="#inodot">i</g>u <choice ana="rdg">
+                  <orig>wn der</orig>
+                  <reg>vunder</reg>
+               </choice> er da <lb n="24"/><g ref="#slong">s</g>ah<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="34">d<g ref="#inodot">i</g>e er <choice ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>en<g ref="#inodot">i</g>menne</orig>
+                  <reg>ze nimenne</reg>
+               </choice> redete noh <lb n="25"/>ne <g ref="#slong">s</g>prah<g ref="#period"
+                  ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p3" facs="#Vorau_133vb_3">
+            <l n="35"><hi rend="initial" style="text-colour: blue"><g ref="#Drot">D</g></hi>a<g
+                  ref="#mhgzed">z</g> was <choice ana="abbr">
+                  <abbr><g ref="#inodot">i</g>oh<g ref="#combcurlbar"/>s</abbr>
+                  <expan>johannes</expan>
+               </choice>
+               <choice ana="lb">
+                  <orig>euuan<g ref="#ndash">-</g><lb n="26"/>gel<g ref="#inodot">i</g><g
+                        ref="#slong">s</g>ta</orig>
+                  <reg>ewangelista</reg>
+               </choice><note>Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
+            <l n="36">der uber d<g ref="#inodot">i</g>e gotes bru<g ref="#slong">s</g>te<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="37"><choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>le</orig>
+                  <reg>vile</reg>
+               </choice>
+               <lb n="27"/><g ref="#slong">s</g>u<g ref="#mhgzed">z</g>e l<g ref="#inodot">i</g>nete
+                  un<g ref="#mhgzed">z</g>e er <g ref="#inodot"
+                  >i</g>n<g ref="#slong">s</g>l<g ref="#inodot">i</g>f</l>
+            <l n="38"><g ref="#slong">s</g><g ref="#inodot">i</g>n ge<g ref="#slong">s</g><g
+                  ref="#inodot">i</g>n<g ref="#ndash">-</g><lb n="28"/>ne waren t<g ref="#inodot"
+                  >i</g>f<g ref="#period" ana="syntax">.</g></l>
+            <l n="39">pathmos <g ref="#inodot">i</g>n der <g ref="#inodot">i</g>n<g ref="#slong"
+                  >s</g>ula<g ref="#period" ana="syntax">.</g><g ref="#combacute"/></l>
+            <l n="40"><lb n="29"/>e<g ref="#inodot">i</g>n buh <choice ana="rdg">
+                  <orig><g ref="#slong">s</g>creber</orig>
+                  <reg>screb er</reg>
+               </choice> da<g ref="#period" ana="syntax">.</g></l>
+            <l n="41">gehe<g ref="#inodot">i</g><g ref="#mhgzed">z</g>en <choice ana="lb">
+                  <orig>apocal<g ref="#inodot">i</g><g ref="#ndash">-</g><lb n="30"/>p<g
+                        ref="#slong">s</g><g ref="#inodot">i</g>s</orig>
+                  <reg>apocalipsis</reg>
+               </choice></l>
+            <l n="42"><g ref="#inodot">i</g>n den h<g ref="#inodot">i</g>melen was er w<g
+                  ref="#inodot">i</g><g ref="#slong">s</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="43">got <lb n="31"/><choice ana="rdg">
+                  <orig>uerl<g ref="#inodot">i</g>h</orig>
+                  <reg>verlih</reg>
+               </choice>
+               <g ref="#inodot">i</g>me den <g ref="#slong">s</g><g ref="#inodot">i</g>n<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="44">d<g ref="#inodot">i</g>e burech <choice ana="lb">
+                  <orig><g ref="#slong">s</g>cre<g ref="#ndash">-</g><lb n="32"/>ber</orig>
+                  <reg>screb er</reg>
+               </choice>dar<g ref="#inodot">i</g>n<g ref="#period" ana="syntax">.</g></l>
+            <l n="45">den namen <g ref="#slong">s</g>ah er dar <lb n="33"/>obe <g ref="#slong"
+                  >s</g>tan<g ref="#period" ana="syntax">.</g></l>
+            <l n="46">der h<g ref="#inodot">i</g>mel<g ref="#inodot">i</g><g ref="#slong">s</g>cen
+                  <choice ana="abbr">
+                  <abbr><g ref="#inodot">i</g>erlm<g ref="#combcurlbar"/></abbr>
+                  <expan>jerusalem</expan>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="47">m<g ref="#inodot">i</g>t <lb n="34"/>guld<g ref="#inodot">i</g>n buhe<g
+                  ref="#slong">s</g>taben<g ref="#period" ana="syntax">.</g></l>
+            <l n="48"><choice ana="rdg">
+                  <orig>ander</orig>
+                  <reg>an der</reg>
+               </choice> porte <lb n="35"/><choice ana="rdg">
+                  <orig>woler graben</orig>
+                  <reg>wol ergraben</reg>
+               </choice></l>
+         </lg>
+         <lg xml:id="HimmlJer_p4" facs="#Vorau_133vb_4">
+            <l n="49"><hi rend="initial" style="text-colour: red"><g ref="#Drot">D</g></hi>a<g
+                  ref="#mhgzed">z</g> puch <g ref="#slong">s</g>aget <lb n="36"/>uns <g
+                  ref="#mhgzed">z</g>edute<g ref="#period" ana="syntax">.</g></l>
+            <l n="50"><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> der hohe<g ref="#period" ana="emph">.</g></l>
+            <l n="51">unte <choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice>
+               <lb n="37"/>der w<g ref="#inodot">i</g>nte<g ref="#period" ana="emph">.</g></l>
+            <l n="52">unte <choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> der lenge<g ref="#period" ana="emph">.</g></l>
+            <l n="53"><choice ana="abbr">
+                  <abbr>un<g ref="#bar"/></abbr>
+                  <expan>unte</expan>
+               </choice>
+               <lb n="38"/><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> der bre<g ref="#inodot">i</g>te</l>
+            <l n="54">alle<g ref="#mhgzed">z</g>
+               <g ref="#slong">s</g>o gere<g ref="#inodot">i</g>e<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="55">d<g ref="#inodot">i</g>u <lb n="39"/>burch <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t gewerchet<g ref="#period" ana="syntax">.</g></l>
+            <l n="56"><choice ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>eunter<g ref="#inodot">i</g><g ref="#slong"
+                     >s</g>te</orig>
+                  <reg>ze unteriste</reg>
+               </choice> x<g ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#period" ana="num"
+                  >.</g>
+               <lb n="40"/>legge<g ref="#period" ana="syntax">.</g></l>
+            <l n="57"><choice ana="rdg">
+                  <orig>ander</orig>
+                  <reg>an der</reg>
+               </choice> grunt <choice ana="rdg">
+                  <orig>ue<g ref="#slong">s</g>te</orig>
+                  <reg>veste</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="58">aller <choice ana="lb">
+                  <orig><g ref="#slong">s</g>te<g ref="#inodot">i</g><g ref="#ndash">-</g><lb n="41"
+                     />ne</orig>
+                  <reg>steine</reg>
+               </choice> be<g ref="#slong">s</g>te<g ref="#period" ana="syntax">.</g></l>
+            <l n="59">da gent <g ref="#inodot">i</g>n x<g ref="#inodot">i</g><g ref="#inodot">i</g>
+                  porte<g ref="#period" ana="syntax">.</g></l>
+            <l n="60">an <lb n="42"/><g ref="#inodot">i</g>gel<g ref="#inodot">i</g>chem orte<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="61">der <g ref="#slong">s</g>elben porte <lb n="43"/>doh tr<g ref="#inodot"
+                  >i</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="62"><choice ana="abbr">
+                  <abbr>aplo<g ref="#combcurlbar"/><g ref="#rum">y</g> no<g ref="#inodot">i</g><g
+                        ref="#bar"/>a</abbr>
+                  <expan>apostolorum nomina</expan>
+               </choice> et agn<g ref="#inodot">i</g><g ref="#comma">,</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p5_1" part="I" facs="#Vorau_133vb_5">
+            <l n="63"><hi rend="initial" style="text-colour: blue"><g ref="#Drot">D</g></hi><g
+                  ref="#inodot">i</g>e <lb n="44"/><g ref="#slong">s</g>elben x<g ref="#inodot"
+                  >i</g><g ref="#inodot">i</g><g ref="#period" ana="num">.</g> porte<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="64" part="I">alle <g ref="#slong">s</g><g ref="#inodot">i</g>nt <g ref="#slong"
+                  >s</g><g ref="#inodot">i</g> lutere</l>
+         </lg>
+         <pb/>
+         <lg xml:id="HimmlJer_p5_2" part="F" facs="#Vorau_134ra_1">
+            <l n="64" part="F"><lb n="1"/><handShift new="#hand2"/>chr<g ref="#inodot">i</g><g ref="#slong">s</g>tallen<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="65"><choice ana="rdg">
+                  <orig>ander</orig>
+                  <reg>an der</reg>
+               </choice> o<g ref="#slong">s</g>teren porte <g ref="#slong">s</g>tant doch <lb n="2"
+                  />dr<g ref="#inodot">i</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="66">got be<g ref="#zscap">z</g>e<g ref="#inodot">i</g>chenet un<g ref="#slong"
+                  >s</g> da p<g ref="#inodot">i</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="67"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>uelche</orig>
+                  <reg>svelche</reg>
+               </choice>
+               <lb n="3"/><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> ch<g ref="#inodot">i</g>nde<g ref="#slong">s</g> pe<g ref="#inodot"
+               >i</g>ne</l>
+            <l n="68"><g ref="#slong">s</g><g ref="#inodot">i</g>nt luter unde re<g ref="#inodot"
+                  >i</g>ne</l>
+            <l n="69"><lb n="4"/>den werdent d<g ref="#inodot">i</g>e porte en<g ref="#slong"
+                  >s</g>perret<g ref="#period" ana="syntax">.</g></l>
+            <l n="70"><choice ana="lb">
+                  <orig><g ref="#drot">d</g>an <lb n="5"/>nen</orig>
+                  <reg>dannen</reg>
+               </choice> un<g ref="#slong">s</g> der <g ref="#slong">s</g>unne er <g ref="#slong"
+                  >s</g>ch<g ref="#inodot">i</g>net un<g
+                  ref="#drot">d</g>e er <choice ana="lb">
+                  <orig>r<g ref="#inodot">i</g>n <lb n="6"/>net</orig>
+                  <reg>rinnet</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p6" facs="#Vorau_134ra_2">
+            <l n="71"><hi rend="initial" style="text-colour: blue">I</hi>n <g ref="#slong"
+               >s</g>underen porten <g ref="#slong">s</g>tant doch dr<g ref="#inodot">i</g><g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="72"><lb n="7"/>be<g ref="#zscap">z</g>e<g ref="#inodot">i</g>chenet <g
+                  ref="#inodot">i</g><g ref="#slong">s</g>t un<g ref="#slong">s</g> da p<g
+                  ref="#inodot">i</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="73"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>uelche</orig>
+                  <reg>svelche</reg>
+               </choice>
+               <g ref="#inodot">i</g>n <choice ana="lb">
+                  <orig>altugen <lb n="8"/>te</orig>
+                  <reg>al tugente</reg>
+               </choice>
+            </l>
+            <l n="74"><g ref="#slong">s</g><g ref="#inodot">i</g>nt <g ref="#zscap">z</g>egote
+                  hugente<g ref="#period" ana="syntax">.</g></l>
+            <l n="75">den werdent d<g ref="#inodot">i</g>e <lb n="9"/>porte ufgetan<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="76">dannan w<g ref="#inodot">i</g>r d<g ref="#inodot">i</g>e w<g ref="#inodot"
+                  >i</g>rmen <choice ana="lb">
+                  <orig>un <lb n="10"/>te</orig>
+                  <reg>unte</reg>
+               </choice> den <g ref="#slong">s</g>umer haben<g ref="#period" ana="syntax">.</g></l>
+            <l n="77">h<g ref="#inodot">i</g>n norderet <g ref="#slong">s</g>tant <lb n="11"/>porte
+               doch dr<g ref="#inodot">i</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="78">be<g ref="#zscap">z</g>e<g ref="#inodot">i</g>chenet <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t un<g ref="#slong">s</g> da p<g ref="#inodot">i</g><g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="79"><lb n="12"/><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>uenne</orig>
+                  <reg>svenne</reg>
+               </choice> der menn<g ref="#inodot">i</g><g ref="#slong">s</g>che w<g ref="#inodot"
+                  >i</g>rt alth<g ref="#period" ana="syntax">.</g></l>
+            <l n="80">aller <g ref="#slong">s</g><g ref="#inodot">i</g>n <lb n="13"/>le<g
+                  ref="#inodot">i</g>p <g ref="#inodot">i</g><g ref="#slong">s</g>t <g ref="#inodot"
+                  >i</g>m chalt<g ref="#period" ana="syntax">.</g></l>
+            <l n="81"><choice ana="rdg">
+                  <orig><g ref="#zscap">z</g>eden</orig>
+                  <reg>ze den</reg>
+               </choice> chreften <g ref="#inodot">i</g>me <choice ana="lb">
+                  <orig>gebr<g ref="#inodot">i</g><g ref="#slong">s</g>
+                     <lb n="14"/>tet</orig>
+                  <reg>gebristet</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="82">all<g ref="#inodot">i</g>u <g ref="#slong">s</g><g ref="#inodot">i</g>n
+               tugente <choice ana="rdg">
+                  <orig>er l<g ref="#inodot">i</g><g ref="#slong">s</g>chent</orig>
+                  <reg>erlischent</reg>
+               </choice></l>
+            <l n="83">da<g ref="#zscap">z</g> alter <lb n="15"/><choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nbefr<g ref="#inodot">i</g>fet</orig>
+                  <reg>in befrifet</reg>
+               </choice></l>
+            <l n="84">d<g ref="#inodot">i</g>u <g ref="#inodot">i</g>ugent dann an <g ref="#slong"
+                  >s</g>l<g ref="#inodot">i</g>fet<g ref="#period" ana="syntax">.</g></l>
+            <l n="85">w<g ref="#inodot">i</g>l <lb n="16"/>er danoch gote d<g ref="#inodot"
+                  >i</g>enen<g ref="#period" ana="syntax">.</g></l>
+            <l n="86">er mach <g ref="#slong">s</g><g ref="#inodot">i</g>h <choice ana="lb">
+                  <orig>uer we <lb n="17"/>nen</orig>
+                  <reg>verwenen</reg>
+               </choice><note>Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
+            <l n="87"><g ref="#inodot">i</g>me werden d<g ref="#inodot">i</g>e porten ufgetan</l>
+            <l n="88"><choice ana="lb">
+                  <orig>dan <lb n="18"/>nen</orig>
+                  <reg>dannen</reg>
+               </choice> w<g ref="#inodot">i</g>r <g ref="#drot">d</g>en w<g ref="#inodot">i</g>nter
+               unde den <choice ana="rdg">
+                  <orig>uro<g ref="#slong">s</g>t</orig>
+                  <reg>vrost</reg>
+               </choice> haben<g ref="#period" ana="syntax">.</g></l>
+            <l n="89"><lb n="19"/>H<g ref="#inodot">i</g>ne we<g ref="#slong">s</g>teret <g
+                  ref="#slong">s</g>tant porte doc dr<g ref="#inodot">i</g><g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="90"><choice ana="lb">
+                  <orig>be<g ref="#zscap">z</g>e<g ref="#inodot">i</g>che <lb n="20"/>net</orig>
+                  <reg>bezeichenet</reg>
+               </choice>
+               <g ref="#inodot">i</g><g ref="#slong">s</g>t un<g ref="#slong">s</g> dap<g
+                  ref="#inodot">i</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="91"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>uer</orig>
+                  <reg>sver</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>ne <g ref="#slong">s</g>unde <g
+                  ref="#slong">s</g>part an <lb n="21"/>den ente<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="92">da<g ref="#zscap">z</g> er nemach leben <g ref="#inodot">i</g>n ere<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="93">r<g ref="#inodot">i</g>went <lb n="22"/><g ref="#slong">s</g><g ref="#inodot"
+                  >i</g>
+               <g ref="#inodot">i</g>n danoch <g ref="#slong">s</g>ere<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="94"><g ref="#inodot">i</g>me werdent d<g ref="#inodot">i</g>e porte <choice
+                  ana="lb">
+                  <orig>en <lb n="23"/><g ref="#slong">s</g>perret</orig>
+                  <reg>ensperret</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="95">dannen un<g ref="#slong">s</g> des l<g ref="#inodot">i</g>hte<g ref="#slong"
+                  >s</g> unte de<g ref="#slong">s</g>
+               <choice ana="lb">
+                  <orig>ta <lb n="24"/>ge<g ref="#slong">s</g></orig>
+                  <reg>tages</reg>
+               </choice>
+               <g ref="#zscap">z</g>er<g ref="#inodot">i</g>nnet<g ref="#period" ana="syntax"
+               >.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p7" facs="#Vorau_134ra_3">
+            <l n="96"><choice ana="rdg">
+                  <orig><hi rend="initial" style="text-colour: red">S</hi>u<g ref="#inodot"
+                     >i</g>e</orig>
+                  <reg>Svie</reg>
+               </choice> w<g ref="#inodot">i</g>r <g ref="#slong">s</g>omenn<g ref="#inodot">i</g><g
+                  ref="#slong">s</g>chl<g ref="#inodot">i</g>chen</l>
+            <l n="97"><lb n="25"/> chomen <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>ngote<g ref="#slong">s</g>r<g ref="#inodot"
+                     >i</g>che</orig>
+                  <reg>in gotes riche</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="98">w<g ref="#inodot">i</g>r <g ref="#slong">s</g>culen <g ref="#inodot"
+               >i</g>edoch <choice ana="lb">
+                  <orig><g ref="#slong">s</g>a <lb n="26"/>met</orig>
+                  <reg>samet</reg>
+               </choice> puen<g ref="#period" ana="syntax">.</g></l>
+            <l n="99">d<g ref="#inodot">i</g>e <g ref="#slong">s</g>al<g ref="#inodot">i</g>gen
+                  <choice ana="rdg">
+                  <orig>heuent</orig>
+                  <reg>hevent</reg>
+               </choice></l>
+            <l n="100">
+               <g ref="#slong">s</g><g ref="#inodot">i</g>h <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>le</orig>
+                  <reg>vile</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>uro<g ref="#vsup">u</g></orig>
+                  <reg>vruo</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="101"><lb n="27"/>unde warnent <g ref="#slong">s</g><g ref="#inodot">i</g>h wole
+                  <choice ana="rdg">
+                  <orig><g ref="#zscap">z</g>u<g ref="#osup">o</g></orig>
+                  <reg>zuo</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="102"><choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>le</orig>
+                  <reg>vile</reg>
+               </choice> man<g ref="#inodot">i</g>ge <lb n="28"/>le<g ref="#inodot">i</g>der <g
+                  ref="#slong">s</g>pate<g ref="#period" ana="syntax">.</g></l>
+            <l n="103">d<g ref="#inodot">i</g>e bedurfen ar<g ref="#zscap">z</g>ate<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="104"><g ref="#zscap">z</g><g ref="#inodot">i</g>r h<g ref="#inodot">i</g>ne <lb
+                  n="29"/><choice ana="rdg">
+                  <orig>uerte</orig>
+                  <reg>verte</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="105"><g ref="#inodot">i</g>r wege d<g ref="#inodot">i</g>e <g ref="#slong">s</g><g
+                  ref="#inodot">i</g>nt herte<g ref="#period" ana="syntax">.</g></l>
+            <l n="106">unde magen <lb n="30"/><g ref="#inodot">i</g>edoch <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>l</orig>
+                  <reg>vil</reg>
+               </choice> wol gene<g ref="#slong">s</g>en<g ref="#period" ana="syntax">.</g></l>
+            <l n="107">hart belanget <g ref="#slong">s</g><g ref="#inodot">i</g>u <lb n="31"/>da <g
+                  ref="#zscap">z</g>ewesen<g ref="#period" ana="syntax">.</g></l>
+            <l n="108"><choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>ndeme</orig>
+                  <reg>in deme</reg>
+               </choice> helle w<g ref="#inodot">i</g><g ref="#zscap">z</g>e<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="109"><choice ana="rdg">
+                  <orig>emand<g ref="#inodot">i</g>e</orig>
+                  <reg>e man die</reg>
+               </choice>
+               <lb n="32"/>porte en<g ref="#slong">s</g>l<g ref="#inodot">i</g><g ref="#zscap"
+                  >z</g>e<g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p8" facs="#Vorau_134ra_4">
+            <l n="110"><hi rend="initial" style="text-colour: blue"><g ref="#nenl">N</g></hi>u b<g
+                  ref="#inodot">i</g>r <choice ana="rdg">
+                  <orig>uu<g ref="#inodot">i</g>r</orig>
+                  <reg>wir</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>geuorderet</orig>
+                  <reg>gevorderet</reg>
+               </choice></l>
+            <l n="111">
+               <choice ana="lb">
+                  <orig><g ref="#slong">s</g>un <lb n="33"/>deret</orig>
+                  <reg>sunderet</reg>
+               </choice> unde norderet<g ref="#period" ana="syntax">.</g></l>
+            <l n="112">o<g ref="#slong">s</g>teret unde we<g ref="#slong">s</g>teret<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="113"><lb n="34"/><g ref="#inodot">i</g>a <g ref="#slong">s</g>col <choice
+                  ana="rdg">
+                  <orig><g ref="#inodot">i</g>e doch</orig>
+                  <reg>iedoch</reg>
+               </choice> gephla<g ref="#slong">s</g>teret</l>
+            <l n="114">d<g ref="#inodot">i</g>u <g ref="#slong">s</g>elbe burch <lb n="35"/>m<g
+                  ref="#inodot">i</g>t un<g ref="#slong">s</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>n</l>
+            <l n="115">der w<g ref="#inodot">i</g>nchel <g ref="#slong">s</g>ta<g ref="#inodot"
+                  >i</g>n<g ref="#period" ana="syntax">.</g></l>
+            <l n="116"><g ref="#inodot">i</g><g ref="#slong">s</g>t m<g ref="#inodot">i</g>n <choice
+                  ana="lb">
+                  <orig>treh <lb n="36"/>t<g ref="#inodot">i</g>n</orig>
+                  <reg>trehtin</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="117"> der d<g ref="#inodot">i</g>e <choice ana="rdg">
+                  <orig><g ref="#zscap">z</g>uwa</orig>
+                  <reg>zwa</reg>
+               </choice> wente</l>
+            <l n="118">be<g ref="#slong">s</g>l<g ref="#inodot">i</g>u<g ref="#zscap">z</g>et
+                  <choice ana="rdg">
+                  <orig>andem</orig>
+                  <reg>an dem</reg>
+               </choice>
+               <lb n="37"/> ente<g ref="#period" ana="syntax">.</g></l>
+            <l n="119">D<g ref="#inodot">i</g>u <choice ana="rdg">
+                  <orig>uunder</orig>
+                  <reg>vunder</reg>
+               </choice> d<g ref="#inodot">i</g>u <g ref="#slong">s</g><g ref="#inodot">i</g>nt
+               manec <g ref="#slong">s</g>lath<g ref="#period" ana="syntax">.</g></l>
+            <l n="120"><g ref="#drot">d</g>a <lb n="38"/>n<g ref="#inodot">i</g><g ref="#slong"
+                  >s</g>t u<g ref="#inodot">i</g>n<g ref="#slong">s</g>ter noh d<g ref="#inodot"
+                  >i</g>u naht<g ref="#period" ana="syntax">.</g></l>
+            <l n="121">D<g ref="#inodot">i</g>u man<g ref="#inodot">i</g>nne <lb n="39"/>noh der <g
+                  ref="#slong">s</g>unne</l>
+            <l n="122">ne <g ref="#slong">s</g>c<g ref="#inodot">i</g>net dar <g ref="#inodot"
+               >i</g>nne</l>
+            <l n="123">noh der <lb n="40"/>tage <g ref="#slong">s</g>terne<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="123"><choice ana="rdg">
+                  <orig>la<g ref="#inodot">i</g><g ref="#slong">s</g>t</orig>
+                  <reg>da ist</reg>
+               </choice> d<g ref="#inodot">i</g>u lucerne<g ref="#period" ana="syntax">.</g></l>
+            <l n="124">Der h<g ref="#inodot">i</g>emel chu<lb n="41"/>n<g ref="#inodot">i</g>c a<g
+                  ref="#inodot">i</g>ne<g ref="#period" ana="syntax">.</g></l>
+            <l n="124">da<g ref="#zscap">z</g> edele ge<g ref="#slong">s</g>ta<g ref="#inodot"
+               >i</g>ne</l>
+            <l n="125">luhtet dar <g ref="#slong">s</g>am <lb n="42"/><g ref="#inodot">i</g><g
+                  ref="#zscap">z</g> per<g ref="#inodot">i</g>nne</l>
+            <l n="126"><choice ana="rdg">
+                  <orig>d<g ref="#inodot">i</g><g ref="#slong">s</g>tra<g ref="#zscap">z</g>e</orig>
+                  <reg>di straze</reg>
+               </choice> dar<g ref="#inodot">i</g>nne<g ref="#period" ana="syntax">.</g></l>
+            <l n="127">D<g ref="#inodot">i</g>e <g ref="#slong">s</g><g ref="#inodot">i</g>nt durch
+                  <lb n="43"/><g ref="#slong">s</g>oten golt<g ref="#period" ana="syntax">.</g></l>
+            <l n="128">D<g ref="#inodot">i</g>u bur<g ref="#inodot">i</g>c nehe<g ref="#inodot"
+                  >i</g>n meh dolet<g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p9_1" part="I" facs="#Vorau_134ra_5">
+            <l n="129"><lb n="44"/><choice ana="rdg">
+                  <orig><hi rend="initial" style="text-colour: black">A</hi>nder</orig>
+                  <reg>An der</reg>
+               </choice> bur<g ref="#inodot">i</g>c mure ra<g ref="#inodot">i</g>ne</l>
+            <l n="130">l<g ref="#inodot">i</g>g<g ref="#inodot">i</g>nt <g ref="#period" ana="num"
+                  >.</g>x<g ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#period" ana="num"
+                  >.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>ne<lb n="45"/></l>
+            <l n="131">
+               <choice ana="rdg">
+                  <orig>uorden</orig>
+                  <reg>vor den</reg>
+               </choice> anderen aller her<g ref="#inodot">i</g><g ref="#slong">s</g>t<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="132">D<g ref="#inodot">i</g>e nenne <lb n="46"/>w<g ref="#inodot">i</g>r <g
+                  ref="#inodot">i</g>n aller er<g ref="#inodot">i</g><g ref="#slong">s</g>te<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="133">Der a<g ref="#inodot">i</g>ne <choice ana="rdg">
+                  <orig>he<g ref="#combced"/><g ref="#inodotsup">i</g><g ref="#zscap">z</g>et</orig>
+                  <reg>heizet</reg>
+               </choice> Ia<g ref="#slong">s</g>p<g ref="#inodot">i</g><g ref="#slong">s</g><g
+                  ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <cb/>
+         <lg xml:id="HimmlJer_p9_2" part="F" facs="#Vorau_134rb_1">
+            <l n="134"><lb n="1"/>
+               <handShift new="#hand1"/>unde l<g ref="#inodot">i</g>t zaller unter<g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t</l>
+            <l n="135"><choice ana="rdg">
+                  <orig>ander</orig>
+                  <reg>an der</reg>
+               </choice> gerunt <lb n="2"/>fe<g ref="#slong">s</g>te<add type="foliation" place="margin" facs="#Vorau_134rb_add" rend="faded">134</add></l>
+            <l n="136"> unte habet uf da<g ref="#mhgzed">z</g> ger<g ref="#inodot">i</g>u<g
+                  ref="#slong">s</g>te </l>
+            <l n="137"><choice ana="rdg">
+                  <orig>zuare</orig>
+                  <reg>zvare</reg>
+               </choice>
+               <lb n="3"/><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>agen<g ref="#inodot">i</g>ch</orig>
+                  <reg>sagen ich</reg>
+               </choice>
+               <g ref="#inodot">i</g>u da<g ref="#mhgzed">z</g><g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="138">Der <g ref="#inodot">i</g><g ref="#slong">s</g>t gerune <g ref="#slong"
+               >s</g>am a<g ref="#inodot">i</g>n <lb n="4"/>gras<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="139">Der <choice ana="rdg">
+                  <orig>t<g ref="#inodot">i</g>uuel</orig>
+                  <reg>tiuvel</reg>
+               </choice> dannen fluhet </l>
+            <l n="140">den <choice ana="lb">
+                  <orig><g ref="#slong">s</g>el<g ref="#ndash" rend="faded">-</g><lb n="5"
+                     />ben</orig>
+                  <reg>selben</reg>
+               </choice>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n er <g ref="#slong">s</g>cuhet<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="141">Swa er l<g ref="#inodot">i</g>t oder <g ref="#slong">s</g>tat</l>
+            <l n="142"><lb n="6"/>o<g ref="#drot">d</g>
+               <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nder</orig>
+                  <reg>in der</reg>
+               </choice> menn<g ref="#inodot">i</g><g ref="#slong">s</g>ch<g ref="#inodot">i</g>
+               hat</l>
+            <l n="143"><choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>n<g ref="#slong">s</g><g ref="#inodot">i</g>ner</orig>
+                  <reg>in siner</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>gew<g ref="#ndash">-</g><lb n="7"/>elte</orig>
+                  <reg>gewelte</reg>
+               </choice></l>
+            <l n="144">beworth m<g ref="#inodot">i</g>t golde <choice ana="rdg">
+                  <orig>ander</orig>
+                  <reg>an der</reg>
+               </choice> hente<g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p10" facs="#Vorau_134rb_2">
+            <l n="145"><lb n="8"/><hi rend="initial" style="text-colour: red"><g ref="#nenl"
+                  >N</g></hi>u <choice ana="rdg">
+                  <orig>uer nemet</orig>
+                  <reg>vernemet</reg>
+               </choice> l<g ref="#inodot">i</g>ben l<g ref="#inodot">i</g>ute<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="146">wa<g ref="#mhgzed">z</g> der <lb n="9"/><g ref="#slong">s</g>te<g
+                  ref="#inodot">i</g>n beduthe<g ref="#period" ana="syntax">.</g></l>
+            <l n="147">S<g ref="#inodot">i</g>n varve <g ref="#inodot">i</g><g ref="#slong">s</g>t
+                  <g ref="#inodot">i</g>me <choice ana="lb">
+                  <orig>gr<g ref="#inodot">i</g>u <lb n="10"/>ne</orig>
+                  <reg>griune</reg>
+               </choice></l>
+            <l n="148">der <choice ana="rdg">
+                  <orig>tu uel</orig>
+                  <reg>tuvel</reg>
+               </choice>
+               <g ref="#inodot">i</g><g ref="#slong">s</g>t <g ref="#slong">s</g>o chune</l>
+            <l n="149">al<g ref="#slong">s</g>am der <choice ana="lb">
+                  <orig>le<g ref="#ndash" rend="faded">-</g><lb n="11"/>uo</orig>
+                  <reg>levo</reg>
+               </choice><note>Variant Form in reg</note> w<g ref="#inodot">i</g>lde<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="150"><g ref="#inodot">i</g>a <choice ana="rdg">
+                  <orig>uerter</orig>
+                  <reg>vert er</reg>
+               </choice> ruhelente</l>
+            <l n="151">w<g ref="#inodot">i</g> er uns <lb n="12"/>muge <choice ana="rdg">
+                  <orig>uer <g ref="#slong">s</g>uelehen</orig>
+                  <reg>versvelehen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="152">So <g ref="#slong">s</g>ule w<g ref="#inodot">i</g>r uns <lb n="13"/>gote
+                  <choice ana="rdg">
+                  <orig>beuelehen</orig>
+                  <reg>bevuelehen</reg>
+               </choice>
+               <g ref="#period" ana="syntax">.</g></l>
+            <l n="153"><choice ana="rdg">
+                  <orig><g ref="#menl">M</g><g ref="#inodot">i</g>tte me</orig>
+                  <reg>Mit teme</reg>
+               </choice> geloben <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>le</orig>
+                  <reg>vile</reg>
+               </choice>
+               <lb n="14"/><choice ana="rdg">
+                  <orig>ua<g ref="#slong">s</g>te</orig>
+                  <reg>vaste</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="154"><g ref="#slong">s</g>o l<g ref="#inodot">i</g>ge w<g ref="#inodot">i</g>ur <g
+                  ref="#zscap">z</g>unter<g ref="#inodot">i</g><g ref="#slong">s</g>te<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="155"><choice ana="rdg">
+                  <orig>ander</orig>
+                  <reg>an der</reg>
+               </choice>
+               <lb n="15"/>gerunt fe<g ref="#slong">s</g>te<g ref="#period" ana="syntax">.</g></l>
+            <l n="156"><choice ana="rdg">
+                  <orig>vnte</orig>
+                  <reg>unte</reg>
+               </choice> be<g ref="#zscap">z</g>echenen den <choice ana="lb">
+                  <orig><g ref="#inodot">i</g>a<g ref="#slong">s</g><g ref="#ndash" rend="faded"
+                        >-</g><lb n="16"/>p<g ref="#inodot">i</g>n</orig>
+                  <reg>iaspin</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="157">Er fluhet <g ref="#slong">s</g>am man <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nberune</orig>
+                  <reg>in berune</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="158"><lb n="17"/>gerune b<g ref="#inodot">i</g>r w<g ref="#inodot">i</g>r denne<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="159">Swer <g ref="#slong">s</g>o <choice ana="lb">
+                  <orig>gelo<g ref="#ndash" rend="faded">-</g><lb n="18"/>ben</orig>
+                  <reg>geloben</reg>
+               </choice> n<g ref="#inodot">i</g>ne hat<g ref="#period" ana="syntax">.</g></l>
+            <l n="160">der <g ref="#inodot">i</g><g ref="#slong">s</g>t durre unde <choice ana="lb">
+                  <orig>th<g ref="#ndash" rend="faded">-</g><lb n="19"/>ot</orig>
+                  <reg>thot</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="161">Der <choice ana="rdg">
+                  <orig>t<g ref="#inodot">i</g>u uel</orig>
+                  <reg>tiuvel</reg>
+               </choice>
+               <g ref="#inodot">i</g>n n<g ref="#inodot">i</g>ne m<g ref="#inodot">i</g>det<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="162">wante <lb n="20"/>er den geloben n<g ref="#inodot">i</g>det<g ref="#period"
+                  ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p11" facs="#Vorau_134rb_3">
+            <l n="163"><hi rend="initial" style="text-colour: blue">S</hi>o <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t der <choice ana="lb">
+                  <orig>an<g ref="#ndash" rend="faded">-</g><lb n="21"/>der</orig>
+                  <reg>ander</reg>
+               </choice>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <g ref="#slong">s</g>u<g ref="#slong"
+                  >s</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="164">Saphyrus gehe<g ref="#inodot">i</g><g ref="#mhgzed">z</g>en<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="165"><choice ana="rdg">
+                  <orig>Hah</orig>
+                  <reg>Nah</reg>
+               </choice>
+               <lb n="22"/>teme h<g ref="#inodot">i</g>mele <g ref="#inodot">i</g><g ref="#slong"
+                  >s</g>t er <choice ana="rdg">
+                  <orig>uare</orig>
+                  <reg>vare</reg>
+               </choice>
+               <g ref="#period" ana="syntax">.</g></l>
+            <l n="166">Suwenne un<g ref="#slong">s</g>
+               <lb n="23"/><g ref="#slong">s</g><g ref="#inodot">i</g>h<g ref="#inodot">i</g> un<g
+                  ref="#slong">s</g>er mut tre<g ref="#inodot">i</g>t dare<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="167">Des en<g ref="#inodot">i</g><g ref="#slong">s</g>t <lb n="24"/>
+               <choice ana="rdg">
+                  <orig>zu<g ref="#inodot">i</g>uel</orig>
+                  <reg>zvivel</reg>
+               </choice> ne cha<g ref="#inodot">i</g>n<g ref="#period" ana="syntax">.</g></l>
+            <l n="168"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>obe za<g ref="#inodot">i</g>hene</orig>
+                  <reg>so bezaihene</reg>
+               </choice>w<g ref="#inodot">i</g>r <lb n="25"/>den <g ref="#slong">s</g>elben <g
+                  ref="#slong">s</g>ta<g ref="#inodot">i</g>n<g ref="#period" ana="syntax">.</g></l>
+            <l n="169">da d<g ref="#inodot">i</g>u burch <g ref="#inodot">i</g><g ref="#slong"
+               >s</g>t <choice ana="lb">
+                  <orig>m<g ref="#inodot">i</g>t <lb n="26"/>te</orig>
+                  <reg>mitte</reg>
+               </choice> gece<g ref="#inodot">i</g>ret</l>
+            <l n="170">al<g ref="#slong">s</g>o uns da<g ref="#mhgzed">z</g> buch leret</l>
+            <l n="171">der <lb n="27"/>h<g ref="#inodot">i</g>mel<g ref="#inodot">i</g><g
+                  ref="#slong">s</g>chen <choice ana="abbr">
+                  <abbr><g ref="#inodot">i</g>eru<g ref="#slong">s</g>ale<g ref="#combcurlbar"
+                     /></abbr>
+                  <expan>jerusalem</expan>
+               </choice></l>            
+            <l n="172">d<g ref="#inodot">i</g>u n<g ref="#inodot">i</g>mer <g ref="#slong">s</g>col
+                  <lb n="28"/><choice ana="rdg">
+                  <orig>zer gen</orig>
+                  <reg>zergen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="173"><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> hewen unte zewen<g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p12" facs="#Vorau_134rb_4">
+            <l n="174"><hi rend="initial" style="text-colour: red">S</hi>o <lb n="29"/><choice
+                  ana="rdg">
+                  <orig><g ref="#inodot">i</g><g ref="#slong">s</g>ter</orig>
+                  <reg>is ter</reg>
+               </choice>
+               <g ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#period"
+                  ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <g ref="#slong">s</g>us</l>
+            <l n="175">geha<g ref="#inodot">i</g><g ref="#zscap">z</g>en<g ref="#period"
+                  ana="syntax">.</g> Calcedon<g ref="#inodot">i</g>u<g ref="#slong">s</g></l>
+            <l n="176">
+               <lb n="30"/>der <g ref="#inodot">i</g><g ref="#slong">s</g>t tunchel <choice
+                  ana="rdg">
+                  <orig><g ref="#inodot">i</g>ndemehaus</orig>
+                  <reg>in deme haus</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="177">unte <choice ana="lb">
+                  <orig><g ref="#slong">s</g>ch<g ref="#ndash">-</g><lb n="31"/><g ref="#inodot"
+                        >i</g>net</orig>
+                  <reg>schinet</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig><g ref="#slong">s</g>om<g ref="#inodot">i</g>ntret</orig>
+                  <reg>so min tret</reg>
+               </choice> u<g ref="#mhgzed">z</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="178">w<g ref="#inodot">i</g>rt er <choice ana="rdg">
+                  <orig><choice ana="rdg">
+                        <orig>uon</orig>
+                        <reg>von</reg>
+                     </choice>der</orig>
+                  <reg>von der</reg>
+               </choice>
+               <lb n="32"/><g ref="#slong">s</g>unnen warm<g ref="#period" ana="syntax">.</g></l>
+            <l n="179">P<g ref="#inodot">i</g><g ref="#slong">s</g>tr<g ref="#inodot">i</g>chet <g
+                  ref="#inodot">i</g>n v<g ref="#inodot">i</g>nger <lb n="33"/>oder arm<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="180">So <choice ana="rdg">
+                  <orig>heueter</orig>
+                  <reg>hevet er</reg>
+               </choice> huf werde</l>
+            <l n="181">den <lb n="34"/>halem <choice ana="rdg">
+                  <orig><choice ana="rdg">
+                        <orig>uon</orig>
+                        <reg>von</reg>
+                     </choice>der</orig>
+                  <reg>von der</reg>
+               </choice> herde<g ref="#period" ana="syntax">.</g></l>
+            <l n="182"><choice ana="rdg">
+                  <orig>Eren lath</orig>
+                  <reg>Er enlath</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>ch <lb n="35"/>n<g ref="#inodot">i</g>ht
+               er graben<g ref="#period" ana="syntax">.</g></l>
+            <l n="183"><g ref="#menl">M</g>an <choice ana="rdg">
+                  <orig>mu<g ref="#mhgzed">z</g><g ref="#inodot">i</g>n</orig>
+                  <reg>muz in</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>umbe <lb n="36"/>wor<g ref="#inodot">i</g>th</orig>
+                  <reg>umbeworith</reg>
+               </choice> haben<g ref="#period" ana="syntax">.</g></l>
+            <l n="184">Geruret h<g ref="#inodot">i</g>n d<g ref="#inodot">i</g>u p<g ref="#inodot"
+                  >i</g>l<g ref="#inodot">i</g>e<g ref="#period" ana="syntax">.</g></l>
+            <l n="185"><lb n="37"/>er ze <choice ana="rdg">
+                  <orig>uert</orig>
+                  <reg>vert</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>na<g ref="#inodot">i</g>ner</orig>
+                  <reg>in ainer</reg>
+               </choice> w<g ref="#inodot">i</g>le<g ref="#period" ana="syntax">.</g></l>
+            <l n="186"><g ref="#aenl">A</g>l<g ref="#slong">s</g>o chele<g ref="#inodot">i</g>ne <lb
+                  n="38"/><g ref="#slong">s</g>o da<g ref="#mhgzed">z</g> gela<g ref="#slong"
+               >s</g></l>
+            <l n="187">er <g ref="#inodot">i</g><g ref="#slong">s</g>t herte unte was<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="188"><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice>
+               <lb n="39"/>d<g ref="#inodot">i</g>u <g ref="#slong">s</g>o <choice ana="rdg">
+                  <orig>mager</orig>
+                  <reg>mag er</reg>
+               </choice> wole <g ref="#slong">s</g>ten<g ref="#period" ana="syntax">.</g></l>
+            <l n="189"><g ref="#inodot">i</g>n der <choice ana="lb">
+                  <orig>h<g ref="#inodot">i</g>me<g ref="#ndash" rend="faded">-</g><lb n="40"/>l<g
+                        ref="#inodot">i</g><g ref="#slong">s</g>chen</orig>
+                  <reg>himelischen</reg>
+               </choice>
+               <g ref="#inodot">i</g>eru<g ref="#slong">s</g>alem<g ref="#period" ana="syntax"
+               >.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p13_1" part="I" facs="#Vorau_134rb_5">
+            <l n="190"><hi rend="initial" style="text-colour: blue"><g ref="#Drot">D</g></hi>er <g
+                  ref="#slong">s</g>elbe <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <lb n="41"
+                  />p<g ref="#inodot">i</g>zech<g ref="#inodot">i</g>not<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="191"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>u uu<g ref="#inodot">i</g>er</orig>
+                  <reg>svwier</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>n herce unte <lb n="42"/><g ref="#slong"
+                  >s</g><g ref="#inodot">i</g>n mut</l>
+            <l n="192">unte alle <g ref="#slong">s</g><g ref="#inodot">i</g>ne l<g ref="#inodot"
+                  >i</g><g ref="#slong">s</g>te<g ref="#period" ana="syntax">.</g></l>
+            <l n="193">zegote <choice ana="lb">
+                  <orig>ch<g ref="#ndash" rend="faded">-</g><lb n="43"/>eret</orig>
+                  <reg>cheret</reg>
+               </choice> fa<g ref="#slong">s</g>te</l>
+            <l n="194"><choice ana="rdg">
+                  <orig>er h<g ref="#inodot">i</g>lt</orig>
+                  <reg>erhilt</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>ch <g ref="#slong">s</g><g ref="#inodot"
+                  >i</g>ner gute</l>
+            <l n="195">fluet <lb n="44"/>uber mute<g ref="#period" ana="syntax">.</g></l>
+            <l n="196">Der <g ref="#inodot">i</g><g ref="#slong">s</g>t tunchel <g ref="#inodot"
+                  >i</g>nme hus<g ref="#period" ana="syntax">.</g></l>
+            <l n="197"><lb n="45"/>Su wenner <choice ana="rdg">
+                  <orig>auer</orig>
+                  <reg>aver</reg>
+               </choice> chumet u<g ref="#mhgzed">z</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="198"><g ref="#slong">s</g>o <choice ana="lb">
+                  <orig><g ref="#slong">s</g>ch<g ref="#inodot">i</g>n<g ref="#ndash" rend="faded"
+                        >-</g><lb n="46"/>ent</orig>
+                  <reg>schinent</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>ne guete<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="199" part="I"><choice ana="rdg">
+                  <orig>Suu<g ref="#inodot">i</g></orig>
+                  <reg>Swi</reg>
+               </choice>
+               <g ref="#slong">s</g>tarche er <g ref="#slong">s</g><g ref="#inodot">i</g>ch</l>
+         </lg>
+         <pb/>
+         <lg xml:id="HimmlJer_p13_2" part="F" facs="#Vorau_134va_1">
+            <l n="199" part="F"><lb n="1"/>puhuete<g ref="#period" ana="syntax">.</g></l>
+            <l n="200">D<g ref="#inodot">i</g>u werlt <g ref="#slong">s</g><g ref="#inodot">i</g>h<g
+                  ref="#inodot">i</g>t<g ref="#period" ana="syntax">.</g></l>
+            <l n="201">algeme<g ref="#inodot">i</g>ne <lb n="2"/>uber chu<g ref="#slong">s</g>che <g
+                  ref="#inodot">i</g><g ref="#slong">s</g>t unt re<g ref="#inodot">i</g>ne<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="202">Er dolet da<g ref="#mhgzed">z</g>
+               <lb n="3"/>man <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nre thot<g ref="#inodot">i</g>t</orig>
+                  <reg>in rethotit</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="203"><choice ana="rdg">
+                  <orig>emandes genot te</orig>
+                  <reg>e man des genotte</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="204">Da<g ref="#mhgzed">z</g>
+               <lb n="4"/>er wantele <g ref="#slong">s</g><g ref="#inodot">i</g>n <g ref="#slong"
+                  >s</g><g ref="#inodot">i</g>nne<g ref="#period" ana="syntax">.</g></l>
+            <l n="205">So <choice ana="rdg">
+                  <orig>be ca<g ref="#inodot">i</g>henet</orig>
+                  <reg>becaihenet</reg>
+               </choice> got <lb n="5"/>den <g ref="#slong">s</g>unnen<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="206">Von dem er da w<g ref="#inodot">i</g>rt <choice ana="lb">
+                  <orig>war <lb n="6"/>mer</orig>
+                  <reg>warmer</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="207">uf <choice ana="rdg">
+                  <orig>heuet</orig>
+                  <reg>hevet</reg>
+               </choice> er den armen<g ref="#period" ana="syntax">.</g></l>
+            <l n="208">den <choice ana="abbr">
+                  <abbr><g ref="#slong">s</g>unt<g ref="#inodot">i</g>g<g ref="#bar"/>n</abbr>
+                  <expan>suntigen</expan>
+               </choice><lb n="7"/>
+               <choice ana="rdg">
+                  <orig>uonder</orig>
+                  <reg>von der</reg>
+               </choice> erde<g ref="#period" ana="syntax">.</g></l>
+            <l n="209"><g ref="#slong">s</g>am der <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n
+               thut d<g ref="#inodot">i</g>e <choice ana="lb">
+                  <orig>hal <lb n="8"/>me</orig>
+                  <reg>halme</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p14" facs="#Vorau_134va_2">
+            <l n="210"><hi rend="initial" style="text-colour: red">S</hi>o <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t der <g ref="#period" ana="num">.</g><g ref="#inodot">i</g><g
+                  ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#period"
+                  ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <g ref="#slong">s</g>us</l>
+            <l n="211">geha<g ref="#inodot">i</g><g ref="#zscap">z</g>en<g ref="#period" ana="emph"
+                  >.</g><lb n="9"/>Smaragdu<g ref="#slong">s</g><g ref="#period" ana="emph"
+               >.</g></l>
+            <l n="212"><choice ana="rdg">
+                  <orig>Inder</orig>
+                  <reg>In der</reg>
+               </choice>werelte <g ref="#inodot">i</g><g ref="#slong">s</g>t ne<g ref="#inodot"
+                  >i</g>h<g ref="#inodot">i</g>t <g ref="#slong">s</g>o <lb n="10"/>grune</l>
+            <l n="213"><choice ana="rdg">
+                  <orig>erbe neme</orig>
+                  <reg>er beneme</reg>
+               </choice> une <g ref="#slong">s</g><g ref="#inodot">i</g>ne <g ref="#slong"
+                  >s</g>cone<g ref="#period" ana="syntax">.</g></l>
+            <l n="213">E<g ref="#inodot">i</g>n lant <lb n="11"/>ha<g ref="#inodot">i</g><g
+                  ref="#zscap">z</g><g ref="#inodot">i</g>t cyth<g ref="#inodot">i</g>a</l>
+            <l n="214">der <g ref="#slong">s</g>ta<g ref="#inodot">i</g>ne <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>ndet</orig>
+                  <reg>vindet</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>meda</orig>
+                  <reg>me da</reg>
+               </choice></l>
+            <l n="215">
+               <lb n="12"/>al<g ref="#slong">s</g>o <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>le</orig>
+                  <reg>vile</reg>
+               </choice>
+               <g ref="#slong">s</g>o der gere<g ref="#inodot">i</g><g ref="#zscap">z</g>e</l>
+            <l n="216">tor<g ref="#slong">s</g>te man <g ref="#slong">s</g><g ref="#inodot">i</g>
+                  n<g ref="#inodot">i</g>
+               <lb n="13"/><g ref="#zscap">z</g><g ref="#inodot">i</g>n</l>
+            <l n="217">da <g ref="#slong">s</g><g ref="#inodot">i</g>nt <g ref="#inodot">i</g>nne
+                  ger<g ref="#inodot">i</g>fe</l>
+            <l n="218"><choice ana="rdg">
+                  <orig>uor</orig>
+                  <reg>vor</reg>
+               </choice> fro<g ref="#slong">s</g>te<g ref="#period" ana="amb">.</g> unt <lb n="14"
+                  /><choice ana="rdg">
+                  <orig>uor</orig>
+                  <reg>vor</reg>
+               </choice> r<g ref="#inodot">i</g>fen<g ref="#period" ana="syntax">.</g></l>
+            <l n="219">unt <choice ana="rdg">
+                  <orig>uor</orig>
+                  <reg>vor</reg>
+               </choice> den <g ref="#slong">s</g>tarchen geruen<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="220"><lb n="15"/>Sol<g ref="#inodot">i</g>t <g ref="#inodot">i</g><g ref="#zscap"
+                  >z</g>
+               <choice ana="rdg">
+                  <orig>uner buen</orig>
+                  <reg>unerbuen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="221">D<g ref="#inodot">i</g>
+               <choice ana="rdg">
+                  <orig>uogele</orig>
+                  <reg>vogele</reg>
+               </choice> unre<g ref="#inodot">i</g>ne<g ref="#period" ana="syntax">.</g></l>
+            <l n="222"><lb n="16"/>werent da<g ref="#mhgzed">z</g> ge<g ref="#slong">s</g>te<g
+                  ref="#inodot">i</g>ne<g ref="#period" ana="syntax">.</g></l>
+            <l n="223"><choice ana="rdg">
+                  <orig>Suuer</orig>
+                  <reg>Swer</reg>
+               </choice>
+               <g ref="#inodot">i</g><g ref="#zscap">z</g> da w<g ref="#inodot">i</g>l <lb n="17"
+                  />gew<g ref="#inodot">i</g>nnen<g ref="#period" ana="syntax">.</g></l>
+            <l n="224"><choice ana="rdg">
+                  <orig>uuerdent</orig>
+                  <reg>werdent</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>n <g ref="#inodot">i</g>nnen<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="225">er mu<g ref="#zscap">z</g>
+               <lb n="18"/><g ref="#slong">s</g><g ref="#inodot">i</g>n che<g ref="#inodot">i</g><g
+                  ref="#slong">s</g>en den thot<g ref="#period" ana="syntax">.</g></l>
+            <l n="226">da<g ref="#mhgzed">z</g> tunt t<g ref="#inodot">i</g>
+               <choice ana="lb">
+                  <orig>uoge <lb n="19"/>le</orig>
+                  <reg>vogele</reg>
+               </choice><note>Variant Form in reg</note> ane not<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="227"><choice ana="rdg">
+                  <orig>S<g ref="#inodot">i</g>ben durfen</orig>
+                  <reg>Si bendurfen</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>n <g ref="#zscap">z</g>e n<g ref="#inodot"
+                  >i</g>hte<g ref="#period" ana="syntax">.</g></l>
+            <l n="228"><g ref="#inodot">i</g>n <lb n="20"/>der v<g ref="#inodot">i</g>n<g
+                  ref="#slong">s</g>tere<g ref="#period" ana="amb">.</g> noch <g ref="#inodot"
+               >i</g>n demme l<g ref="#inodot">i</g>hte<g ref="#period" ana="syntax">.</g></l>
+            <l n="229"><choice ana="abbr">
+                  <abbr>unte<g ref="#bar"/></abbr>
+                  <expan>unt en</expan>
+               </choice>
+               <lb n="21"/>punnens <g ref="#inodot">i</g>doch den l<g ref="#inodot">i</g>uten<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="230">da<g ref="#mhgzed">z</g> w<g ref="#inodot">i</g>ll<g ref="#inodot">i</g>ch
+                  <lb n="22"/>hernach d<g ref="#inodot">i</g>uten<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="231">So <g ref="#slong">s</g><g ref="#inodot">i</g>nt e<g ref="#inodot">i</g>nu
+                  l<g ref="#inodot">i</g>ute da b<g ref="#inodot">i</g></l>
+            <l n="232"><lb n="23"/>ha<g ref="#inodot">i</g><g ref="#zscap">z</g>ent ar<g
+                  ref="#inodot">i</g>ma<g ref="#slong">s</g>p<g ref="#inodot">i</g><g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="233">D<g ref="#inodot">i</g> w<g ref="#inodot">i</g><g ref="#zscap">z</g>en <g
+                  ref="#inodot">i</g>re thogen</l>
+            <l n="234"><lb n="24"/>n<g ref="#inodot">i</g>
+               <choice ana="rdg">
+                  <orig>uuar</orig>
+                  <reg>war</reg>
+               </choice> e<g ref="#inodot">i</g>nes ougen</l>
+            <l n="235">habent <g ref="#slong">s</g><g ref="#inodot">i</g>
+               <choice ana="rdg">
+                  <orig>uorne</orig>
+                  <reg>vorne</reg>
+               </choice>
+               <lb n="25"/><choice ana="abbr">
+                  <abbr>ande<g ref="#combcurlbar"/></abbr>
+                  <expan>an deme</expan>
+               </choice> ende<g ref="#period" ana="syntax">.</g></l>
+            <l n="236">Da<g ref="#zscap">z</g>
+               <g ref="#inodot">i</g>st <g ref="#inodot">i</g>r urch ende<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="237">d<g ref="#inodot">i</g>u l<g ref="#inodot">i</g>ute <lb n="26"/><g
+                  ref="#slong">s</g><g ref="#inodot">i</g>nt <g ref="#slong">s</g>o chune<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="238"><g ref="#slong">s</g><g ref="#inodot">i</g> nement d<g ref="#inodot">i</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>ne gerune<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="239"><lb n="27"/>Den <choice ana="rdg">
+                  <orig>uo gelen</orig>
+                  <reg>vogelen</reg>
+               </choice> m<g ref="#inodot">i</g>t gewalte </l>
+            <l n="240"><g ref="#slong">s</g><g ref="#inodot">i</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>nt wert da<g ref="#zscap">z</g>
+               <lb n="28"/><choice ana="rdg">
+                  <orig>man<g ref="#slong">s</g><g ref="#inodot">i</g></orig>
+                  <reg>man si</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>wolge halte</orig>
+                  <reg>wol gehalte</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p15" facs="#Vorau_134va_3">
+            <l n="241"><hi rend="initial" style="text-colour: blue"><g ref="#Drot">D</g></hi>en
+                  <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>l</orig>
+                  <reg>vil</reg>
+               </choice> gerunnen <lb n="29"/><g ref="#slong">s</g>ta<g ref="#inodot">i</g>ne</l>
+            <l n="242">eben ma<g ref="#mhgzed">z</g>e w<g ref="#inodot">i</g>r d<g ref="#inodot"
+                  >i</g> a<g ref="#inodot">i</g>nen<g ref="#period" ana="syntax">.</g></l>
+            <l n="243">mugen <lb n="30"/><g ref="#slong">s</g><g ref="#inodot">i</g> wole <g
+                  ref="#slong">s</g>underen<g ref="#period" ana="syntax">.</g></l>
+            <l n="244">d<g ref="#inodot">i</g> des gelouben <g ref="#slong">s</g><g ref="#inodot"
+                  >i</g>nt <lb n="31"/><choice ana="rdg">
+                  <orig>uor</orig>
+                  <reg>vor</reg>
+               </choice> den anderen<g ref="#period" ana="syntax">.</g></l>
+            <l n="245"><choice ana="rdg">
+                  <orig>H<g ref="#combced"/>ubet zechenet</orig>
+                  <reg>Nu bezechenet</reg>
+               </choice> da<g ref="#zscap">z</g>
+               <choice ana="lb">
+                  <orig>la<g ref="#ndash" rend="faded">-</g><lb n="32"/>nt</orig>
+                  <reg>lant</reg>
+               </choice> calt</l>
+            <l n="246">d<g ref="#inodot">i</g> der unterue habent manec <lb n="33"/><choice
+                  ana="rdg">
+                  <orig>ualt</orig>
+                  <reg>valt</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="247">unte lebent ane m<g ref="#inodot">i</g>nne</l>
+            <l n="248"><choice ana="rdg">
+                  <orig>d<g ref="#inodot">i</g>eger<g ref="#inodot">i</g>fe</orig>
+                  <reg>di gerife</reg>
+               </choice>
+               <lb n="34"/>dar<g ref="#inodot">i</g>nne<g ref="#period" ana="syntax">.</g></l>            <l n="249">D<g ref="#inodot">i</g>
+               <choice ana="rdg">
+                  <orig>be <g ref="#zscap">z</g>echenent</orig>
+                  <reg>bezechenent</reg>
+               </choice> d<g ref="#inodot">i</g>
+               <choice ana="rdg">
+                  <orig>t<g ref="#inodot">i</g>uele</orig>
+                  <reg>tivele</reg>
+               </choice> d<g ref="#inodot">i</g> da <lb n="35"/>
+               <choice ana="rdg">
+                  <orig>uarent</orig>
+                  <reg>varent</reg>
+               </choice></l>
+            <l n="250">unte den gelouben b<g ref="#inodot">i</g>warent<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="251">da<g ref="#zscap">z</g>
+               <lb n="36"/>n<g ref="#inodot">i</g>men den n<g ref="#inodot">i</g><g ref="#zscap"
+                  >z</g>e<g ref="#period" ana="syntax">.</g></l>
+            <l n="252">Sw<g ref="#inodot">i</g> lucel <choice ana="rdg">
+                  <orig>er<g ref="#slong">s</g><g ref="#inodot">i</g>buze</orig>
+                  <reg>er si buze</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="253">D<g ref="#inodot">i</g>u <lb n="37"/>l<g ref="#inodot">i</g>ute m<g
+                  ref="#inodot">i</g>t a<g ref="#inodot">i</g>nem ougen<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="254">D<g ref="#inodot">i</g>u be<g ref="#zscap">z</g>a<g ref="#inodot">i</g>henent
+                  <lb n="38"/>ane lougen<g ref="#period" ana="syntax">.</g></l>
+            <l n="255">d<g ref="#inodot">i</g> der a<g ref="#inodot">i</g>nen goth <choice ana="lb">
+                  <orig>pechen<g ref="#ndash" rend="faded">-</g><lb n="39"/>nent</orig>
+                  <reg>pechennent</reg>
+               </choice></l>
+            <l n="256">den gelouben <g ref="#slong">s</g><g ref="#inodot">i</g> gew<g ref="#inodot"
+                  >i</g>nnent<g ref="#period" ana="syntax">.</g></l>
+            <l n="257"><choice ana="rdg">
+                  <orig>uor</orig>
+                  <reg>vor</reg>
+               </choice>
+               <lb n="40"/>dem <choice ana="rdg">
+                  <orig>t<g ref="#inodot">i</g>uele</orig>
+                  <reg>tivele</reg>
+               </choice> m<g ref="#inodot">i</g>t <choice ana="rdg">
+                  <orig>geuualte</orig>
+                  <reg>gewalte</reg>
+               </choice></l>
+            <l n="258">
+               <choice ana="rdg">
+                  <orig>al <g ref="#slong">s</g><g ref="#inodot">i</g>ch</orig>
+                  <reg>als ich</reg>
+               </choice>
+               <g ref="#inodot">i</g><g ref="#mhgzed">z</g> eu e <lb n="41"/><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> den <g ref="#slong">s</g>ta<g ref="#inodot">i</g>nen zalete<g ref="#period"
+                  ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p16_1" facs="#Vorau_134va_4">
+            <l n="259"><hi rend="initial" style="text-colour: red"><g ref="#Drot">D</g></hi>es n<g
+                  ref="#inodot">i</g><g ref="#slong">s</g>t <choice ana="lb">
+                  <orig>zu<g ref="#inodot">i</g>u<g ref="#ndash" rend="faded">-</g><lb n="42"
+                     />el</orig>
+                  <reg>zvivel</reg>
+               </choice><note>Variant Form in reg</note> neha<g ref="#inodot">i</g>n<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="260">Sardon<g ref="#inodot">i</g>x ha<g ref="#inodot">i</g>zet der <g
+                  ref="#period" ana="num">.</g>v<g ref="#period" ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n</l>
+            <l n="261"><lb n="43"/><choice ana="rdg">
+                  <orig>varue</orig>
+                  <reg>varve</reg>
+            </choice> <am><g ref="#combdblac"/></am>
+               <add type="addition" place="margin" facs="#Vorau_134va_add">er</add> doch ter<g ref="#inodot">i</g><g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="262">daz ged<g ref="#inodot">i</g>ute <g ref="#slong">s</g>age w<g ref="#inodot"
+                  >i</g>r <lb n="44"/>h<g ref="#inodot">i</g>u der b<g ref="#inodot">i</g><g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="263">er <g ref="#inodot">i</g><g ref="#slong">s</g>t untene <choice ana="rdg">
+                  <orig><g ref="#slong">s</g>u warz</orig>
+                  <reg>swarz</reg>
+               </choice>
+               <g ref="#slong">s</g>o da<g ref="#mhgzed">z</g>
+               <lb n="45"/>gelas<g ref="#period" ana="syntax">.</g></l>
+            <l n="264"><g ref="#zscap">z</g>e ware <choice ana="rdg">
+                  <orig><g ref="#slong">s</g>agene<g ref="#inodot">i</g>ch</orig>
+                  <reg>sagene ich</reg>
+               </choice> eu da<g ref="#mhgzed">z</g></l>
+            <l n="265">m<g ref="#inodot">i</g>tten <lb n="46"/>w<g ref="#inodot">i</g><g
+                  ref="#zscap">z</g>
+               <g ref="#slong">s</g>o der <g ref="#slong">s</g>ene</l>
+            <l n="266">roth <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g><g ref="#slong">s</g>ter hobene</orig>
+                  <reg>ist erhobene</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="267" part="I"><choice ana="lb">
+                  <orig><g ref="#nenl">N</g>ube</orig>
+                  <reg>Nu be-</reg>
+               </choice><note>Variant form across columns</note></l>
+         </lg>
+         <cb/>
+         <lg xml:id="HimmlJer_p16_2" part="F" facs="#Vorau_134vb1">
+            <l n="267" part="F"><lb n="1"/>za<g ref="#inodot">i</g>h<g ref="#inodot">i</g>nt d<g
+                  ref="#inodot">i</g>u <choice ana="rdg">
+                  <orig>uareue</orig>
+                  <reg>vareve</reg>
+               </choice> rot<g ref="#period" ana="syntax">.</g></l>
+            <l n="268"><choice ana="rdg">
+                  <orig>Suver</orig>
+                  <reg>Swer</reg>
+               </choice> l<g ref="#inodot">i</g>d<g ref="#inodot">i</g>t <lb n="2"/>marter unt not<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="269">durch d<g ref="#inodot">i</g>u gotes <choice ana="lb">
+                  <orig>m<g ref="#inodot">i</g>n<g ref="#ndash">-</g><lb n="3"/>ne</orig>
+                  <reg>minne</reg>
+               </choice></l>
+            <l n="270">d<g ref="#inodot">i</g>u w<g ref="#inodot">i</g><g ref="#zscap">z</g>e dar<g
+                  ref="#inodot">i</g>nne<g ref="#period" ana="syntax">.</g></l>
+            <l n="271">dem lutter <lb n="4"/><g ref="#inodot">i</g><g ref="#slong">s</g>t <g
+                  ref="#slong">s</g><g ref="#inodot">i</g>n herce<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="272">dem <choice ana="rdg">
+                  <orig>mu<g ref="#osup">o</g>th</orig>
+                  <reg>muoth</reg>
+               </choice> tu <g ref="#slong">s</g>u werce<g ref="#period" ana="syntax">.</g></l>
+            <l n="273"><lb n="5"/>pe<g ref="#mhgzed">z</g>e<g ref="#inodot">i</g>chenet ane <choice
+                  ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>u<g ref="#inodot">i</g>uel</orig>
+                  <reg>zvivel</reg>
+               </choice>
+               <g ref="#period" ana="syntax">.</g></l>
+            <l n="274"><choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>r</orig>
+                  <reg>vir</reg>
+               </choice> gerne <lb n="6"/><choice ana="rdg">
+                  <orig>eruerrattet</orig>
+                  <reg>er verrattet</reg>
+               </choice> dem man<g ref="#period" ana="syntax">.</g></l>
+            <l n="275">want er den <lb n="7"/>cr<g ref="#inodot">i</g><g ref="#slong">s</g>ten
+               gewan</l>
+            <l n="276"><choice ana="abbr">
+                  <abbr>m<g ref="#inodot">i</g>tte<g ref="#bar"/></abbr>
+                  <expan>mit teme</expan>
+               </choice>
+               <g ref="#slong">s</g>elben <g ref="#slong">s</g>tr<g ref="#inodot">i</g>cche</l>
+            <l n="277"><lb n="8"/>da m<g ref="#inodot">i</g>te <choice ana="rdg">
+                  <orig>uellet</orig>
+                  <reg>vellet</reg>
+               </choice> er un<g ref="#slong">s</g>ech la<g ref="#inodot">i</g>der al<g ref="#slong"
+                  >s</g>o <lb n="9"/>d<g ref="#inodot">i</g>che<g ref="#period" ana="syntax"
+               >.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p17" facs="#Vorau_134vb_2">
+            <l n="278"><hi rend="initial" style="text-colour: blue"><g ref="#nenl">N</g></hi>u
+                  <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g><g ref="#slong">s</g>ter</orig>
+                  <reg>is ter</reg>
+               </choice>
+               <g ref="#period" ana="num">.</g>v<g ref="#inodot">i</g><g ref="#period" ana="num"
+                  >.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n<g ref="#period" ana="amb">.</g><g
+                  ref="#slong">s</g>u<g ref="#slong">s</g></l>
+            <l n="279">
+               <choice ana="lb">
+                  <orig>geha<g ref="#inodot">i</g>
+                     <lb n="10"/>zen</orig>
+                  <reg>gehaizen</reg>
+               </choice><g ref="#period" ana="emph">.</g>
+               <choice ana="abbr">
+                  <abbr>Sard<g ref="#inodot">i</g><g ref="#combcurl"/>
+                  </abbr>
+                  <expan>Sardius</expan>
+               </choice><g ref="#period" ana="emph">.</g></l>
+            <l n="280">der <g ref="#inodot">i</g><g ref="#slong">s</g>t <g ref="#slong">s</g>o roth
+                  <g ref="#slong">s</g>o daz pelut<g ref="#period" ana="syntax">.</g></l>
+            <l n="281"><lb n="11"/>unt be<g ref="#zscap">z</g>a<g ref="#inodot">i</g>henet d<g
+                  ref="#inodot">i</g> marterere guot<g ref="#period" ana="syntax">.</g></l>
+            <l n="282"><lb n="12"/>d<g ref="#inodot">i</g> m<g ref="#inodot">i</g>t <g ref="#inodot"
+                  >i</g>r tode<g ref="#period" ana="syntax">.</g></l>
+            <l n="283">d<g ref="#inodot">i</g> ew<g ref="#inodot">i</g>gen genade</l>
+            <l n="284"><choice ana="lb">
+                  <orig>ha<g ref="#ndash" rend="faded">-</g><lb n="13"/>be</orig>
+                  <reg>habe</reg>
+               </choice> habent er <choice ana="rdg">
+                  <orig>woruen</orig>
+                  <reg>worven</reg>
+               </choice> umbe got</l>
+            <l n="285">l<g ref="#inodot">i</g>ten <lb n="14"/>huh unte <g ref="#slong">s</g>pot<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="286">unte n<g ref="#inodot">i</g>d unte ha<g ref="#zscap">z</g></l>
+            <l n="287"><choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>l</orig>
+                  <reg>vil</reg>
+               </choice>
+               <lb n="15"/>wole ge<g ref="#slong">s</g>taten <g ref="#slong">s</g><g ref="#inodot"
+                  >i</g> da<g ref="#zscap">z</g></l>
+            <l n="288"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>ol<g ref="#inodot">i</g>t</orig>
+                  <reg>so lit</reg>
+               </choice> ta<g ref="#mhgzed">z</g> all<g ref="#inodot">i</g>he <lb n="16"/>haere<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="289">oben <choice ana="rdg">
+                  <orig>ander</orig>
+                  <reg>an der</reg>
+               </choice> beru<g ref="#slong">s</g>twere </l>
+            <l n="290">der <lb n="17"/>h<g ref="#inodot">i</g>mel<g ref="#inodot">i</g><g
+                  ref="#slong">s</g>chen burege<g ref="#period" ana="syntax">.</g></l>
+            <l n="291"><g ref="#slong">s</g><g ref="#inodot">i</g> habent <g ref="#inodot">i</g>r
+                  <choice ana="lb">
+                  <orig><g ref="#slong">s</g>o<g ref="#ndash" rend="faded">-</g><lb n="18"
+                     />rege</orig>
+                  <reg>sorege</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="292"><choice ana="rdg">
+                  <orig>geuuor fen</orig>
+                  <reg>geworfen</reg>
+               </choice> cerucge<g ref="#period" ana="syntax">.</g></l>
+            <l n="293">d<g ref="#inodot">i</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>nt <choice ana="lb">
+                  <orig>un<g ref="#ndash" rend="faded">-</g><lb n="19"/><g ref="#slong"
+                     >s</g>er</orig>
+                  <reg>unser</reg>
+               </choice> berucge</l>
+            <l n="294"><g ref="#slong">s</g><g ref="#inodot">i</g>
+               <g ref="#slong">s</g>ulen un<g ref="#slong">s</g><g ref="#inodot">i</g>ch la<g
+                  ref="#inodot">i</g>ten</l>
+            <l n="295">u<g ref="#mhgzed">z</g>
+               <lb n="20"/>t<g ref="#inodot">i</g><g ref="#slong">s</g>en arba<g ref="#inodot"
+                  >i</g>ten<g ref="#period" ana="syntax">.</g></l>
+            <l n="296"><g ref="#zscap">z</g>e der h<g ref="#inodot">i</g>mel<g ref="#inodot">i</g><g
+                  ref="#slong">s</g>gen<g ref="#period" ana="emph">.</g>
+               <choice ana="lb">
+                  <orig><g ref="#inodot">i</g>er<g ref="#ndash" rend="faded">-</g><lb n="21"/>lm<g
+                        ref="#combcurlbar"/></orig>
+                  <reg>jerusalem</reg>
+               </choice>
+               <note>Abbreviation expanded in reg</note><g ref="#period" ana="syntax">.</g></l>
+            <l n="297">ube w<g ref="#inodot">i</g>r wellen begen<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="298"><g ref="#drot">d</g><g ref="#inodot">i</g>
+               <choice ana="lb">
+                  <orig>gev<g ref="#ndash" rend="faded">-</g><lb n="22"/>voneha<g ref="#inodot"
+                        >i</g>t</orig>
+                  <reg>gewonehait</reg>
+               </choice><note>Variant Form in reg</note> d<g ref="#inodot">i</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g> habent</l>
+            <l n="299"><g ref="#drot">d</g><g ref="#inodot">i</g> w<g ref="#inodot">i</g>le da<g
+                  ref="#mhgzed">z</g>
+               <lb n="23"/><choice ana="rdg">
+                  <orig><g ref="#slong">s</g><g ref="#inodot">i</g>lebeten</orig>
+                  <reg>si lebeten</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p18" facs="#Vorau_134vb_3">
+            <l n="300"><hi rend="initial" style="text-colour: red"><g ref="#Drot">D</g></hi>er v<g
+                  ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#period" ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <g ref="#inodot">i</g><g ref="#slong"
+                  >s</g>t <g ref="#slong">s</g>us</l>
+            <l n="301"><lb n="24"/>geha<g ref="#inodot">i</g><g ref="#mhgzed">z</g>en<g
+                  ref="#period" ana="emph">.</g>
+               <choice ana="abbr">
+                  <abbr>Cr<g ref="#inodot">i</g><g ref="#slong">s</g>ol<g ref="#inodot">i</g>t<g
+                        ref="#combcurl"/></abbr>
+                  <expan>Crisolitus</expan>
+               </choice><g ref="#period" ana="emph">.</g></l>
+            <l n="302"><g ref="#slong">s</g><g ref="#inodot">i</g>n <choice ana="rdg">
+                  <orig>uarue</orig>
+                  <reg>varve</reg>
+               </choice>
+               <g ref="#inodot">i</g><g ref="#slong">s</g>t <g ref="#inodot">i</g>me <lb n="25"/>a<g
+                  ref="#inodot">i</g>n valt<g ref="#period" ana="syntax">.</g></l>
+            <l n="303">unte <g ref="#slong">s</g>ch<g ref="#inodot">i</g>net al<g ref="#slong"
+               >s</g>o da<g ref="#mhgzed">z</g> golt<g ref="#period" ana="syntax">.</g></l>
+            <l n="304"><lb n="26"/>da<g ref="#mhgzed">z</g>
+               <g ref="#inodot">i</g><g ref="#slong">s</g>t <choice ana="rdg">
+                  <orig>wnder</orig>
+                  <reg>vunder</reg>
+               </choice> ma<g ref="#inodot">i</g><g ref="#slong">s</g>t</l>
+            <l n="305"><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice>
+               <g ref="#inodot">i</g>me <choice ana="lb">
+                  <orig>ua<g ref="#ndash" rend="faded">-</g><lb n="27"/>rent</orig>
+                  <reg>varent</reg>
+               </choice><note>Variant Form in reg</note> genane<g ref="#inodot">i</g><g ref="#slong"
+                  >s</g>t</l>
+            <l n="306">al<g ref="#slong">s</g>o <choice ana="rdg">
+                  <orig>uondem</orig>
+                  <reg>von dem</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>br<g ref="#inodot">i</g>nne <g ref="#bar"/><lb n="28"/>te<g ref="#bar"
+                     /></orig>
+                  <reg>brinnenten</reg>
+               </choice>
+               <note>Abbreviation expanded in reg</note>
+               <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>vre</orig>
+                  <reg>viure</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="307">der <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t edele unte <choice ana="lb">
+                  <orig>t<g ref="#inodot">i</g><g ref="#ndash" rend="faded">-</g><lb n="29"
+                     />ure</orig>
+                  <reg>tiure</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p19" facs="#Vorau_134vb_4">
+            <l n="308"><hi rend="initial" style="text-colour: blue">C</hi>o <choice ana="rdg">
+                  <orig>be <g ref="#zscap">z</g>a<g ref="#inodot">i</g>chenet</orig>
+                  <reg>bezaichenet</reg>
+               </choice> d<g ref="#inodot">i</g>u <choice ana="rdg">
+                  <orig>uarewe</orig>
+                  <reg>varewe</reg>
+               </choice>
+               <lb n="30"/><g ref="#slong">s</g>o da<g ref="#mhgzed">z</g> golt<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="309"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>uueme</orig>
+                  <reg>sweme</reg>
+               </choice> got <choice ana="rdg">
+                  <orig>fer l<g ref="#inodot">i</g>et</orig>
+                  <reg>ferliet</reg>
+               </choice> ten <lb n="31"/><choice ana="rdg">
+                  <orig>geuualt</orig>
+                  <reg>gewalt</reg>
+               </choice></l>
+            <l n="310">da<g ref="#mhgzed">z</g> er <g ref="#inodot">i</g><g ref="#slong">s</g>t
+               guter l<g ref="#inodot">i</g><g ref="#slong">s</g>te<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="311"><choice ana="rdg">
+                  <orig>vnde</orig>
+                  <reg>unde</reg>
+               </choice>
+               <lb n="32"/><g ref="#slong">s</g><g ref="#inodot">i</g>nen eben cr<g ref="#inodot"
+                  >i</g><g ref="#slong">s</g>ten<g ref="#period" ana="syntax">.</g></l>
+            <l n="312"><g ref="#slong">s</g>t<g ref="#inodot">i</g>uret unt leret<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="313"><lb n="33"/><g ref="#zscap">z</g>udem be<g ref="#slong">s</g><g ref="#zscap"
+                  >z</g>erem<g ref="#period" ana="amb">.</g> cheret<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="314">m<g ref="#inodot">i</g>t tem <lb n="34"/><g ref="#slong">s</g>elben ga<g
+                  ref="#inodot">i</g><g ref="#slong">s</g>te<g ref="#period" ana="syntax">.</g></l>
+            <l n="315">da<g ref="#mhgzed">z</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>nt <choice ana="rdg">
+                  <orig>t<g ref="#inodot">i</g>gana<g ref="#inodot">i</g>sten</orig>
+                  <reg>ti ganaisten</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="316"><lb n="35"/>d<g ref="#inodot">i</g>
+               <choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>dem me</orig>
+                  <reg>demme</reg>
+               </choice>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>ne <g ref="#slong">s</g>pr<g
+                  ref="#inodot">i</g>ngent<g ref="#period" ana="syntax">.</g></l>
+            <l n="317"><lb n="36"/>d<g ref="#inodot">i</g> da m<g ref="#inodot">i</g>t r<g
+                  ref="#inodot">i</g>gent<g ref="#period" ana="syntax">.</g></l>
+            <l n="318">unte rehte wellent <lb n="37"/>leben<g ref="#period" ana="syntax">.</g></l>
+            <l n="319">der <choice ana="rdg">
+                  <orig>uu<g ref="#inodot">i</g>rt</orig>
+                  <reg>wirt</reg>
+               </choice> d<g ref="#inodot">i</g>u <choice ana="rdg">
+                  <orig>ha<g ref="#inodot">i</g>mut</orig>
+                  <reg>haimat</reg>
+               </choice> gege<lb n="38"/>ben<g ref="#period" ana="syntax">.</g></l>
+            <l n="320">der h<g ref="#inodot">i</g>mel<g ref="#inodot">i</g><g ref="#slong">s</g>cen
+                  <choice ana="abbr">
+                  <abbr><g ref="#inodot">i</g>erlm<g ref="#combcurlbar"/></abbr>
+                  <expan>jerusalem</expan>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="321">da<g ref="#mhgzed">z</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g> da <lb n="39"/><choice ana="rdg">
+                  <orig>zeuo<g ref="#rum">y</g> der<g ref="#inodot">i</g><g ref="#slong"
+                     >s</g>te</orig>
+                  <reg>ze vorderiste</reg>
+               </choice>
+               <g ref="#slong">s</g>colen <g ref="#slong">s</g>ten<g ref="#period" ana="syntax"
+                  >.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p20_1" part="I" facs="#Vorau_134vb_5">
+            <l n="322"><hi rend="initial" style="text-colour: red">S</hi>o <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t <lb n="40"/>der v<g ref="#inodot">i</g><g ref="#inodot"
+                  >i</g><g ref="#inodot">i</g><g ref="#period" ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <g ref="#slong">s</g>us</l>
+            <l n="323">geha<g ref="#inodot">i</g>zen<g ref="#period" ana="emph">.</g> Per<g
+                  ref="#inodot">i</g>llu<g ref="#slong">s</g><g ref="#period" ana="emph">.</g></l>
+            <l n="324"><lb n="41"/>der <g ref="#inodot">i</g><g ref="#slong">s</g>t <choice
+                  ana="rdg">
+                  <orig><g ref="#slong">s</g>ol<g ref="#inodot">i</g>uter</orig>
+                  <reg>so liuter</reg>
+               </choice>
+               <g ref="#slong">s</g>o der berunne</l>
+            <l n="325"><g ref="#slong">s</g>o <lb n="42"/>der <g ref="#inodot">i</g>n<g ref="#slong"
+                  >s</g>c<g ref="#inodot">i</g>net der <g ref="#slong">s</g>unne<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="326">der <g ref="#slong">s</g>ta<g ref="#inodot">i</g>ne <lb n="43"/><g
+                  ref="#inodot">i</g><g ref="#slong">s</g>t lucel <g ref="#inodot">i</g>n me
+               lante</l>
+            <l n="327"><g ref="#inodot">i</g>h <choice ana="rdg">
+                  <orig>wa<g ref="#inodot">i</g><g ref="#zscap">z</g>er</orig>
+                  <reg>waiz er</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>war <lb n="44"/>met</orig>
+                  <reg>warmet</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>t<g ref="#inodotsup">i</g>hant</orig>
+                  <reg>ti hant</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="328"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>u wer</orig>
+                  <reg>suwer</reg>
+               </choice>
+               <g ref="#inodot">i</g>n m<g ref="#inodot">i</g>t <choice ana="lb">
+                  <orig>geduan<g ref="#ndash" rend="faded">-</g><lb n="45"/>ge</orig>
+                  <reg>gedvange</reg>
+               </choice><note>Variant Form in reg</note></l>
+            <l n="329">dr<g ref="#inodot">i</g>nne hat lange<g ref="#period" ana="syntax">.</g></l>
+            <l n="330">der be<g ref="#zscap">z</g>e<g ref="#inodot">i</g>henet <lb n="46"/>d<g
+                  ref="#inodot">i</g> rehten<g ref="#period" ana="syntax">.</g></l>
+            <l n="331">
+               <choice ana="rdg">
+                  <orig>d<g ref="#inodot">i</g>er luhtet</orig>
+                  <reg>di erluhtet</reg>
+               </choice> m<g ref="#inodot">i</g>t trahten<g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <pb/>
+         <lg xml:id="HimmlJer_p20_2" part="F" facs="#Vorau_135ra_1">
+            <l n="332"><lb n="1"/>m<g ref="#inodot">i</g>t tem <g ref="#slong">s</g><g ref="#inodot"
+                  >i</g>nen ga<g ref="#inodot">i</g><g ref="#slong">s</g>te<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="333">da<g ref="#mhgzed">z</g> l<g ref="#inodot">i</g>th <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t aller <lb n="2"/>ma<g ref="#inodot">i</g><g ref="#slong"
+                  >s</g>te<g ref="#period" ana="syntax">.</g></l>
+            <l n="334"><choice ana="rdg">
+                  <orig>Suuelhe</orig>
+                  <reg>Swelhe</reg>
+               </choice> dannen gaheut</l>
+            <l n="335"><choice ana="abbr">
+                  <abbr>un<g ref="#bar"/></abbr>
+                  <expan>unte</expan>
+               </choice>
+               <lb n="3"/><g ref="#slong">s</g><g ref="#inodot">i</g>ch cu <choice ana="rdg">
+                  <orig>ce c<g ref="#inodot">i</g>me</orig>
+                  <reg>cecime</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>uahent</orig>
+                  <reg>vahent</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="336">d<g ref="#inodot">i</g> werdent <lb n="4"/>danne ra<g ref="#inodot">i</g>ne<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="337">al<g ref="#slong">s</g>o du hant warmet <lb n="5"/><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> dem <g ref="#slong">s</g>ta<g ref="#inodot">i</g>ne<g ref="#period"
+                  ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p21" facs="#Vorau_135ra_2">
+            <l n="338"><hi rend="initial" style="text-colour: red"><g ref="#Drot">D</g></hi>er v<g
+                  ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#inodot">i</g><g ref="#inodot"
+                  >i</g><g ref="#period" ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <lb n="6"/><g ref="#inodot">i</g>st <g
+                  ref="#slong">s</g>us</l>
+            <l n="339">geha<g ref="#inodot">i</g><g ref="#mhgzed">z</g>en<g ref="#period" ana="emph"
+                  >.</g>
+               <choice ana="abbr">
+                  <abbr>Topa<g ref="#mhgzed">z</g><g ref="#inodot">i</g><g ref="#combcurl"/></abbr>
+                  <expan>Topazius</expan>
+               </choice></l>
+            <l n="340">
+               <choice ana="rdg">
+                  <orig>uarue</orig>
+                  <reg>varve</reg>
+               </choice> habet <lb n="7"/>er doch zuwa<g ref="#period" ana="syntax">.</g></l>
+            <l n="341">da<g ref="#mhgzed">z</g>
+               <choice ana="rdg">
+                  <orig>puhc</orig>
+                  <reg>puch</reg>
+               </choice>
+               <g ref="#slong">s</g>aget un<g ref="#slong">s</g>
+               <lb n="8"/><g ref="#slong">s</g>o<g ref="#period" ana="syntax">.</g></l>
+            <l n="342">d<g ref="#inodot">i</g>u e<g ref="#inodot">i</g>ne <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t ha<g ref="#inodot">i</g>ter unte mare<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="343">nah <lb n="9"/>dem h<g ref="#inodot">i</g>mele <choice ana="rdg">
+                  <orig>geuare</orig>
+                  <reg>gevare</reg>
+               </choice></l>
+            <l n="344">d<g ref="#inodot">i</g>u ander <choice ana="lb">
+                  <orig>luu<g ref="#ndash">-</g><lb n="10"/>ter</orig>
+                  <reg>luuter</reg>
+               </choice>
+               <g ref="#slong">s</g>o da<g ref="#mhgzed">z</g> golt<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="345">d<g ref="#inodot">i</g> chunege <g ref="#slong">s</g><g ref="#inodot">i</g>nt
+                  <g ref="#inodot">i</g>me <lb n="11"/>holt<g ref="#period" ana="syntax">.</g></l>
+            <l n="346">unte m<g ref="#inodot">i</g>nnent <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nmere</orig>
+                  <reg>in mere</reg>
+               </choice></l>
+            <l n="347">den <choice ana="lb">
+                  <orig>an<g ref="#ndash" rend="faded">-</g><lb n="12"/>der</orig>
+                  <reg>ander</reg>
+               </choice> zu <choice ana="rdg">
+                  <orig>uuene</orig>
+                  <reg>wene</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="348">So <g ref="#slong">s</g>chone n<g ref="#inodot">i</g><g ref="#slong">s</g>t
+                  n<g ref="#inodot">i</g>h <lb n="13"/>ze<g ref="#slong">s</g>ehne</l>
+            <l n="349">den luten ze <g ref="#inodot">i</g>ehne<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="350"><choice ana="rdg">
+                  <orig>aldes</orig>
+                  <reg>al des</reg>
+               </choice>
+               <g ref="#inodot">i</g>n <lb n="14"/>der werelt <g ref="#inodot">i</g><g ref="#slong"
+                  >s</g>t<g ref="#period" ana="syntax">.</g></l>
+            <l n="351"><g ref="#inodot">i</g>a habet der <choice ana="lb">
+                  <orig>walt<g ref="#ndash">-</g><lb n="15"/>unte</orig>
+                  <reg>waltunte</reg>
+               </choice> cr<g ref="#inodot">i</g><g ref="#slong">s</g>t<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="352"><g ref="#slong">s</g><g ref="#inodot">i</g>ne burch da m<g ref="#inodot"
+                  >i</g>t <choice ana="lb">
+                  <orig>gec<g ref="#inodot">i</g>n <lb n="16"/>net</orig>
+                  <reg>gecinnet</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="353">er <g ref="#inodot">i</g><g ref="#slong">s</g>t wole wert da<g ref="#mhgzed"
+                  >z</g> man <g ref="#inodot">i</g>n <lb n="17"/>m<g ref="#inodot">i</g>nnet<g
+                  ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p22" facs="#Vorau_135ra_3">
+            <l n="354"><hi rend="initial" style="text-colour: blue"><g ref="#nenl">N</g></hi>u <g
+                  ref="#slong">s</g>ul w<g ref="#inodot">i</g>r werden <g ref="#inodot">i</g>n <lb
+                  n="18"/>a<g ref="#inodot">i</g>n</l>
+            <l n="355">wa<g ref="#mhgzed">z</g> pe<g ref="#mhgzed">z</g>a<g ref="#inodot"
+               >i</g>chenet der <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="356"><choice ana="lb">
+                  <orig>al <lb n="19"/><g ref="#slong">s</g>o</orig>
+                  <reg>also</reg>
+               </choice> mare</l>
+            <l n="357">a<g ref="#inodot">i</g>nen offenen <g ref="#slong">s</g>untare</l>
+            <l n="358">den <lb n="20"/>r<g ref="#inodot">i</g>uent <g ref="#slong">s</g><g
+                  ref="#inodot">i</g>ne <g ref="#slong">s</g>culde<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="359">unte er gotes <choice ana="lb">
+                  <orig>hul <lb n="21"/>de</orig>
+                  <reg>hulde</reg>
+               </choice></l>
+            <l n="360">m<g ref="#inodot">i</g>t noten gew<g ref="#inodot">i</g>nnet<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="361">al<g ref="#slong">s</g>o da<g ref="#mhgzed">z</g>
+               <lb n="22"/><choice ana="rdg">
+                  <orig>uu<g ref="#inodot">i</g>r</orig>
+                  <reg>wir</reg>
+               </choice> brennet<g ref="#period" ana="syntax">.</g></l>
+            <l n="362">u<g ref="#mhgzed">z</g> dem chofer da<g ref="#mhgzed">z</g>
+               <choice ana="lb">
+                  <orig>g<g ref="#ndash" rend="faded">-</g><lb n="23"/>olt</orig>
+                  <reg>golt</reg>
+               </choice></l>
+            <l n="363">
+               <g ref="#slong">s</g>o w<g ref="#inodot">i</g>rt <g ref="#inodot">i</g>me got <choice
+                  ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>l</orig>
+                  <reg>vil</reg>
+               </choice> holt<g ref="#period" ana="syntax">.</g></l>
+            <l n="364">unt <lb n="24"/>m<g ref="#inodot">i</g>nnet <g ref="#inodot">i</g>n mere<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="365">den ander be<g ref="#slong">s</g>cere</l>
+            <l n="366"><lb n="25"/>nah dem h<g ref="#inodot">i</g>mele <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t <choice ana="rdg">
+                  <orig>ergeuare</orig>
+                  <reg>er gevare</reg>
+               </choice></l>
+            <l n="367"><g ref="#slong">s</g>wen <lb n="26"/><g ref="#inodot">i</g>n <g ref="#slong"
+                  >s</g><g ref="#inodot">i</g>n mut tre<g ref="#inodot">i</g>t dare</l>
+            <l n="368"> al<g ref="#slong">s</g>am e<g ref="#combacute"/>
+               <choice ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>ed<g ref="#esup">e</g>n</orig>
+                  <reg>ze den</reg>
+               </choice>
+               <lb n="27"/><g ref="#slong">s</g>unten</l>
+            <l n="369">e<g ref="#combacute"/> e<g ref="#inodot">i</g>n d<g ref="#inodot">i</g> r<g
+                  ref="#inodot">i</g>ue <choice ana="rdg">
+                  <orig>er uunten</orig>
+                  <reg>ervunten</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p23" facs="#Vorau_135ra_4">
+            <l n="370"><lb n="28"/><hi rend="initial" style="text-colour: red"><g ref="#Drot"
+                  >D</g></hi>er <g ref="#period" ana="num">.</g>x<g ref="#period" ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <g ref="#inodot">i</g><g ref="#slong"
+                  >s</g>t <g ref="#slong">s</g>us</l>
+            <l n="371">geha<g ref="#inodot">i</g>zen <choice ana="lb">
+                  <orig>Cr<g ref="#inodot">i</g><g ref="#slong">s</g>oph <lb n="29"/><g
+                        ref="#inodot">i</g>ru<g ref="#slong">s</g></orig>
+                  <reg>Crisophirus</reg>
+               </choice></l>
+            <l n="372">purpruner <choice ana="rdg">
+                  <orig>uarue</orig>
+                  <reg>varve</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="373"><g ref="#inodot">i</g>st <choice ana="lb">
+                  <orig>erbe g<g ref="#aelig">ae</g>
+                     <lb n="30"/>rue</orig>
+                  <reg>er begaerve</reg>
+               </choice><note>Variant Form in reg</note></l>
+            <l n="374">da <choice ana="rdg">
+                  <orig><g ref="#slong">s</g>t<g ref="#aelig">ae</g>nt</orig>
+                  <reg>staent</reg>
+               </choice> ane tophen<g ref="#period" ana="syntax">.</g></l>
+            <l n="375"><g ref="#slong">s</g>am d<g ref="#inodot">i</g>
+               <lb n="31"/>golt trophen<g ref="#period" ana="syntax">.</g></l>
+            <l n="376">darane <choice ana="rdg">
+                  <orig><g ref="#slong">s</g><g ref="#inodot">i</g>ngemaloth</orig>
+                  <reg>sin gemaloth</reg>
+               </choice></l>
+            <l n="377">
+               <lb n="32"/>der <g ref="#slong">s</g>elbe <g ref="#slong">s</g>ta<g ref="#inodot"
+                  >i</g>n be<g ref="#mhgzed">z</g>a<g ref="#inodot">i</g>henot<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="378"><choice ana="rdg">
+                  <orig><g ref="#slong">s</g>uer</orig>
+                  <reg>sver</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>d<g ref="#inodot">i</g>
+                     <lb n="33"/><g ref="#zscap">z</g>e</orig>
+                  <reg>dize</reg>
+               </choice> ellente leben</l>
+            <l n="379">umbe da<g ref="#mhgzed">z</g> ew<g ref="#inodot">i</g>ge <lb n="34"/>hat
+                  gegeben<g ref="#period" ana="syntax">.</g></l>
+            <l n="380">unte h<g ref="#inodot">i</g> l<g ref="#inodot">i</g>det mart<g ref="#inodot"
+                  >i</g>re <lb n="35"/>unte not<g ref="#period" ana="syntax">.</g></l>
+            <l n="381"><choice ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>ealler</orig>
+                  <reg>ze aller</reg>
+               </choice>
+               <g ref="#inodot">i</g>unge<g ref="#slong">s</g>t den thot</l>
+            <l n="382"><lb n="36"/>chu<g ref="#slong">s</g>et andem ende<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="383">da<g ref="#mhgzed">z</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>nt d<g ref="#inodot">i</g>
+               <choice ana="lb">
+                  <orig><g ref="#slong">s</g>ta <lb n="37"/><g ref="#inodot">i</g>n</orig>
+                  <reg>stain</reg>
+               </choice> wente<g ref="#period" ana="syntax">.</g></l>
+            <l n="384">d<g ref="#inodot">i</g> uf habent d<g ref="#inodot">i</g> balchen<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="385"><lb n="38"/>un der allen m<g ref="#inodot">i</g>nes teraht<g ref="#inodot"
+                  >i</g>nes <choice ana="lb">
+                  <orig><g ref="#slong">s</g>cal <lb n="39"/>chen</orig>
+                  <reg>scalchen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p24_1" part="I" facs="#Vorau_135ra_5">
+            <l n="386"><hi rend="initial" style="text-colour: blue">S</hi>o <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t der <g ref="#period" ana="num">.</g>x<g ref="#inodot">i</g><g
+                  ref="#period" ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <g ref="#slong">s</g>us</l>
+            <l n="387"><choice ana="lb">
+                  <orig>ge<g ref="#ndash" rend="faded">-</g><lb n="40"/>ha<g ref="#inodot">i</g><g
+                        ref="#mhgzed">z</g>en</orig>
+                  <reg>gehaizen</reg>
+               </choice><g ref="#period" ana="emph">.</g> Iac<g ref="#inodot">i</g>ngtu<g
+                  ref="#slong">s</g><g ref="#period" ana="emph">.</g></l>
+            <l n="388">der <choice ana="rdg">
+                  <orig>uuandelet</orig>
+                  <reg>wandelet</reg>
+               </choice>
+               <lb n="41"/><g ref="#slong">s</g><g ref="#inodot">i</g>ne <choice ana="rdg">
+                  <orig>uarue</orig>
+                  <reg>varve</reg>
+               </choice></l>
+            <l n="389">
+               <g ref="#slong">s</g>o d<g ref="#inodot">i</g>che nach dem <choice ana="lb">
+                  <orig>h<g ref="#inodot">i</g>me <lb n="42"/>le</orig>
+                  <reg>himele</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="390">I<g ref="#slong">s</g>t er trube oder gra<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="391">danach <choice ana="lb">
+                  <orig>ua<g ref="#ndash" rend="faded">-</g><lb n="43"/>ruet</orig>
+                  <reg>varvet</reg>
+               </choice><note>Variant Form in reg</note> er <g ref="#slong">s</g><g ref="#inodot"
+                  >i</g>ch <g ref="#slong">s</g>a</l>
+            <l n="392"><choice ana="rdg">
+                  <orig>da m<g ref="#inodot">i</g>te</orig>
+                  <reg>damite</reg>
+               </choice>
+               <g ref="#mhgzed">z</g>a<g ref="#inodot">i</g>chenet <lb n="44"/>er d<g ref="#inodot"
+                  >i</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="393">d<g ref="#inodot">i</g>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>ch <choice ana="rdg">
+                  <orig>fer wan delent</orig>
+                  <reg>ferwandelent</reg>
+               </choice> h<g ref="#inodot">i</g></l>
+            <l n="394"><g ref="#inodot">i</g>n <lb n="45"/>aller <g ref="#slong">s</g>elahte <choice
+                  ana="rdg">
+                  <orig>uera<g ref="#inodot">i</g><g ref="#slong">s</g>en</orig>
+                  <reg>veraisen</reg>
+               </choice>
+               <g ref="#period" ana="syntax">.</g></l>
+            <l n="395">
+               <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>l</orig>
+                  <reg>vil</reg>
+               </choice> d<g ref="#inodot">i</g>che nah <lb n="46"/>ten wa<g ref="#inodot">i</g><g
+                  ref="#slong">s</g>en<g ref="#period" ana="syntax">.</g></l>
+            <l n="396" part="I">den armen <g ref="#inodot">i</g><g ref="#slong">s</g>t er m<g
+                  ref="#inodot">i</g>lte</l>
+         </lg>
+         <cb/>
+         <lg xml:id="HimmlJer_p24_2" part="F" facs="#Vorau_135rb_1">
+            <l n="397" part="F"><lb n="1"/>den guten gehente<g ref="#period" ana="syntax">.</g></l>
+            <l n="398">Den ubelen <choice ana="lb">
+                  <orig>gedul <lb n="2"/>t<g ref="#inodot">i</g>c</orig>
+                  <reg>gedultic</reg>
+            </choice><g ref="#period" ana="syntax">.</g>
+               <add type="foliation" place="margin" facs="#Vorau_135rb_add" rend="faded">135</add></l>
+            <l n="399">Den r<g ref="#inodot">i</g>chen <choice ana="rdg">
+                  <orig>a<g ref="#inodot">i</g>n ualtec</orig>
+                  <reg>ainvaltec</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="400"><g ref="#slong">s</g>w<g ref="#inodot">i</g>
+               <g ref="#slong">s</g>o du <choice ana="lb">
+                  <orig>we<g ref="#ndash" rend="faded">-</g><lb n="3"/>rd</orig>
+                  <reg>werd</reg>
+               </choice> tut<g ref="#period" ana="syntax">.</g></l>
+            <l n="401">dar <choice ana="rdg">
+                  <orig>nahc</orig>
+                  <reg>nach</reg>
+               </choice> cherent <g ref="#slong">s</g><g ref="#inodot">i</g>
+               <g ref="#inodot">i</g>r mut<g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p25" facs="#Vorau_135rb_2">
+            <l n="402"><lb n="4"/><choice ana="rdg">
+                  <orig><hi rend="initial" style="text-colour: blue">S</hi><g ref="#inodot"
+                     >i</g>nechoment</orig>
+                  <reg><hi rend="initial" style="text-colour: blue">S</hi>i ne choment</reg>
+               </choice> n<g ref="#inodot">i</g>th <choice ana="rdg">
+                  <orig>zeder</orig>
+                  <reg>ze der</reg>
+               </choice> w<g ref="#inodot">i</g>n<g ref="#slong">s</g>teren<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="403"><lb n="5"/>w<g ref="#inodot">i</g>r magen <g ref="#slong">s</g><g
+                  ref="#inodot">i</g> wol <g ref="#mhgzed">z</g>eden <choice ana="rdg">
+                  <orig>uen<g ref="#slong">s</g>teren</orig>
+                  <reg>vensteren</reg>
+               </choice>
+               <g ref="#period" ana="syntax">.</g></l>
+            <l n="404">an <lb n="6"/>d<g ref="#inodot">i</g> burch <g ref="#slong">s</g>caffen<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="405">nu <g ref="#inodot">i</g><g ref="#slong">s</g>t <g ref="#inodot">i</g>r leben
+                  <choice ana="rdg">
+                  <orig>gal<g ref="#slong">s</g>tel<g ref="#inodot">i</g>ch</orig>
+                  <reg>gaistelich</reg>
+               </choice>
+               <lb n="7"/>unt offen<g ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p26" facs="#Vorau_135rb_3">
+            <l n="406"><hi rend="initial" style="text-colour: red"><g ref="#Drot">D</g></hi>er <g
+                  ref="#period" ana="num">.</g>x<g ref="#inodot">i</g><g ref="#inodot">i</g><g
+                  ref="#period" ana="num">.</g>
+               <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n der <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t <choice ana="rdg">
+                  <orig>aue</orig>
+                  <reg>ave</reg>
+               </choice>
+               <lb n="8"/><g ref="#slong">s</g>us</l>
+            <l n="407">geha<g ref="#inodot">i</g><g ref="#mhgzed">z</g>en<g ref="#period" ana="emph"
+                  >.</g>
+               <choice ana="rdg">
+                  <orig><g ref="#aenl">A</g>me<g ref="#slong">s</g>t<g ref="#inodot">i</g>tus</orig>
+                  <reg>Ametistus</reg>
+               </choice></l>
+            <l n="408">der <g ref="#inodot">i</g><g ref="#slong">s</g>t rot <g ref="#slong">s</g>o
+                  <lb n="9"/>da<g ref="#mhgzed">z</g> plut<g ref="#period" ana="syntax">.</g></l>
+            <l n="409">unte <choice ana="rdg">
+                  <orig>lo cheet</orig>
+                  <reg>locheet</reg>
+               </choice>
+               <g ref="#slong">s</g>o da<g ref="#mhgzed">z</g>
+               <choice ana="rdg">
+                  <orig>f<g ref="#inodot">i</g>uer</orig>
+                  <reg>fiver</reg>
+               </choice> tut</l>
+            <l n="410"><lb n="10"/>der be<g ref="#mhgzed">z</g>a<g ref="#inodot">i</g>chenet d<g
+                  ref="#inodot">i</g> mart<g ref="#inodot">i</g>rare</l>
+            <l n="411">d<g ref="#inodot">i</g> gotes <lb n="11"/>arhe poten waren<g ref="#period"
+                  ana="syntax">.</g></l>
+            <l n="412">behalten <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nder</orig>
+                  <reg>in der</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>m<g ref="#inodot">i</g>n <lb n="12"/>ne</orig>
+                  <reg>minne</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="413">da<g ref="#mhgzed">z</g>
+               <g ref="#inodot">i</g><g ref="#slong">s</g>t der louch dar<g ref="#inodot">i</g>nne<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="414">d<g ref="#inodot">i</g>
+               <choice ana="lb">
+                  <orig><g ref="#inodot">i</g>nal <lb n="13"/>len</orig>
+                  <reg>in allen</reg>
+               </choice>
+               <g ref="#inodot">i</g>r noten<g ref="#period" ana="syntax">.</g></l>
+            <l n="415">P<g ref="#inodot">i</g>ttent got den guten<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="416">da<g ref="#mhgzed">z</g>
+               <lb n="14"/>er <g ref="#inodot">i</g>r <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>anten</orig>
+                  <reg>vianten</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>uer gebe</orig>
+                  <reg>vergebe</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="417">d<g ref="#inodot">i</g>
+               <g ref="#inodot">i</g>n <choice ana="rdg">
+                  <orig>uer ta<g ref="#inodot">i</g>lent</orig>
+                  <reg>vertailent</reg>
+               </choice>
+               <lb n="15"/>da<g ref="#mhgzed">z</g> leben<g ref="#period" ana="syntax">.</g></l>
+            <l n="418">des n<g ref="#inodot">i</g><g ref="#slong">s</g>t <choice ana="rdg">
+                  <orig>zuv<g ref="#inodot">i</g>uel</orig>
+                  <reg>zwivel</reg>
+               </choice> neha<g ref="#inodot">i</g>n<g ref="#period" ana="syntax">.</g></l>
+            <l n="419"><choice ana="lb">
+                  <orig><g ref="#zscap">z</g>ob <lb n="16"/>er<g ref="#inodot">i</g><g ref="#slong"
+                        >s</g>t</orig>
+                  <reg>zoberist</reg>
+               </choice> l<g ref="#inodot">i</g>t der <g ref="#slong">s</g>elbe <g ref="#slong"
+                  >s</g>ta<g ref="#inodot">i</g>n<g ref="#period" ana="syntax">.</g></l>
+            <l n="420">an m<g ref="#inodot">i</g>nes <choice ana="lb">
+                  <orig>trah<g ref="#ndash" rend="faded">-</g><lb n="17"/>t<g ref="#inodot"
+                     >i</g>nes</orig>
+                  <reg>trahtines</reg>
+               </choice> purge<g ref="#period" ana="syntax">.</g></l>
+            <l n="421">unte be<g ref="#slong">s</g>elu<g ref="#zscap">z</g>et da<g ref="#mhgzed"
+                  >z</g>
+               <choice ana="lb">
+                  <orig>geuu<g ref="#ndash" rend="faded">-</g><lb n="18"/>elbe</orig>
+                  <reg>gewelbe</reg>
+               </choice><note>Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
+            <l n="422">Der h<g ref="#inodot">i</g>mel<g ref="#inodot">i</g>chen <choice ana="abbr">
+                  <abbr><g ref="#inodot">i</g>erlm<g ref="#combcurlbar"/></abbr>
+                  <expan>jerusalem</expan>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="423"><g ref="#zscap">z</g>obere<g ref="#slong">s</g>t mag <lb n="19"/>er wole <g
+                  ref="#slong">s</g>ten<g ref="#period" ana="syntax">.</g></l>
+            <l n="424"><g ref="#slong">s</g><g ref="#inodot">i</g>n cheraft nelat <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nn<g ref="#inodot">i</g>ht</orig>
+                  <reg>in niht</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>w<g ref="#ndash" rend="faded">-</g><lb n="20"/><g ref="#inodot"
+                     >i</g>hen</orig>
+                  <reg>wihen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="425">neha<g ref="#inodot">i</g>n<g ref="#period" ana="amb">.</g> tugent mac <g
+                  ref="#slong">s</g><g ref="#inodot">i</g> errechen<g ref="#period" ana="syntax"
+                  >.</g><g ref="#combacute"/></l>
+            <l n="426"><lb n="21"/>D<g ref="#inodot">i</g>
+               <g ref="#inodot">i</g>r <choice ana="rdg">
+                  <orig>u<g ref="#inodot">i</g>ante</orig>
+                  <reg>viante</reg>
+               </choice> m<g ref="#inodot">i</g>nnent<g ref="#period" ana="syntax">.</g></l>
+            <l n="427"><choice ana="rdg">
+                  <orig>Gv w<g ref="#inodot">i</g><g ref="#slong">s</g><g ref="#slong">s</g>e</orig>
+                  <reg>Guwisse</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g> hohe <lb n="22"/>br<g ref="#inodot"
+                  >i</g>nnent<g ref="#period" ana="syntax">.</g></l>
+            <l n="428"><g ref="#slong">s</g>tarche under <g ref="#inodot">i</g>r bru<g ref="#slong"
+                  >s</g>ten<g ref="#period" ana="syntax">.</g><g ref="#combacute"/></l>
+         </lg>
+         <lg xml:id="HimmlJer_p27" facs="#Vorau_135rb_4">
+            <l n="429"><lb n="23"/><hi rend="initial" style="text-colour: blue">N</hi>u <g
+                  ref="#slong">s</g>cule w<g ref="#inodot">i</g>r d<g ref="#inodot">i</g> burch ma<g
+                  ref="#inodot">i</g><g ref="#zscap">z</g>en</l>
+            <l n="430">d<g ref="#inodot">i</g>u <g ref="#slong">s</g>tat <lb n="24"/><choice
+                  ana="rdg">
+                  <orig>umbe <g ref="#slong">s</g>elo<g ref="#mhgzed">z</g><g ref="#mhgzed"
+                     >z</g>en</orig>
+                  <reg>umbeselozzen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="431">offen <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nalle</orig>
+                  <reg>in alle</reg>
+               </choice> c<g ref="#inodot">i</g>t<g ref="#period" ana="syntax">.</g></l>
+            <l n="432">d<g ref="#inodot">i</g>
+               <choice ana="lb">
+                  <orig>ho<g ref="#ndash" rend="faded">-</g><lb n="25"/>he</orig>
+                  <reg>hohe</reg>
+               </choice>
+               <g ref="#inodot">i</g>och d<g ref="#inodot">i</g> w<g ref="#inodot">i</g>te</l>
+            <l n="433">unte <choice ana="rdg">
+                  <orig>d<g ref="#inodot">i</g>lenge</orig>
+                  <reg>di lenge</reg>
+               </choice> dab<g ref="#inodot">i</g><g ref="#period" ana="syntax">.</g></l>
+            <l n="434"><choice ana="lb">
+                  <orig>Ga <lb n="26"/>nt<g ref="#mhgzed">z</g></orig>
+                  <reg>Gantz</reg>
+               </choice> algel<g ref="#inodot">i</g>ht <g ref="#slong">s</g><g ref="#inodot">i</g><g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="435">be<g ref="#mhgzed">z</g>a<g ref="#inodot">i</g>henet <g ref="#inodot">i</g><g
+                  ref="#slong">s</g>t uns dab<g ref="#inodot">i</g><g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="436"><lb n="27"/>der <choice ana="rdg">
+                  <orig>uur <g ref="#slong">s</g>teun</orig>
+                  <reg>vursteun</reg>
+               </choice> wente doch tr<g ref="#inodot">i</g></l>
+            <l n="437"><choice ana="rdg">
+                  <orig>zeuuare</orig>
+                  <reg>zeware</reg>
+               </choice>
+               <lb n="28"/><g ref="#slong">s</g>agen <g ref="#inodot">i</g>ch <g ref="#inodot"
+               >i</g>u da<g ref="#mhgzed">z</g></l>
+            <l n="438">f<g ref="#inodot">i</g>des<g ref="#period" ana="emph">.</g>
+               <g ref="#slong">s</g>pes<g ref="#period" ana="emph">.</g> car<g ref="#inodot"
+               >i</g>tas</l>
+            <l n="439">der <lb n="29"/>geloube <g ref="#inodot">i</g>och d<g ref="#inodot">i</g>u
+                  m<g ref="#inodot">i</g>nne</l>
+            <l n="440">der <choice ana="rdg">
+                  <orig><g ref="#mhgzed">z</g>uuer<g ref="#slong">s</g><g ref="#inodot"
+                     >i</g>th</orig>
+                  <reg>zuversith</reg>
+               </choice><lb n="30"/>
+               <choice ana="rdg">
+                  <orig><g ref="#drot">d</g>a r<g ref="#inodot">i</g>nne</orig>
+                  <reg>darinne</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="441">r<g ref="#inodot">i</g>ch<g ref="#slong">s</g>enet m<g ref="#inodot">i</g>t
+                  gewalte<g ref="#period" ana="syntax">.</g></l>
+            <l n="442"><choice ana="lb">
+                  <orig>dan<g ref="#ndash" rend="faded">-</g><lb n="31"/>nen</orig>
+                  <reg>dannen</reg>
+               </choice> choment uns ander tugente ma<lb n="32"/>n<g ref="#inodot">i</g>c falte<g
+                  ref="#period" ana="syntax">.</g></l>
+         </lg>
+         <lg xml:id="HimmlJer_p28_1" part="I" facs="#Vorau_135rb_5">
+            <l n="443"><hi rend="initial" style="text-colour: red"><g ref="#nenl">N</g></hi>u habent
+                  <g ref="#inodot">i</g>r alle wol <choice ana="lb">
+                  <orig>uer <lb n="33"/>nomen</orig>
+                  <reg>vernomen</reg>
+               </choice><note>Variant Form in reg</note></l>
+            <l n="444">w<g ref="#inodot">i</g>
+               <g ref="#inodot">i</g>r <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>nd<g ref="#inodot">i</g></orig>
+                  <reg>in di</reg>
+               </choice> burch<g ref="#period" ana="amb">.</g>
+               <g ref="#slong">s</g>culet chomen</l>
+            <l n="445"><lb n="34"/>unt w<g ref="#inodot">i</g>
+               <g ref="#inodot">i</g>r<g ref="#slong">s</g> ouch muget <choice ana="rdg">
+                  <orig>uer we<g ref="#inodot">i</g>rchen</orig>
+                  <reg>verweirchen</reg>
+               </choice></l>
+            <l n="446"><lb n="35"/>
+               <choice ana="rdg">
+                  <orig>uuoltent</orig>
+                  <reg>woltent</reg>
+               </choice>
+               <g ref="#inodot">i</g>r da<g ref="#mhgzed">z</g> merchen<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="447"><choice ana="rdg">
+                  <orig>Suuaman</orig>
+                  <reg>Swa man</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>a<g ref="#inodot">i</g><g ref="#ndash" rend="faded">-</g><lb n="36"
+                     />ne</orig>
+                  <reg>aine</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig>gu<g ref="#osup">o</g>te</orig>
+                  <reg>guote</reg>
+               </choice> rede tut<g ref="#period" ana="syntax">.</g></l>
+            <l n="448">dem tumben <choice ana="lb">
+                  <orig>um ma<g ref="#ndash" rend="faded">-</g><lb n="37"/>re</orig>
+                  <reg>ummare</reg>
+               </choice></l>
+            <l n="449">der ha<g ref="#inodot">i</g><g ref="#mhgzed">z</g>et <g ref="#inodot">i</g>me
+                  <g ref="#slong">s</g><g ref="#inodot">i</g>ngen</l>
+            <l n="450"><choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>werltl<g ref="#inodot">i</g>c<g ref="#ndash">-</g><lb n="38"/>hen</orig>
+                  <reg>werltlichen</reg>
+               </choice> d<g ref="#inodot">i</g>ggen<g ref="#period" ana="syntax">.</g></l>
+            <l n="451">unt <choice ana="rdg">
+                  <orig>uon</orig>
+                  <reg>von</reg>
+               </choice> der degenha<g ref="#inodot">i</g>te</l>
+            <l n="452"><lb n="39"/><choice ana="rdg">
+                  <orig>da<g ref="#zscap">z</g>en dunchet</orig>
+                  <reg>daz endunchet</reg>
+               </choice>
+               <choice ana="rdg">
+                  <orig><g ref="#inodot">i</g>narba<g ref="#inodot">i</g>te</orig>
+                  <reg>in arbaite</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="453">W<g ref="#inodot">i</g>r haben <lb n="40"/>noch <choice ana="rdg">
+                  <orig><g ref="#zscap">z</g>u wa<g ref="#inodot">i</g>gere</orig>
+                  <reg>zuwaigere</reg>
+               </choice> wege gewalt<g ref="#period" ana="syntax">.</g></l>
+            <l n="454">al<g ref="#slong">s</g>o <lb n="41"/>uns der <choice ana="abbr">
+                  <abbr>apls<g ref="#combcurl"/></abbr>
+                  <expan>apostolus</expan>
+               </choice>
+               <choice ana="rdg">
+                  <orig>uore</orig>
+                  <reg>vore</reg>
+               </choice> zalt<g ref="#period" ana="syntax">.</g></l>
+            <l n="455">der e<g ref="#inodot">i</g>ne <g ref="#inodot">i</g><g ref="#slong">s</g>t
+                  bra<lb n="42"/><g ref="#inodot">i</g>t unt w<g ref="#inodot">i</g>t</l>
+            <l n="456">offen <g ref="#slong">s</g>tat <choice ana="rdg">
+                  <orig>eren</orig>
+                  <reg>er en</reg>
+               </choice> allen c<g ref="#inodot">i</g>t<g ref="#period" ana="syntax">.</g></l>
+            <l n="457">er <lb n="43"/>tra<g ref="#inodot">i</g>t <g ref="#inodot">i</g>uch <choice
+                  ana="rdg">
+                  <orig><g ref="#inodot">i</g>nd<g ref="#inodot">i</g></orig>
+                  <reg>in di</reg>
+               </choice> helle<g ref="#period" ana="syntax">.</g></l>
+            <l n="458"><g ref="#inodot">i</g>me <choice ana="rdg">
+                  <orig>uolge</orig>
+                  <reg>volge</reg>
+               </choice> der der <lb n="44"/>welle<g ref="#period" ana="syntax">.</g></l>
+            <l n="459">der ander enge unt <g ref="#slong">s</g>emal<g ref="#period" ana="syntax"
+                  >.</g></l>
+            <l n="460">er <lb n="45"/>w<g ref="#inodot">i</g><g ref="#slong">s</g>et h<g
+                  ref="#inodot">i</g>uch <g ref="#inodot">i</g>nne den <g ref="#slong">s</g>al<g
+                  ref="#period" ana="syntax">.</g></l>
+            <l n="461">der <g ref="#slong">s</g>orge<g ref="#period" ana="amb">.</g>
+               <lb n="46"/>unt aldes <g ref="#inodot">i</g>u h<g ref="#inodot">i</g>
+               <choice ana="rdg">
+                  <orig><g ref="#zscap">z</g>ela<g ref="#inodot">i</g>de</orig>
+                  <reg>ze laide</reg>
+               </choice> ge<g ref="#slong">s</g>cah<g ref="#period" ana="syntax">.</g></l>
+            <l n="462" part="I"><g ref="#slong">s</g>on darf</l>
+         </lg>
+         <pb/>
+         <lg xml:id="HimmlJer_p28_2" part="F" facs="#Vorau_135va_1">
+            <l n="462" part="F"><lb n="1"/>h<g ref="#inodot">i</g>uch da<g ref="#mhgzed">z</g>
+               ungemach</l>
+            <l n="463">n<g ref="#inodot">i</g>mer <choice ana="lb">
+                  <orig>ger<g ref="#inodot">i</g>u w<g ref="#ndash" rend="faded">-</g><lb n="2"
+                     />en</orig>
+                  <reg>geriuwen</reg>
+               </choice><note>Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
+            <l n="464">da<g ref="#mhgzed">z</g>
+               <g ref="#inodot">i</g>r he<g ref="#inodot">i</g> habet en <choice ana="rdg">
+                  <orig>tr<g ref="#inodot">i</g>u wen</orig>
+                  <reg>triuwen</reg>
+               </choice><g ref="#period" ana="syntax">.</g></l>
+            <l n="465"><choice ana="lb">
+                  <orig>er l<g ref="#inodot">i</g><g ref="#ndash" rend="faded">-</g><lb n="3"
+                     />ten</orig>
+                  <reg>erliten</reg>
+               </choice> durch d<g ref="#inodot">i</g> gotes he<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="466"><g ref="#slong">s</g>o <g ref="#inodot">i</g><g ref="#slong">s</g>t alle den
+                  <choice ana="lb">
+                  <orig>u<g ref="#inodot">i</g><g ref="#ndash" rend="faded">-</g><lb n="4"
+                     />le</orig>
+                  <reg>vile</reg>
+               </choice><note>Variant Form in reg</note> we<g ref="#period" ana="syntax">.</g></l>
+            <l n="467"><choice ana="rdg">
+                  <orig>d<g ref="#inodot">i</g>de</orig>
+                  <reg>di de</reg>
+               </choice> helle mu<g ref="#zscap">z</g>en buwen<g ref="#period" ana="syntax"
+               >.</g></l>
+            <l n="468">des <g ref="#inodot">i</g>n <lb n="5"/><g ref="#slong">s</g>cule w<g
+                  ref="#inodot">i</g>r gote getruen<g ref="#period" ana="syntax">.</g></l>
+            <l n="469">der un<g ref="#slong">s</g><g ref="#inodot">i</g>ch <choice ana="lb">
+                  <orig>er <lb n="6"/>lo<g ref="#slong">s</g>te</orig>
+                  <reg>erloste</reg>
+               </choice> dannen<g ref="#period" ana="syntax">.</g></l>
+            <l n="470"><choice ana="rdg">
+                  <orig>H<g ref="#combced"/>u</orig>
+                  <reg>Nu</reg>
+               </choice>
+               <g ref="#slong">s</g><g ref="#inodot">i</g>t <g ref="#inodot">i</g>r dem <choice
+                  ana="rdg">
+                  <orig>t<g ref="#inodot">i</g>uuele</orig>
+                  <reg>tiwele</reg>
+               </choice>
+               <choice ana="lb">
+                  <orig>uer <lb n="7"/>boten</orig>
+                  <reg>verboten</reg>
+               </choice><note>Variant Form in reg</note> unte <choice ana="rdg">
+                  <orig>uerbannen</orig>
+                  <reg>verbannen</reg>
+               </choice></l>
+            <l n="471">a<g ref="#munc">m</g>e<g ref="#nscap">n</g><g ref="#period" ana="syntax"
+                  >.</g></l>
+         </lg>
+      </body>
+   </text>
+</TEI>
