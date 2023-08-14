@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="HimmlJer_ODD.rng"?>
+<?xml-model href="HimmlJer_ODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -27,12 +26,12 @@
                   <country>Österreich</country>
                   <institution ref="https://www.stift-vorau.at/">Augustiner Chorherrenstift
                      Vorau</institution>
-                  <idno type="shelfmark" source="urn:nbn:at:at-ubg:2-22148">Vorau Cod. 276</idno>
+                  <idno type="shelfmark">Vorau Cod. 276</idno>
                   <altIdentifier type="shelfmark">
                      <idno>früher Vorau Cod. XI</idno>
                   </altIdentifier>
-                  <altIdentifier type="URI">
-                     <idno>urn:nbn:at:at-ubg:2-22148</idno>
+                  <altIdentifier type="URN">
+                     <idno type="URN">urn:nbn:at:at-ubg:2-22148</idno>
                   </altIdentifier>
                </msIdentifier>
                <msContents>
@@ -88,7 +87,7 @@
                      <handNote xml:id="Hand2" scope="minor">
                         <locus>Fol. 134ra</locus>
                         <desc>Gotische Minuskelschrift, kleinere Ausgestaltung der Zeichen
-                           (deutlichere Zeilenränder), ca. 41 Zeichen/Zeile, überwiegen vergrößertes
+                           (deutlichere Zeilenränder), ca. 41 Zeichen/Zeile, überwiegend vergrößertes
                            Minuskel-z, w eindeutig erkennbar, kein v, ausschließlich Schaft-s,
                            Majuskeln ausschließlich als Majuskeln realisiert, keine Geviertstriche ausgeführt </desc>
                      </handNote>
@@ -372,6 +371,15 @@
                <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
                <note>Private Use Area Glyph</note>
             </glyph>
+            <glyph ana="allograph" corresp="N" resp="https://hdl.handle.net/1956/10699"
+               source="p.66" xml:id="Nrdes">
+               <desc>LATIN SMALL LETTER N WITH RIGHT DESCENDER</desc>
+               <mapping type="normalized">N</mapping>
+               <mapping subtype="PUA-51" type="unicode_codepoint">F229</mapping>
+               <mapping type="unicode_symbol"></mapping>
+               <mapping subtype="html_entity" type="unicode_codepoint_hex"></mapping>
+               <note>Private Use Area Glyph</note>
+            </glyph>
             <glyph ana="allograph" corresp="n" resp="https://hdl.handle.net/1956/10699"
                source="p.64" xml:id="nscap">
                <desc>LATIN LETTER SMALL CAPITAL N</desc>
@@ -543,7 +551,7 @@
       <surfaceGrp xml:id="Vorau_133v">
          <!--Nomenklatur für xml:ids: Vorau_[FolioNummer][Spaltenkürzel]_[NummerDesParagraphen] wobei Spaltenkürzel{a=links, b=rechts}-->
          <surface xml:id="Vorau_133v_b">
-            <graphic url="Vorau_133v.jpg" width="2000px" height="2716px"/>
+            <graphic url="Vorau_133v.jpg" source="urn:nbn:at:at-ubg:2-22148/fragment/page=3645336" width="2000px" height="2716px"/>
             <zone xml:id="Vorau_133vb_1"
                points="1056,182 1270,182 1270,264 1850,264 1840,862 1505,862 1507,907 1146,907 1146,389 1062,389"/>
             <!--Nu sule wir beginen...-->
@@ -563,7 +571,7 @@
       </surfaceGrp>
       <surfaceGrp>
          <surface xml:id="Vorau_134ra">
-            <graphic url="Vorau_134r.jpg" width="2000px" height="2716px"/>
+            <graphic url="Vorau_134r.jpg" source="urn:nbn:at:at-ubg:2-22148/fragment/page=3645337" width="2000px" height="2716px"/>
             <zone xml:id="Vorau_134ra_1" points="234,170 864,170 864,416 319,404 317,450 232,450"/>
             <!--...christallen. ander osteren porte...-->
             <zone xml:id="Vorau_134ra_2"
@@ -579,7 +587,7 @@
             <!--Ander buric mure raine ligint...-->
          </surface>
          <surface xml:id="Vorau_134rb">
-            <graphic url="Vorau_134r.jpg" width="2000px" height="2716px"/>
+            <graphic url="Vorau_134r.jpg" source="urn:nbn:at:at-ubg:2-22148/fragment/page=3645337" width="2000px" height="2716px"/>
             <zone xml:id="Vorau_134rb_1" points="920,180 1600,182 1600,510 913,506"/>
             <!--unde lit zaller unterist...-->
             <zone xml:id="Vorau_134rb_2"
@@ -599,7 +607,7 @@
       </surfaceGrp>
       <surfaceGrp>
          <surface xml:id="Vorau_134va">
-            <graphic url="Vorau_134v.jpg" width="2000px" height="2716px"/>
+            <graphic url="Vorau_134v.jpg" source="urn:nbn:at:at-ubg:2-22148/fragment/page=3645338" width="2000px" height="2716px"/>
             <zone xml:id="Vorau_134va_1" points="460,194 1123,188 1123,513 548,514 544,553 460,552"/>
             <!--...puhuete. Diu werlt sihit...-->
             <zone xml:id="Vorau_134va_2"
@@ -614,7 +622,7 @@
             <zone xml:id="Vorau_134va_add" points="376,1972 450,1972 450,2025 376,2025"/>
          </surface>
          <surface xml:id="Vorau_134vb">
-            <graphic url="Vorau_134v.jpg" width="2000px" height="2716px"/>
+            <graphic url="Vorau_134v.jpg" source="urn:nbn:at:at-ubg:2-22148/fragment/page=3645338" width="2000px" height="2716px"/>
             <zone xml:id="Vorau_134vb1"
                points="1182,204 1850,204 1850,566 1306,566 1306,596 1182,596"/>
             <!--...zaihint diu vareve rot-->
@@ -634,7 +642,7 @@
       </surfaceGrp>
       <surfaceGrp>
          <surface xml:id="Vorau_135ra">
-            <graphic url="Vorau_135r.jpg" width="2000px" height="2716px"/>
+            <graphic url="Vorau_135r.jpg" source="urn:nbn:at:at-ubg:2-22148/fragment/page=3645339" width="2000px" height="2716px"/>
             <zone xml:id="Vorau_135ra_1" points="235,230 860,230 860,428 534,412 534,460 235,454"/>
             <!--...mit dem sinen gaiste...-->
             <zone xml:id="Vorau_135ra_2"
@@ -650,7 +658,7 @@
             <!--So ist der xi. stain sus gehaizen lacingtus...-->
          </surface>
          <surface xml:id="Vorau_135rb">
-            <graphic url="Vorau_135r.jpg" width="2000px" height="2716px"/>
+            <graphic url="Vorau_135r.jpg" source="urn:nbn:at:at-ubg:2-22148/fragment/page=3645339" width="2000px" height="2716px"/>
             <zone xml:id="Vorau_135rb_1" points="910,247 1589,259 1589,405 910,384"/>
             <!--...Den guten gehente...-->
             <zone xml:id="Vorau_135rb_2"
@@ -670,7 +678,7 @@
       </surfaceGrp>
       <surfaceGrp>
          <surface xml:id="Vorau_135va">
-            <graphic url="Vorau_135v.jpg" width="2000px" height="2716px"/>
+            <graphic url="Vorau_135v.jpg" source="urn:nbn:at:at-ubg:2-22148/fragment/page=3645340" width="2000px" height="2716px"/>
             <zone xml:id="Vorau_135va_1" points="458,211 1146,197 1146,508 453,520"/>
             <!--...hiuch daz ungemach nimer...-->
          </surface>
@@ -850,7 +858,7 @@
                   <orig>euuan<g ref="#ndash">-</g><lb n="26"/>gel<g ref="#inodot">i</g><g
                         ref="#slong">s</g>ta</orig>
                   <reg>ewangelista</reg>
-               </choice><note>Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
+               </choice><note prev="choice">Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
             <l n="36">der uber d<g ref="#inodot">i</g>e gotes bru<g ref="#slong">s</g>te<g
                   ref="#period" ana="syntax">.</g></l>
             <l n="37"><choice ana="rdg">
@@ -964,17 +972,14 @@
                   <expan>apostolorum nomina</expan>
                </choice> et agn<g ref="#inodot">i</g><g ref="#comma">,</g></l>
          </lg>
-         <lg xml:id="HimmlJer_p5_1" part="I" facs="#Vorau_133vb_5">
+         <lg xml:id="HimmlJer_p5" facs="#Vorau_133vb_5 #Vorau_134ra_1">
             <l n="63"><hi rend="initial" style="text-colour: blue"><g ref="#Drot">D</g></hi><g
                   ref="#inodot">i</g>e <lb n="44"/><g ref="#slong">s</g>elben x<g ref="#inodot"
                   >i</g><g ref="#inodot">i</g><g ref="#period" ana="num">.</g> porte<g ref="#period"
                   ana="syntax">.</g></l>
-            <l n="64" part="I">alle <g ref="#slong">s</g><g ref="#inodot">i</g>nt <g ref="#slong"
-                  >s</g><g ref="#inodot">i</g> lutere</l>
-         </lg>
-         <pb/>
-         <lg xml:id="HimmlJer_p5_2" part="F" facs="#Vorau_134ra_1">
-            <l n="64" part="F"><lb n="1"/><handShift new="#hand2"/>chr<g ref="#inodot">i</g><g ref="#slong">s</g>tallen<g
+            <l n="64">alle <g ref="#slong">s</g><g ref="#inodot">i</g>nt <g ref="#slong"
+                  >s</g><g ref="#inodot">i</g> lutere
+         <pb n="134r"/><lb n="1"/><handShift new="#hand2"/>chr<g ref="#inodot">i</g><g ref="#slong">s</g>tallen<g
                   ref="#period" ana="syntax">.</g></l>
             <l n="65"><choice ana="rdg">
                   <orig>ander</orig>
@@ -1068,7 +1073,7 @@
             <l n="86">er mach <g ref="#slong">s</g><g ref="#inodot">i</g>h <choice ana="lb">
                   <orig>uer we <lb n="17"/>nen</orig>
                   <reg>verwenen</reg>
-               </choice><note>Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
+            </choice><note prev="choice">Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
             <l n="87"><g ref="#inodot">i</g>me werden d<g ref="#inodot">i</g>e porten ufgetan</l>
             <l n="88"><choice ana="lb">
                   <orig>dan <lb n="18"/>nen</orig>
@@ -1257,7 +1262,7 @@
             <l n="128">D<g ref="#inodot">i</g>u bur<g ref="#inodot">i</g>c nehe<g ref="#inodot"
                   >i</g>n meh dolet<g ref="#period" ana="syntax">.</g></l>
          </lg>
-         <lg xml:id="HimmlJer_p9_1" part="I" facs="#Vorau_134ra_5">
+         <lg xml:id="HimmlJer_p9" facs="#Vorau_134ra_5 #Vorau_134rb_1">
             <l n="129"><lb n="44"/><choice ana="rdg">
                   <orig><hi rend="initial" style="text-colour: black">A</hi>nder</orig>
                   <reg>An der</reg>
@@ -1280,9 +1285,7 @@
                   <reg>heizet</reg>
                </choice> Ia<g ref="#slong">s</g>p<g ref="#inodot">i</g><g ref="#slong">s</g><g
                   ref="#period" ana="syntax">.</g></l>
-         </lg>
-         <cb/>
-         <lg xml:id="HimmlJer_p9_2" part="F" facs="#Vorau_134rb_1">
+         <cb n="134rb"/>
             <l n="134"><lb n="1"/>
                <handShift new="#hand1"/>unde l<g ref="#inodot">i</g>t zaller unter<g ref="#inodot">i</g><g
                   ref="#slong">s</g>t</l>
@@ -1358,7 +1361,7 @@
             <l n="149">al<g ref="#slong">s</g>am der <choice ana="lb">
                   <orig>le<g ref="#ndash" rend="faded">-</g><lb n="11"/>uo</orig>
                   <reg>levo</reg>
-               </choice><note>Variant Form in reg</note> w<g ref="#inodot">i</g>lde<g ref="#period"
+            </choice><note prev="choice">Variant Form in reg</note> w<g ref="#inodot">i</g>lde<g ref="#period"
                   ana="syntax">.</g></l>
             <l n="150"><g ref="#inodot">i</g>a <choice ana="rdg">
                   <orig>uerter</orig>
@@ -1573,7 +1576,7 @@
                <g ref="#inodot">i</g>eru<g ref="#slong">s</g>alem<g ref="#period" ana="syntax"
                >.</g></l>
          </lg>
-         <lg xml:id="HimmlJer_p13_1" part="I" facs="#Vorau_134rb_5">
+         <lg xml:id="HimmlJer_p13" facs="#Vorau_134rb_5 #Vorau_134va_1">
             <l n="190"><hi rend="initial" style="text-colour: blue"><g ref="#Drot">D</g></hi>er <g
                   ref="#slong">s</g>elbe <g ref="#slong">s</g>ta<g ref="#inodot">i</g>n <lb n="41"
                   />p<g ref="#inodot">i</g>zech<g ref="#inodot">i</g>not<g ref="#period"
@@ -1610,15 +1613,12 @@
                </choice>
                <g ref="#slong">s</g><g ref="#inodot">i</g>ne guete<g ref="#period" ana="syntax"
                   >.</g></l>
-            <l n="199" part="I"><choice ana="rdg">
+            <l n="199"><choice ana="rdg">
                   <orig>Suu<g ref="#inodot">i</g></orig>
                   <reg>Swi</reg>
                </choice>
-               <g ref="#slong">s</g>tarche er <g ref="#slong">s</g><g ref="#inodot">i</g>ch</l>
-         </lg>
-         <pb/>
-         <lg xml:id="HimmlJer_p13_2" part="F" facs="#Vorau_134va_1">
-            <l n="199" part="F"><lb n="1"/>puhuete<g ref="#period" ana="syntax">.</g></l>
+               <g ref="#slong">s</g>tarche er <g ref="#slong">s</g><g ref="#inodot">i</g>ch
+         <pb n="134v"/><lb n="1"/>puhuete<g ref="#period" ana="syntax">.</g></l>
             <l n="200">D<g ref="#inodot">i</g>u werlt <g ref="#slong">s</g><g ref="#inodot">i</g>h<g
                   ref="#inodot">i</g>t<g ref="#period" ana="syntax">.</g></l>
             <l n="201">algeme<g ref="#inodot">i</g>ne <lb n="2"/>uber chu<g ref="#slong">s</g>che <g
@@ -1749,7 +1749,7 @@
                <choice ana="lb">
                   <orig>uoge <lb n="19"/>le</orig>
                   <reg>vogele</reg>
-               </choice><note>Variant Form in reg</note> ane not<g ref="#period" ana="syntax"
+               </choice><note prev="choice">Variant Form in reg</note> ane not<g ref="#period" ana="syntax"
                >.</g></l>
             <l n="227"><choice ana="rdg">
                   <orig>S<g ref="#inodot">i</g>ben durfen</orig>
@@ -1830,7 +1830,7 @@
                   <reg>vor</reg>
                </choice> den anderen<g ref="#period" ana="syntax">.</g></l>
             <l n="245"><choice ana="rdg">
-                  <orig>H<g ref="#combced"/>ubet zechenet</orig>
+                  <orig><g ref="#Nrdes">N</g>ubet zechenet</orig>
                   <reg>Nu bezechenet</reg>
                </choice> da<g ref="#zscap">z</g>
                <choice ana="lb">
@@ -1902,13 +1902,13 @@
                </choice> den <g ref="#slong">s</g>ta<g ref="#inodot">i</g>nen zalete<g ref="#period"
                   ana="syntax">.</g></l>
          </lg>
-         <lg xml:id="HimmlJer_p16_1" facs="#Vorau_134va_4">
+         <lg xml:id="HimmlJer_p16" facs="#Vorau_134va_4 #Vorau_134vb_1">
             <l n="259"><hi rend="initial" style="text-colour: red"><g ref="#Drot">D</g></hi>es n<g
                   ref="#inodot">i</g><g ref="#slong">s</g>t <choice ana="lb">
                   <orig>zu<g ref="#inodot">i</g>u<g ref="#ndash" rend="faded">-</g><lb n="42"
                      />el</orig>
                   <reg>zvivel</reg>
-               </choice><note>Variant Form in reg</note> neha<g ref="#inodot">i</g>n<g ref="#period"
+                  </choice><note prev="choice">Variant Form in reg</note> neha<g ref="#inodot">i</g>n<g ref="#period"
                   ana="syntax">.</g></l>
             <l n="260">Sardon<g ref="#inodot">i</g>x ha<g ref="#inodot">i</g>zet der <g
                   ref="#period" ana="num">.</g>v<g ref="#period" ana="num">.</g>
@@ -1939,14 +1939,11 @@
                   <orig><g ref="#inodot">i</g><g ref="#slong">s</g>ter hobene</orig>
                   <reg>ist erhobene</reg>
                </choice><g ref="#period" ana="syntax">.</g></l>
-            <l n="267" part="I"><choice ana="lb">
+            <l n="267"><choice ana="lb">
                   <orig><g ref="#nenl">N</g>ube</orig>
-                  <reg>Nu be-</reg>
-               </choice><note>Variant form across columns</note></l>
-         </lg>
-         <cb/>
-         <lg xml:id="HimmlJer_p16_2" part="F" facs="#Vorau_134vb1">
-            <l n="267" part="F"><lb n="1"/>za<g ref="#inodot">i</g>h<g ref="#inodot">i</g>nt d<g
+                  <reg>Nu be</reg>
+            </choice>
+         <cb n="134vb"/><lb n="1"/>za<g ref="#inodot">i</g>h<g ref="#inodot">i</g>nt d<g
                   ref="#inodot">i</g>u <choice ana="rdg">
                   <orig>uareue</orig>
                   <reg>vareve</reg>
@@ -2080,7 +2077,7 @@
                         ref="#combcurlbar"/></orig>
                   <reg>jerusalem</reg>
                </choice>
-               <note>Abbreviation expanded in reg</note><g ref="#period" ana="syntax">.</g></l>
+               <note prev="choice">Abbreviation expanded in reg</note><g ref="#period" ana="syntax">.</g></l>
             <l n="297">ube w<g ref="#inodot">i</g>r wellen begen<g ref="#period" ana="syntax"
                >.</g></l>
             <l n="298"><g ref="#drot">d</g><g ref="#inodot">i</g>
@@ -2088,7 +2085,7 @@
                   <orig>gev<g ref="#ndash" rend="faded">-</g><lb n="22"/>voneha<g ref="#inodot"
                         >i</g>t</orig>
                   <reg>gewonehait</reg>
-               </choice><note>Variant Form in reg</note> d<g ref="#inodot">i</g>
+               </choice><note prev="choice">Variant Form in reg</note> d<g ref="#inodot">i</g>
                <g ref="#slong">s</g><g ref="#inodot">i</g> habent</l>
             <l n="299"><g ref="#drot">d</g><g ref="#inodot">i</g> w<g ref="#inodot">i</g>le da<g
                   ref="#mhgzed">z</g>
@@ -2129,7 +2126,7 @@
                <g ref="#inodot">i</g>me <choice ana="lb">
                   <orig>ua<g ref="#ndash" rend="faded">-</g><lb n="27"/>rent</orig>
                   <reg>varent</reg>
-               </choice><note>Variant Form in reg</note> genane<g ref="#inodot">i</g><g ref="#slong"
+               </choice><note prev="choice">Variant Form in reg</note> genane<g ref="#inodot">i</g><g ref="#slong"
                   >s</g>t</l>
             <l n="306">al<g ref="#slong">s</g>o <choice ana="rdg">
                   <orig>uondem</orig>
@@ -2140,7 +2137,7 @@
                      /></orig>
                   <reg>brinnenten</reg>
                </choice>
-               <note>Abbreviation expanded in reg</note>
+               <note prev="choice">Abbreviation expanded in reg</note>
                <choice ana="rdg">
                   <orig>u<g ref="#inodot">i</g>vre</orig>
                   <reg>viure</reg>
@@ -2228,7 +2225,7 @@
                <g ref="#slong">s</g>colen <g ref="#slong">s</g>ten<g ref="#period" ana="syntax"
                   >.</g></l>
          </lg>
-         <lg xml:id="HimmlJer_p20_1" part="I" facs="#Vorau_134vb_5">
+         <lg xml:id="HimmlJer_p20" facs="#Vorau_134vb_5 #Vorau_135ra_1">
             <l n="322"><hi rend="initial" style="text-colour: red">S</hi>o <g ref="#inodot">i</g><g
                   ref="#slong">s</g>t <lb n="40"/>der v<g ref="#inodot">i</g><g ref="#inodot"
                   >i</g><g ref="#inodot">i</g><g ref="#period" ana="num">.</g>
@@ -2266,7 +2263,7 @@
                <g ref="#inodot">i</g>n m<g ref="#inodot">i</g>t <choice ana="lb">
                   <orig>geduan<g ref="#ndash" rend="faded">-</g><lb n="45"/>ge</orig>
                   <reg>gedvange</reg>
-               </choice><note>Variant Form in reg</note></l>
+               </choice><note prev="choice">Variant Form in reg</note></l>
             <l n="329">dr<g ref="#inodot">i</g>nne hat lange<g ref="#period" ana="syntax">.</g></l>
             <l n="330">der be<g ref="#zscap">z</g>e<g ref="#inodot">i</g>henet <lb n="46"/>d<g
                   ref="#inodot">i</g> rehten<g ref="#period" ana="syntax">.</g></l>
@@ -2275,9 +2272,7 @@
                   <orig>d<g ref="#inodot">i</g>er luhtet</orig>
                   <reg>di erluhtet</reg>
                </choice> m<g ref="#inodot">i</g>t trahten<g ref="#period" ana="syntax">.</g></l>
-         </lg>
-         <pb/>
-         <lg xml:id="HimmlJer_p20_2" part="F" facs="#Vorau_135ra_1">
+         <pb n="135r"/>
             <l n="332"><lb n="1"/>m<g ref="#inodot">i</g>t tem <g ref="#slong">s</g><g ref="#inodot"
                   >i</g>nen ga<g ref="#inodot">i</g><g ref="#slong">s</g>te<g ref="#period"
                   ana="syntax">.</g></l>
@@ -2459,7 +2454,7 @@
                   <orig>erbe g<g ref="#aelig">ae</g>
                      <lb n="30"/>rue</orig>
                   <reg>er begaerve</reg>
-               </choice><note>Variant Form in reg</note></l>
+            </choice><note prev="choice">Variant Form in reg</note></l>
             <l n="374">da <choice ana="rdg">
                   <orig><g ref="#slong">s</g>t<g ref="#aelig">ae</g>nt</orig>
                   <reg>staent</reg>
@@ -2508,7 +2503,7 @@
                   <reg>scalchen</reg>
                </choice><g ref="#period" ana="syntax">.</g></l>
          </lg>
-         <lg xml:id="HimmlJer_p24_1" part="I" facs="#Vorau_135ra_5">
+         <lg xml:id="HimmlJer_p24" facs="#Vorau_135ra_5 #Vorau_135rb_1">
             <l n="386"><hi rend="initial" style="text-colour: blue">S</hi>o <g ref="#inodot">i</g><g
                   ref="#slong">s</g>t der <g ref="#period" ana="num">.</g>x<g ref="#inodot">i</g><g
                   ref="#period" ana="num">.</g>
@@ -2537,7 +2532,7 @@
             <l n="391">danach <choice ana="lb">
                   <orig>ua<g ref="#ndash" rend="faded">-</g><lb n="43"/>ruet</orig>
                   <reg>varvet</reg>
-               </choice><note>Variant Form in reg</note> er <g ref="#slong">s</g><g ref="#inodot"
+            </choice><note prev="choice">Variant Form in reg</note> er <g ref="#slong">s</g><g ref="#inodot"
                   >i</g>ch <g ref="#slong">s</g>a</l>
             <l n="392"><choice ana="rdg">
                   <orig>da m<g ref="#inodot">i</g>te</orig>
@@ -2562,12 +2557,9 @@
                   <reg>vil</reg>
                </choice> d<g ref="#inodot">i</g>che nah <lb n="46"/>ten wa<g ref="#inodot">i</g><g
                   ref="#slong">s</g>en<g ref="#period" ana="syntax">.</g></l>
-            <l n="396" part="I">den armen <g ref="#inodot">i</g><g ref="#slong">s</g>t er m<g
-                  ref="#inodot">i</g>lte</l>
-         </lg>
-         <cb/>
-         <lg xml:id="HimmlJer_p24_2" part="F" facs="#Vorau_135rb_1">
-            <l n="397" part="F"><lb n="1"/>den guten gehente<g ref="#period" ana="syntax">.</g></l>
+            <l n="396">den armen <g ref="#inodot">i</g><g ref="#slong">s</g>t er m<g
+                  ref="#inodot">i</g>lte
+         <cb n="135rb"/><lb n="1"/>den guten gehente<g ref="#period" ana="syntax">.</g></l>
             <l n="398">Den ubelen <choice ana="lb">
                   <orig>gedul <lb n="2"/>t<g ref="#inodot">i</g>c</orig>
                   <reg>gedultic</reg>
@@ -2698,7 +2690,7 @@
                <choice ana="lb">
                   <orig>geuu<g ref="#ndash" rend="faded">-</g><lb n="18"/>elbe</orig>
                   <reg>gewelbe</reg>
-               </choice><note>Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
+               </choice><note prev="choice">Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
             <l n="422">Der h<g ref="#inodot">i</g>mel<g ref="#inodot">i</g>chen <choice ana="abbr">
                   <abbr><g ref="#inodot">i</g>erlm<g ref="#combcurlbar"/></abbr>
                   <expan>jerusalem</expan>
@@ -2795,12 +2787,12 @@
                </choice> choment uns ander tugente ma<lb n="32"/>n<g ref="#inodot">i</g>c falte<g
                   ref="#period" ana="syntax">.</g></l>
          </lg>
-         <lg xml:id="HimmlJer_p28_1" part="I" facs="#Vorau_135rb_5">
+         <lg xml:id="HimmlJer_p28" facs="#Vorau_135rb_5 #Vorau_135va_1">
             <l n="443"><hi rend="initial" style="text-colour: red"><g ref="#nenl">N</g></hi>u habent
                   <g ref="#inodot">i</g>r alle wol <choice ana="lb">
                   <orig>uer <lb n="33"/>nomen</orig>
                   <reg>vernomen</reg>
-               </choice><note>Variant Form in reg</note></l>
+                  </choice><note prev="choice">Variant Form in reg</note></l>
             <l n="444">w<g ref="#inodot">i</g>
                <g ref="#inodot">i</g>r <choice ana="rdg">
                   <orig><g ref="#inodot">i</g>nd<g ref="#inodot">i</g></orig>
@@ -2896,17 +2888,14 @@
                   <orig><g ref="#zscap">z</g>ela<g ref="#inodot">i</g>de</orig>
                   <reg>ze laide</reg>
                </choice> ge<g ref="#slong">s</g>cah<g ref="#period" ana="syntax">.</g></l>
-            <l n="462" part="I"><g ref="#slong">s</g>on darf</l>
-         </lg>
-         <pb/>
-         <lg xml:id="HimmlJer_p28_2" part="F" facs="#Vorau_135va_1">
-            <l n="462" part="F"><lb n="1"/>h<g ref="#inodot">i</g>uch da<g ref="#mhgzed">z</g>
+            <l n="462"><g ref="#slong">s</g>on darf
+         <pb n="135v"/><lb n="1"/>h<g ref="#inodot">i</g>uch da<g ref="#mhgzed">z</g>
                ungemach</l>
             <l n="463">n<g ref="#inodot">i</g>mer <choice ana="lb">
                   <orig>ger<g ref="#inodot">i</g>u w<g ref="#ndash" rend="faded">-</g><lb n="2"
                      />en</orig>
                   <reg>geriuwen</reg>
-               </choice><note>Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
+            </choice><note prev="choice">Variant Form in reg</note><g ref="#period" ana="syntax">.</g></l>
             <l n="464">da<g ref="#mhgzed">z</g>
                <g ref="#inodot">i</g>r he<g ref="#inodot">i</g> habet en <choice ana="rdg">
                   <orig>tr<g ref="#inodot">i</g>u wen</orig>
@@ -2923,7 +2912,7 @@
                   <orig>u<g ref="#inodot">i</g><g ref="#ndash" rend="faded">-</g><lb n="4"
                      />le</orig>
                   <reg>vile</reg>
-               </choice><note>Variant Form in reg</note> we<g ref="#period" ana="syntax">.</g></l>
+                  </choice><note prev="choice">Variant Form in reg</note> we<g ref="#period" ana="syntax">.</g></l>
             <l n="467"><choice ana="rdg">
                   <orig>d<g ref="#inodot">i</g>de</orig>
                   <reg>di de</reg>
@@ -2936,7 +2925,7 @@
                   <reg>erloste</reg>
                </choice> dannen<g ref="#period" ana="syntax">.</g></l>
             <l n="470"><choice ana="rdg">
-                  <orig>H<g ref="#combced"/>u</orig>
+                  <orig><g ref="#Nrdes"></g>u</orig>
                   <reg>Nu</reg>
                </choice>
                <g ref="#slong">s</g><g ref="#inodot">i</g>t <g ref="#inodot">i</g>r dem <choice
@@ -2947,7 +2936,7 @@
                <choice ana="lb">
                   <orig>uer <lb n="7"/>boten</orig>
                   <reg>verboten</reg>
-               </choice><note>Variant Form in reg</note> unte <choice ana="rdg">
+               </choice><note prev="choice">Variant Form in reg</note> unte <choice ana="rdg">
                   <orig>uerbannen</orig>
                   <reg>verbannen</reg>
                </choice></l>
