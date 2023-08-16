@@ -71,12 +71,22 @@
         <section>
             <xsl:for-each select=".">
                 <p>
+                    <xsl:apply-templates select="tei:cb" mode="hyper_text"/>
+                </p>
+            </xsl:for-each>
+            <xsl:for-each select=".">
+                <p>
+                    <xsl:apply-templates select="tei:pb" mode="hyper_text"/>
+                </p>
+            </xsl:for-each>
+            <xsl:for-each select=".">
+                <p>
                     <xsl:apply-templates select="." mode="hyper_text"/>
                 </p>
             </xsl:for-each>
         </section>
     </xsl:template>
-
+    
     <xsl:template match="tei:lb" mode="hyper_text">
         <xsl:for-each select=".">
             <section>
@@ -93,20 +103,28 @@
             </section>
         </xsl:for-each>
     </xsl:template>
+    
+    <xsl:template match="tei:cb" mode="hyper_text">
+        <h2>
+            <xsl:text>Col. </xsl:text>
+            <xsl:value-of select="@n"/>
+        </h2>
+    </xsl:template>
+    
+    <xsl:template match="tei:pb" mode="hyper_text">
+        <h2>
+            <xsl:text>Fol. </xsl:text>
+            <xsl:value-of select="@n"/>
+        </h2>
+    </xsl:template>
 
-    <!-- Abkürzungen, Normierungen, Notes, Additions -->
+    <!-- Abkürzungen, Normierungen, Additions -->
     <xsl:template match="tei:expan" mode="hyper_text">
         <xsl:text/>
     </xsl:template>
 
     <xsl:template match="tei:reg" mode="hyper_text">
         <xsl:text/>
-    </xsl:template>
-
-    <xsl:template match="tei:note" mode="hyper_text">
-        <span class="note">
-            <xsl:value-of select="."/>
-        </span>
     </xsl:template>
 
     <xsl:template match="tei:add" mode="hyper_text">
@@ -178,16 +196,28 @@
         </span>
     </xsl:template>
 
-    <!-- Abkürzungen, Normierungen (+ Zeilennummerierung innerhalb von <choice>), Notes, Additions  -->
+    <!-- Abkürzungen, Normierungen (+ Zeilennummerierung innerhalb von <choice>), Additions  -->
     <xsl:template match="tei:choice" mode="norm">
         <span>
             <xsl:choose>
                 <xsl:when test="@ana = 'abbr'">
-                    <xsl:value-of select="tei:expan"/>
+                    <xsl:choose>
+                        <xsl:when test="tei:abbr/tei:lb">
+                            <span class="lb_note">
+                                <xsl:text>(</xsl:text>
+                                <xsl:value-of select="tei:abbr/tei:lb/@n"/>
+                                <xsl:text>) </xsl:text>
+                            </span>
+                            <xsl:value-of select="tei:expan"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="tei:expan"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>
-                        <xsl:when test="@ana = 'lb'">
+                        <xsl:when test="tei:orig/tei:lb">
                             <span class="lb_note">
                                 <xsl:text>(</xsl:text>
                                 <xsl:value-of select="tei:orig/tei:lb/@n"/>
@@ -203,12 +233,6 @@
                     </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
-        </span>
-    </xsl:template>
-
-    <xsl:template match="tei:note" mode="norm">
-        <span class="note">
-            <xsl:value-of select="."/>
         </span>
     </xsl:template>
 
