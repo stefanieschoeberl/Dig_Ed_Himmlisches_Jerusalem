@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>HimmlJer_ODD</title>
+        <author>Stefanie Schöberl</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>TEI Consortium</publisher>
+        <availability status="free">
+          <p>TEI material can be licensed differently depending on the use you intend to make of it.
+            Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is
+            generally appropriate for usages which treat TEI content as data or documentation. The
+            BSD-2 licence is generally appropriate for usage of TEI content in a software
+            environment. For further information or clarification, please contact the TEI Consortium
+            (info@tei-c.org).</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Written from scratch.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application ident="RomaJS" version="1.0.0" when="2023-08-12T16:14:29.953Z">
+          <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
+        </application>
+      </appInfo>
+      <appInfo>
+        <application ident="RomaJS" version="1.0.0" when="2023-08-12T16:40:43.231Z">
+          <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
+        </application>
+      </appInfo>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>TEI Complete</head>
+      <p>Diese TEI Spezifizierung beschreibt die für das Projekt notwendigen TEI-Strukturen ausgehend von TEI P5.</p>
+        <p>Grundprinzipien der Edition: <list>
+          <item>Das Hauptziel der Edition ist, den Text sowohl in einer hyperdiplomatischen
+            Transkription als auch in einer verständlicheren Lesefassung anzubieten.</item>
+          <item>Die vorliegende Edition soll eine möglichst breite Basis für Fragestellungen aus
+            verschiedenen Fachbereichen darstellen.</item>
+          <item>Grundprinzipien der Transkription sind hier aufgeführt. Für eine umfangreichere
+            Erklärung, theoretische Grundüberlegungen sowie Begründungen für diverse
+            Transkriptionsentscheidungen siehe <bibl>Masterarbeit</bibl>.</item>
+        </list>
+        </p>
+      <p>TEI-Header: enthält <gi>msDesc</gi>, <gi>editorialDecl</gi>, <gi>charDecl</gi>, <gi>facsimile</gi>.
+        <list>
+          <item>
+            <gi>msDesc</gi> enthält <gi>msIdentifier</gi>, <gi>msContents</gi>, <gi>physDesc</gi> mit <gi>objectDesc</gi> des gesamten Kodex und <gi>handDesc</gi> der Textauswahl, <gi>history</gi>.
+          </item>
+          <item>
+            <gi>editorialDecl</gi> enthält Grundregeln der Transkription auf Makro-, Mikrostrukturebene, Deutungsebene sowie Besonderheiten.
+          </item>
+          <item>
+            <gi>charDecl</gi> enthält das vollständige Zeicheninventar der Transkription, dabei wird <gi>char</gi> für Grafen verwendet, die in der ASCII-Tabelle vorkommen,
+            <gi>glyph</gi> für alle anderen Grafen, wobei hier zwischen Allografen, Ligaturen, Diakritika, Abkürzungsmarker/ Brevigrafen, ambige Zeichen und Interpunktionszeichen unterschieden wird.
+          </item>
+          <item>
+            <gi>facsimile</gi> enthält <gi>surfaceGrp</gi>, darin spaltenweise mit <gi>surface</gi> und <gi>zone</gi> für Abschnitte, die mit einer farblich/deutlich gekennzeichneten Initiale beginnen.
+          </item>
+        </list>
+      </p>
+      <p>
+        Body: enthält <gi>lg</gi> zur Auszeichnung der einzelnen Strophen (referenziert mit <att>facs</att> auf jeweilige <gi>zone</gi>), <gi>l</gi> für Verse. Innerhalb von Versen:
+        <list>
+          <item>
+            <gi>pb</gi> zeigt neue Seiten an, <gi>cb</gi> neue Spalten, <gi>lb</gi> neue Zeilen.
+          </item>
+          <item>
+            <gi>g</gi> zeigt Grafen an, die als <gi>glyph</gi> deklariert wurden.
+          </item>
+          <item>
+            <gi>hi</gi> zeigt Initialen an.
+          </item>
+          <item>
+            <gi>choice</gi> zeigt mehrere Lesarten an, innerhalb davon wird zwischen <gi>abbr</gi>/<gi>expan</gi> und <gi>orig</gi>/<gi>reg</gi> unterschieden. Es werden keine Schriftzeichen hinzugefügt oder weggelassen (betrifft u/v, uu/vv/uv/vu/w).
+          </item>
+        </list>
+      </p>
+      
+      <schemaSpec ident="HimmlJer_ODD" start="TEI teiCorpus" prefix="tei_" targetLang="en"
+        docLang="en">
+        <moduleRef n="01" key="tei"/>
+        <moduleRef n="02" key="header"
+          except="appInfo application authority availability cRefPattern calendar calendarDesc catDesc catRef category change citeData citeStructure conversion distributor geoDecl listChange listPrefixDef prefixDef stdVals styleDefDecl tagUsage tagsDecl unitDecl unitDef xenoData"/>
+        <moduleRef n="03" key="core"
+          except="addrLine address binaryObject date distinct divGen email foreign imprint index label media meeting milestone postBox postCode q quote rb rs rt ruby said series soCalled sp speaker stage street"/>
+        <moduleRef n="04" key="textstructure"
+          except="argument back byline dateline docImprint epigraph floatingText front imprimatur postscript signed trailer"/>
+        <moduleRef n="05" key="gaiji" except="localProp unihanProp"/>
+
+
+
+        <moduleRef n="17" key="analysis" except="cl m phr s w"/>
+
+        <moduleRef n="10" key="msdescription"
+          except="accMat acquisition adminInfo catchwords colophon custEvent custodialHist decoDesc decoNote depth filiation finalRubric heraldry musicNotation rubric seal sealDesc secFol stamp surrogates"/>
+        <moduleRef n="11" key="transcr"
+          except="ex fw listTranspose metamark mod path redo restore retrace transpose undo"/>
+        <moduleRef n="12" key="textcrit"/>
+        <moduleRef n="13" key="namesdates"
+          except="addName affiliation age birth bloc climate death district education event faith floruit genName gender geo geogFeat langKnowledge langKnown listEvent listNym listOrg listRelation nameLink nationality nym occupation offset persPronouns personGrp persona relation residence roleName settlement sex socecStatus state terrain trait"/>
+
+        <moduleRef n="15" key="corpus"
+          except="activity channel factuality interaction locale particDesc preparedness setting settingDesc"/>
+        <moduleRef n="16" key="linking" except="anchor join joinGrp standOff timeline"/>
+
+
+
+        <moduleRef n="22" key="tagdocs" except="altIdent alternate anyElement egXML exemplum"/>
+        <classSpec ident="att.anchoring" type="atts" mode="delete"/>
+        <classSpec ident="att.ascribed.directed" type="atts" mode="delete"/>
+        <classSpec ident="att.cReferencing" type="atts" mode="delete"/>
+        <classSpec ident="att.citeStructurePart" type="atts" mode="delete"/>
+        <classSpec ident="att.datcat" type="atts" mode="delete"/>
+        <classSpec ident="att.declarable" type="atts" mode="delete"/>
+        <classSpec ident="att.deprecated" type="atts" mode="delete"/>
+        <classSpec ident="att.divLike" type="atts" mode="delete"/>
+        <classSpec ident="att.docStatus" type="atts" mode="delete"/>
+        <classSpec ident="att.duration.iso" type="atts" mode="delete"/>
+        <classSpec ident="att.duration.w3c" type="atts" mode="delete"/>
+        <classSpec ident="att.formula" type="atts" mode="delete"/>
+        <classSpec ident="att.internetMedia" type="atts" mode="delete"/>
+        <classSpec ident="att.linguistic" type="atts" mode="delete"/>
+        <classSpec ident="att.locatable" type="atts" mode="delete"/>
+        <classSpec ident="att.msExcerpt" type="atts" mode="delete"/>
+        <classSpec ident="att.naming" type="atts" mode="delete"/>
+        <classSpec ident="att.patternReplacement" type="atts" mode="delete"/>
+        <classSpec ident="att.personal" type="atts" mode="delete"/>
+        <classSpec ident="att.pointing.group" type="atts" mode="delete"/>
+        <classSpec ident="att.predicate" type="atts" mode="delete"/>
+        <classSpec ident="att.repeatable" type="atts" mode="delete"/>
+        <classSpec ident="att.sortable" type="atts" mode="delete"/>
+        <classSpec ident="att.spanning" type="atts" mode="delete"/>
+        <classSpec ident="att.timed" type="atts" mode="delete"/>
+        <classSpec ident="att.translatable" type="atts" mode="delete"/>
+        <elementSpec ident="institution" mode="change">
+          <classes mode="change">
+            <memberOf key="att.canonical"/>
+          </classes>
+        </elementSpec>
+        <classSpec ident="att.global.analytic" type="atts" mode="change">
+          <attList>
+            <attDef ident="ana" mode="change">
+              <valList type="closed" mode="change">
+                <valItem mode="add" ident="main">
+                  <desc versionDate="2023-08-12" xml:lang="en"/>
+                </valItem>
+                <valItem mode="add" ident="traces"/>
+                <valItem mode="add" ident="Deutungsebene"/>
+                <valItem mode="add" ident="Grundprinzipien"/>
+                <valItem mode="add" ident="Makrostrukturebene"/>
+                <valItem mode="add" ident="Mikrostrukturebene"/>
+                <valItem mode="add" ident="emph"/>
+                <valItem mode="add" ident="num"/>
+                <valItem mode="add" ident="syntax"/>
+                <valItem mode="add" ident="amb"/>
+                <valItem mode="add" ident="abbr"/>
+                <valItem mode="add" ident="rdg"/>
+                <valItem mode="add" ident="Besonderheiten"/>
+                <valItem mode="add" ident="graph"/>
+                <valItem mode="add" ident="allograph"/>
+                <valItem mode="add" ident="ligature"/>
+                <valItem mode="add" ident="diacritic"/>
+                <valItem mode="add" ident="abbreviation"/>
+                <valItem mode="add" ident="brevigraph"/>
+                <valItem mode="add" ident="ambiguous"/>
+                <valItem mode="add" ident="punctuation"/>
+              </valList>
+            </attDef>
+          </attList>
+        </classSpec>
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>
